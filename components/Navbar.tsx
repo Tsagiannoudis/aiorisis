@@ -1,0 +1,106 @@
+"use client";
+
+import NavLinksMainData from "@/data/NavLinksMainData";
+import Image from "next/image";
+import Link from "next/link";
+import { Fragment, useState } from "react";
+import { usePathname } from "next/navigation";
+
+const Navbar = () => {
+    const [isOpen, setIsOpen] = useState(false);
+    const pathname = usePathname();
+
+  return (
+    <header className="bg-white text-black">
+      <nav className="container mx-auto px-4 py-4 flex items-center justify-between max-w-7xl">
+        <div className="flex items-center space-x-4">
+          <Link href="/" className="nav-logo">
+            <Image
+              src="/logos/aiorisis_logo_lanscape1.0.png"
+              alt="Logo"
+              width={320}
+              height={100}
+              className="w-auto h-auto max-w-[160px] md:max-w-[220px] lg:max-w-[280px]" // Διορθώθηκε για να αποφευχθεί η μεγέθυνση
+            />
+          </Link>
+        </div>
+
+        {/* Desktop menu */}
+        <ul className="hidden lg:flex items-center space-x-2 xl:space-x-4 text-[#B9007C] font-bold">
+          {NavLinksMainData.map((link, index) => (
+            <Fragment key={link.href}>
+              {index > 0 && (
+                <li className="text-black font-normal" aria-hidden="true">
+                  -
+                </li>
+              )}
+              <li className="nav-item">
+                              <Link
+                href={link.href}
+                className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+                  pathname === link.href
+                    ? "bg-[#B9007C] text-white shadow-md"
+                    : "hover:bg-gray-200 text-gray-700"
+                }`}
+              >
+                  {link.label}
+                </Link>
+              </li>
+            </Fragment>
+          ))}
+        </ul>
+
+        {/* Mobile menu */}
+        <button
+          className="lg:hidden p-2 text-gray-600"
+          aria-label="Άνοιγμα μενού"
+          onClick={() => setIsOpen(!isOpen)}
+        >
+          <svg
+            className="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            {isOpen ? (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M6 18L18 6M6 6l12 12"
+              />
+            ) : (
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            )}
+          </svg>
+        </button>
+      </nav>
+
+      {/* Mobile Menu */}
+      {isOpen && (
+        <div className="lg:hidden bg-white border-t rounded-b-2xl overflow-hidden animate-in slide-in-from-top duration-300">
+          <ul className="flex flex-col p-4 space-y-2">
+            {NavLinksMainData.map((link) => (
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  onClick={() => setIsOpen(false)}
+                  className="block px-4 py-3 text-base font-medium text-[#B9007C] hover:bg-gray-100 rounded-lg"
+                >
+                  {link.label}
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </header>
+  );
+};
+
+export default Navbar;

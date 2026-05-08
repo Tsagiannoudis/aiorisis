@@ -1,17 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Αιώρησις (Aiorisis) - Yoga & Movement Studio
 
-## Getting Started
+Αυτό είναι το επίσημο web application για το στούντιο κίνησης και yoga **Αιώρησις**. Το project είναι κατασκευασμένο με **Next.js** και εστιάζει στην παροχή μιας σύγχρονης, γρήγορης και πλήρως responsive εμπειρίας για την παρουσίαση μαθημάτων, retreats και events.
 
-First, run the development server:
+## 🚀 Τεχνολογίες
+
+- **Framework:** Next.js 14/15 (App Router)
+- **Styling:** Tailwind CSS
+- **Γλώσσα:** TypeScript
+- **Icons/Images:** Lucide-style SVGs & Next/Image για βελτιστοποίηση
+- **Validation:** Zod (με πλήρη υποστήριξη Ελληνικών locales)
+
+## 🎨 Σχεδιαστικές Επιλογές
+
+- **Brand Color:** `#B9007C` (Magenta/Pink)
+- **Design Patterns:** 
+  - Χρήση **Glassmorphism** (backdrop-blur) σε Hero sections.
+  - Card-based layouts για τις φόρμες επικοινωνίας.
+  - Responsive Navigation με υποστήριξη για Desktop, Tablet (iPad) και Mobile.
+
+## 📁 Δομή Components
+
+- `/components/Navbar.tsx`: Κεντρική πλοήγηση με ενεργά links και mobile menu.
+- `/components/contact/`: Σελίδα επικοινωνίας χωρισμένη σε Hero και Form sections.
+- `/data/`: Static data (π.χ. `NavLinksMainData`) για εύκολη συντήρηση των συνδέσμων.
+
+## 🛠️ Εγκατάσταση και Χρήση
+
+1. Εγκαταστήστε τα dependencies:
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
@@ -34,3 +52,4 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+# aiorisis
