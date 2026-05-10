@@ -1,6 +1,6 @@
 const ExperienceOfAiorisis = () => {
   return (
-    <section className="py-24 bg-[#fcfcfc]">
+    <section className="py-24 bg-[#fcfcfc] ">
       <div className="container mx-auto px-4 max-w-6xl">
         <h2 className="text-4xl md:text-6xl font-bold text-center text-gray-900">
           Η Εμπειρία της Αιώρησης
