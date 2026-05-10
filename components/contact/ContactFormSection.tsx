@@ -12,7 +12,7 @@ const ContactFormSection = () => {
           <div className="lg:w-2/5 bg-gray-50 p-8 md:p-12 text-black flex flex-col justify-between">
             <div>
               <h2 className="text-3xl font-bold mb-6">Πείτε μας ένα γεια!</h2>
-              <p className=" mb-12 text-lg">
+              <p className="mb-12 text-lg">
                 Είμαστε εδώ για να λύσουμε κάθε σας απορία σχετικά με τα μαθήματα και τα events μας.
               </p>
 
@@ -62,8 +62,9 @@ const ContactFormSection = () => {
           <div className="lg:w-3/5 p-8 md:p-12">
             <form className="grid grid-cols-1 md:grid-cols-2 gap-8">
               <div className="flex flex-col gap-2">
-                <label className="text-xs font-bold  tracking-widest text-gray-400 ml-1">Ονοματεπώνυμο</label>
+                <label htmlFor="fullname" className="text-xs font-bold tracking-widest text-gray-400 ml-1">Ονοματεπώνυμο</label>
                 <input 
+                  id="fullname"
                   name="fullname"
                   type="text" 
                   placeholder="Ιωάννης Παπαδόπουλος"
@@ -71,8 +72,9 @@ const ContactFormSection = () => {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <label className="text-xs font-bold  tracking-widest text-gray-400 ml-1">Email</label>
+                <label htmlFor="email" className="text-xs font-bold tracking-widest text-gray-400 ml-1">Email</label>
                 <input 
+                  id="email"
                   name="email"
                   type="email" 
                   placeholder="example@mail.com"
@@ -80,8 +82,9 @@ const ContactFormSection = () => {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <label className="text-xs font-bold  tracking-widest text-gray-400 ml-1">Τηλέφωνο</label>
+                <label htmlFor="phone" className="text-xs font-bold tracking-widest text-gray-400 ml-1">Τηλέφωνο</label>
                 <input 
+                  id="phone"
                   name="phone"
                   type="tel" 
                   placeholder="69XXXXXXXX"
@@ -89,8 +92,8 @@ const ContactFormSection = () => {
                 />
               </div>
               <div className="flex flex-col gap-2">
-                <label className="text-xs font-bold  tracking-widest text-gray-400 ml-1">Θέμα</label>
-                <select name="subject" className="px-4 py-4 bg-gray-50 rounded-xl border-transparent focus:bg-white focus:border-[#B9007C] focus:ring-0 transition-all border-2 appearance-none cursor-pointer">
+                <label htmlFor="subject" className="text-xs font-bold tracking-widest text-gray-400 ml-1">Θέμα</label>
+                <select id="subject" name="subject" className="px-4 py-4 bg-gray-50 rounded-xl border-transparent focus:bg-white focus:border-[#B9007C] focus:ring-0 transition-all border-2 cursor-pointer">
                   <option>Μαθήματα</option>
                   <option>Retreat</option>
                   <option>Event</option>
@@ -98,8 +101,9 @@ const ContactFormSection = () => {
                 </select>
               </div>
               <div className="flex flex-col gap-2 md:col-span-2">
-                <label className="text-xs font-bold  tracking-widest text-gray-400 ml-1">Το μήνυμά σας</label>
+                <label htmlFor="message" className="text-xs font-bold tracking-widest text-gray-400 ml-1">Το μήνυμά σας</label>
                 <textarea 
+                  id="message"
                   name="message"
                   rows={4}
                   placeholder="Πώς μπορούμε να σας βοηθήσουμε;"

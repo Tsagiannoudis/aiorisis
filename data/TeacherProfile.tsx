@@ -29,13 +29,15 @@ export const getSpecialtyNames = (teacherSpecialties: number[]) => {
     classes.find(c => c.id === id)?.className
   );
   // 1 - Aerial Yoga
-  // 2 - Aerial Yoga Kids/Teens
-  // 3 - Aerial Silks
-  // 4 - Aerial Rope
-  // 5 - Aerial Straps
-  // 6 - Flying Pole
-  // 7 - Aerial Hoop
-  // 8 - Vinyasa Flow Yoga
+  // 2 - Aerial Yoga Kids
+  // 3 - Aerial Yoga Teens
+  // 4 - Aerial Silks
+  // 5 - Aerial Rope
+  // 6 - Aerial Straps
+  // 7 - Flying Pole
+  // 8 - Aerial Hoop
+  // 9 - Vinyasa Flow Yoga
+  // 10 - Flexibility
 };
 
 // Εξαγωγή του πίνακα των δασκάλων ως const
