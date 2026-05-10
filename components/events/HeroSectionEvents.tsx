@@ -7,7 +7,7 @@ const HeroSectionEvent = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/blog60-scaled.jpg"
+          src="/curtain.webp"
           alt="Event - Αιώρησις"
           fill
           className="object-cover"

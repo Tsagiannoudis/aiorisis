@@ -2,7 +2,7 @@
 import Image from 'next/image';
 
 const images = [
-    '/homepage-photos/homePage.png',
+    '/homepage-photos/homePage.webp',
 ];
 
 const HeroSection2 = () => {
