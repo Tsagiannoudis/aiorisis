@@ -52,7 +52,7 @@ const Navbar = () => {
         <ul className="hidden lg:flex ml-auto">
           <li className="nav-item">
             <Link
-              href="/https://members.aiorisis.gr/"
+              href="https://members.aiorisis.gr/"
               className="px-4 py-2 rounded-xl text-sm font-bold transition-all duration-200 bg-[#B9007C] text-white hover:bg-[#9a0068] shadow-md ml-4"
             >
               Κράτηση Θέσης
@@ -108,7 +108,7 @@ const Navbar = () => {
             ))}
             <li className="pt-2 border-t border-gray-100">
               <Link
-                href="/https://members.aiorisis.gr/"
+                href="https://members.aiorisis.gr/"
                 onClick={() => setIsOpen(false)}
                 className="block px-4 py-3 text-base font-bold text-center text-white bg-[#B9007C] hover:bg-[#9a0068] rounded-xl shadow-md transition-all active:scale-95"
               >
