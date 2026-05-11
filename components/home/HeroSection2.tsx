@@ -9,34 +9,34 @@ const HeroSection2 = () => {
 
     return (
         <>
-        <section className="bg-white text-gray-900">
+        <section className="relative z-10 text-gray-900 pt-2 md:pt-1 pb-4 md:pb-4">
             <div className="container mx-auto px-4 max-w-6xl">
                 {/* Κείμενο Πάνω */}
-                <div className="max-w-6xl mx-auto mt-4 font-[family-name:var(--font-eb-garamond)]">
-                    <h1 className="text-7xl md:text-[12rem] tracking-tighter leading-none">
+                <div className="font-[family-name:var(--font-eb-garamond)]">
+                    <h1 className="text-6xl sm:text-7xl md:text-[11rem] lg:text-[13rem] tracking-tighter leading-none">
                         Αιώρησις 
                     </h1>
-                    <div className='text-6xl md:text-[8rem] text-[#B9007C] text-left mt-[-2rem] md:mt-[-2rem]'>
+                    <div className='text-4xl sm:text-5xl md:text-8xl lg:text-9xl text-[#B9007C] text-left md:text-left md:ml-8 -mt-2 md:-mt-8'>
                         Studio
                     </div>
                 </div>
             </div>
         </section>
 
-        <section className="relative min-h-[65vh] flex flex-col items-start overflow-hidden text-gray-800 -mt-10 md:-mt-10">
-            <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-                {/* Κείμενο Κέντρο */}
-                <div className="max-w-xl py-12">
-                    <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">
-                        Δώσε στο σώμα και στο νου,
+        <section className="relative overflow-hidden text-gray-800 pb-16 md:pb-32 md:-mt-35">
+            <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center">
+                {/* Κείμενο  */}
+                <div className="md:w-3/5 w-full text-right md:text-right md:pr-8">
+                    <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">
+                        Δώσε στο σώμα <br />και στο νου,
                     </h2>
-                    <p className="text-lg md:text-2xl font-light text-gray-500 leading-relaxed">
+                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-light text-gray-500 leading-relaxed">
                         τον χρόνο και τον τόπο να <span className="font-semibold italic text-[#B9007C]">αφεθεί</span> μέσω της "αιώρησις"
                     </p>
                 </div>
 
-                {/* Φωτογραφία Κάτω */}
-                <div className="relative h-[400px] md:h-[600px] w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100">
+                {/* Φωτογραφία */}
+                <div className="relative h-[400px] md:h-[550px] lg:h-[600px] w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100">
                     <Image
                         src={images[0]}
                         alt="Aiorisis Studio"
