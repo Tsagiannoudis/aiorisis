@@ -1,11 +1,13 @@
-import HeroSection2 from "@/components/home/HeroSection2"
+import HeroSection from "@/components/home/HeroSection"
 import ExperienceOfAiorisis from "@/components/home/ExperienceOfAiorisis";
+import ClassesOfStudio from "@/components/home/ClassesOfStudio";
 
 export default function Home() {
   return (
     <main>
-      <HeroSection2 />
+      <HeroSection />
       <ExperienceOfAiorisis />
+      <ClassesOfStudio />
     </main>
   );
 };

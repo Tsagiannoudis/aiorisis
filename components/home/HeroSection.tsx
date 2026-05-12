@@ -1,72 +1,53 @@
 "use client";
 import Image from 'next/image';
-import { useState, useEffect } from 'react';
 
 const images = [
-    '/homepage-photos/homePage.png',
-    '/homepage-photos/sliks.mp4',
+    '/homepage-photos/homePage.webp',
 ];
 
 const HeroSection = () => {
-    const [currentIndex, setCurrentIndex] = useState(0);
-
-      useEffect(() => {
-    const timer = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
-
-    return () => clearInterval(timer);
-  }, [images.length]);
-
 
     return (
-        <section className="relative min-h-[70vh] flex items-start overflow-hidden bg-black text-white">
-            {/* Background Slideshow */}
-            {images.map((src, index) => {
-                const isVideo = src.endsWith('.mp4');
-                
-                return (
-                    <div 
-                        key={src} 
-                        className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                            index === currentIndex ? "opacity-100 scale-105" : "opacity-0 scale-100"
-                        } transition-transform duration-[10000ms]`}
-                    >
-                        {isVideo ? (
-                            <video
-                                src={src}
-                                autoPlay
-                                muted
-                                loop
-                                playsInline
-                                poster={images[0]} // Χρήση της πρώτης εικόνας ως placeholder
-                                className="w-full h-full object-cover"
-                            />
-                        ) : (
-                            <Image
-                                src={src}
-                                alt={`Hero Slide ${index + 1}`}
-                                fill
-                                className="object-cover"
-                                priority={index === 0}
-                            />
-                        )}
-                        {/* Overlay για καλύτερη ανάγνωση κειμένου */}
-                        <div className="absolute inset-0 bg-black/30" />
+        <>
+        <section className="relative z-10 text-gray-900 pt-2 md:pt-1 pb-4 md:pb-4">
+            <div className="container mx-auto px-4 max-w-6xl opacity-60">
+                {/* Κείμενο Πάνω */}
+                <div className="font-[family-name:var(--font-eb-garamond)]">
+                    <h1 className="text-6xl sm:text-7xl md:text-[11rem] lg:text-[16rem] tracking-tighter leading-none">
+                        Αιώρησις 
+                    </h1>
+                    <div className='text-4xl sm:text-5xl md:text-8xl lg:text-9xl text-[#B9007C] text-left md:text-left md:ml-8 -mt-2 md:-mt-8'>
+                        Studio
                     </div>
-                );
-            })}
-
-            {/* Content */}
-            <div className="container mx-auto px-10 max-w-6xl relative z-10">
-                <div className="max-w-xl bg-black/30 backdrop-blur-md p-8 md:p-12 rounded-[2rem] border border-white/10 shadow-2xl mx-auto lg:ml-auto lg:mr-0 mt-20 md:mt-32">
-                    <h2 className="text-4xl md:text-6xl font-bold mb-6 text-[#B9007C] leading-tight">Δώσε στο σώμα <br /> και στο νου,</h2>
-                    <p className="text-lg md:text-2xl font-light leading-relaxed">
-                        τον χρόνο και τον τόπο να <span className="font-semibold italic">αφεθεί</span> μέσω της "αιώρησις"
-                    </p>
                 </div>
             </div>
         </section>
+
+        <section className="relative overflow-hidden text-gray-800 pb-16 md:pb-32 md:-mt-35">
+            <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center">
+                {/* Κείμενο  */}
+                <div className="md:w-3/5 w-full text-right md:text-right md:pr-8">
+                    <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">
+                        Δώσε στο σώμα <br />και στο νου,
+                    </h2>
+                    <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-light text-gray-500 leading-relaxed">
+                        τον χρόνο και τον τόπο να <span className="font-semibold italic text-[#B9007C]">αφεθεί</span> μέσω της "αιώρησις"
+                    </p>
+                </div>
+
+                {/* Φωτογραφία */}
+                <div className="relative h-[400px] md:h-[550px] lg:h-[600px] w-full rounded-[2.5rem] overflow-hidden shadow-2xl border border-gray-100">
+                    <Image
+                        src={images[0]}
+                        alt="Aiorisis Studio"
+                        fill
+                        className="object-cover"
+                        priority
+                    />
+                </div>
+            </div>
+        </section>
+        </>
     );
 };
 

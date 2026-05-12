@@ -1,4 +1,4 @@
-import { classes } from "./ClassesOfStudio";
+import { classes } from "./ClassOfStudioData";
 
 
 export interface Teacher {
