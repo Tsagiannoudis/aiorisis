@@ -11,7 +11,7 @@ const ClassesOfStudio = () => {
               <Image
                 src={classData.image || '/placeholder.webp'} // Πρόσθεσε ένα fallback αν η εικόνα λείπει
                 alt={classData.className}
-                width={400}
+                width={500}
                 height={300}
                 className="object-cover rounded-xl mb-6"
               />

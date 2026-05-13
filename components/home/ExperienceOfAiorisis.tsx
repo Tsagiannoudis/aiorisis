@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const ExperienceOfAiorisis = () => {
   return (
-    <section className="relative py-24 bg-[#70747E] overflow-hidden">
+    <section className="relative py-24 bg-[#858994] overflow-hidden">
       {/* Διακοσμητικό Background Logo (Watermark) */}
       <div className="absolute -bottom-20 -right-20 opacity-20 pointer-events-none -rotate-12 hidden lg:block">
         <Image 
