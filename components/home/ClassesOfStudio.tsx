@@ -9,6 +9,16 @@ const ClassesOfStudio = () => {
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gray-200/50 rounded-full blur-[100px] pointer-events-none"></div>
 
       <div className="container relative mx-auto px-4 max-w-6xl z-10">
+        <div className="text-center mb-16 md:mb-24">
+          <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
+            Τα Μαθήματά μας
+          </h2>
+          <div className="w-20 h-1 bg-[#B9007C] mx-auto mb-8 rounded-full"></div>
+          <p className="text-gray-500 font-light text-lg md:text-xl max-w-2xl mx-auto leading-relaxed">
+            Ανακαλύψτε μια ποικιλία από εναέριες και επίγειες πρακτικές, σχεδιασμένες για να προσφέρουν ενδυνάμωση, ευεξία και απόλυτη ελευθερία κίνησης.
+          </p>
+        </div>
+
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12">
           {classes.map((classData) => (
             <div
@@ -30,7 +40,7 @@ const ClassesOfStudio = () => {
                 {classData.className}
               </h3>
 
-              <div className="w-10 h-[2px] bg-gray mb-6 group-hover:w-20 group-hover:bg-[#B9007C] transition-all duration-500"></div>
+              <div className="w-10 h-[2px] bg-gray-200 mb-6 group-hover:w-20 group-hover:bg-[#B9007C] transition-all duration-500"></div>
               
               <p className="text-gray-500 font-light leading-relaxed text-sm md:text-base">
                 {classData.shortDescription}
