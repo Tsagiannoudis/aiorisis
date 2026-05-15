@@ -20,7 +20,7 @@ const ebGaramond = EB_Garamond({
 });
 
 export const metadata: Metadata = {
-  title: "Αιώρησις | Yoga & Movement Studio",
+  title: "Αιώρησις | Aerial Yoga, Silks, Flying Pole, Rope, Straps, Vinyasa Flow Yoga & Flexibility Studio",
   description: "Σύγχρονο στούντιο κίνησης και yoga στην Αρτέμιδος 42, Θεσσαλονίκη.",
 };
 
