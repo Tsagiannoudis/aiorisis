@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const ExperienceOfAiorisis = () => {
   return (
-    <section className="relative py-24 bg-[#858994] overflow-hidden">
+    <section className="relative py-24 bg-[#85c9bb8d] overflow-hidden">
       {/* Διακοσμητικό Background Logo (Watermark) */}
       <div className="absolute -bottom-20 -right-20 opacity-20 pointer-events-none -rotate-12 hidden lg:block">
         <Image 
@@ -14,10 +14,10 @@ const ExperienceOfAiorisis = () => {
       </div>
 
       <div className="container relative mx-auto px-4 max-w-6xl z-10">
-        <h2 className="text-4xl md:text-6xl font-bold text-center text-white mb-8">
+        <h2 className="text-4xl md:text-6xl font-bold text-center text-black mb-8">
           Η Εμπειρία της Αιώρησης
         </h2>
-        <p className="text-amber-50 font-light leading-relaxed text-center max-w-3xl mx-auto ">
+        <p className="text-grey font-light leading-relaxed text-center max-w-3xl mx-auto ">
             Στο στούντιό μας, έχουμε δημιουργήσει έναν χώρο που συνδυάζει την ασφάλεια, την ποιότητα και την αισθητική, για να σας προσφέρουμε την καλύτερη δυνατή εμπειρία.  
         </p>
 
@@ -33,20 +33,20 @@ const ExperienceOfAiorisis = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
           <div className="space-y-8">
             <div className="border-l-4 border-[#B9007C] pl-6">
-              <h3 className="text-2xl font-bold mb-4 text-white">Ασφάλεια & Ποιότητα</h3>
-              <p className="text-amber-50  font-light leading-relaxed">
+              <h3 className="text-2xl font-bold mb-4 text-black">Ασφάλεια & Ποιότητα</h3>
+              <p className="text-gray  font-light leading-relaxed">
                 Με ύψος 6 μέτρα, ο χώρος μας είναι ιδανικός για να εκτελέσετε ακόμα και τις πιο απαιτητικές εναέριες ασκήσεις με απόλυτη άνεση. 
               </p>
-              <p className="text-amber-50  font-light leading-relaxed">
+              <p className="text-gray   font-light leading-relaxed">
                 Ο εξοπλισμός μας είναι πιστοποιημένος και καινούργιος, διασφαλίζοντας την υψηλότερη ποιότητα και ασφάλεια κατά τη διάρκεια της πρακτικής σας. Είτε πρόκειται για aerial yoga, aerial silks, aerial hoop, rope, straps, ή flying pole.
               </p>
             </div>
 
-            <div className="border-l-4 border-gray-200 pl-6">
-              <h3 className="text-2xl font-bold mb-4 text-white">
+            <div className="border-l-4 border-white pl-6">
+              <h3 className="text-2xl font-bold mb-4 text-black ">
                 Φροντίδα & Καθοδήγηση
               </h3>
-              <p className="text-amber-50  font-light leading-relaxed">
+              <p className="text-gray  font-light leading-relaxed">
                 Δίνουμε έμφαση στην καθαριότητα και τη φροντίδα, προσφέροντας ένα ήρεμο περιβάλλον. Τα τμήματά μας είναι ολιγομελή, επιτρέποντας στους εκπαιδευτές μας να προσφέρουν εξατομικευμένη καθοδήγηση ανάλογα με τις δικές σας ανάγκες.
               </p>
             </div>
@@ -58,7 +58,7 @@ const ExperienceOfAiorisis = () => {
             </p>
             <div className="flex items-center gap-4 text-[#B9007C] font-bold tracking-widest text-sm">
               <span className="h-px w-12 bg-[#B9007C]"></span>Η ομάδα της
-              Αιώρησης
+              Αιώρησις
             </div>
           </div>
         </div>
