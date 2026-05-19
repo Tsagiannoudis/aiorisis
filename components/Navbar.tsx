@@ -19,8 +19,8 @@ const Navbar = () => {
               src="/logos/aiorisis_logo_social_media_big.png"
               alt="Logo"
               width={65}
-              height={100}
-              className="w-auto h-auto max-w-[160px] md:max-w-[220px] lg:max-w-[280px]" // Διορθώθηκε για να αποφευχθεί η μεγέθυνση
+              height={80}
+              className="w-auto h-auto max-w-[120px] md:max-w-[220px] lg:max-w-[280px]" // Διορθώθηκε για να αποφευχθεί η μεγέθυνση
             />
           </Link>
         </div>
