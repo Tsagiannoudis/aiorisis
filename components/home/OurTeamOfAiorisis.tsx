@@ -55,7 +55,7 @@ const OurTeamOfAiorisis = () => {
                   <p className="text-[#B9007C] text-sm font-semibold tracking-widest">
                     {teacher.categoryType}
                   </p>
-                  <p className="text-gray-600 text-sm mt-2 leading-relaxed">
+                  <p className="text-gray-800 text-sm mt-2 leading-relaxed">
                     {getSpecialtyNames(teacher.specialties).map((specialty, idx, arr) => (
                       <span key={idx}>
                         {specialty}
