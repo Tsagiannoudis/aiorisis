@@ -17,7 +17,7 @@ const ExperienceOfAiorisis = () => {
         <h2 className="text-4xl md:text-6xl font-bold text-center text-black mb-8">
           Η Εμπειρία της Αιώρησις
         </h2>
-        <p className="text-grey font-light leading-relaxed text-center max-w-3xl mx-auto ">
+        <p className="text-gray-800 font-light leading-relaxed text-center max-w-3xl mx-auto ">
             Στο στούντιό μας, έχουμε δημιουργήσει έναν χώρο που συνδυάζει την ασφάλεια, την ποιότητα και την αισθητική, για να σας προσφέρουμε την καλύτερη δυνατή εμπειρία.  
         </p>
 

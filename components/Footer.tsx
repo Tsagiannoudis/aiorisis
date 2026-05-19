@@ -11,7 +11,7 @@ const Footer = () => {
           height={120}
           className="h-auto max-w-[160px] md:max-w-[220px] lg:max-w-[280px] mx-auto mb-4"
         />
-        <p className="text-center">
+        <p className="text-center text-gray-800">
           Αιώρησις &copy; {new Date().getFullYear()}. | All rights reserved. | Power by tSagian Projects.
         </p>
       </div>
