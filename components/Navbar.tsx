@@ -11,7 +11,7 @@ const Navbar = () => {
     const pathname = usePathname();
 
   return (
-    <header className="bg-white text-black">
+    <header className=" text-black">
       <nav className="container mx-auto px-4 py-4 flex items-center max-w-7xl">
         <div className="flex items-center space-x-4">
           <Link href="/" className="nav-logo">
