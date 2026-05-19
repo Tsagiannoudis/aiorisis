@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, EB_Garamond } from "next/font/google";
+import { Geist, Geist_Mono, EB_Garamond, Ubuntu_Sans } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
@@ -19,6 +19,11 @@ const ebGaramond = EB_Garamond({
   subsets: ["latin", "greek"],
 });
 
+const ubuntuSans = Ubuntu_Sans({
+  variable: "--font-ubuntu-sans",
+  subsets: ["latin", "greek"],
+});
+
 export const metadata: Metadata = {
   title: "Αιώρησις | Aerial Yoga, Silks, Flying Pole, Rope, Straps, Vinyasa Flow Yoga & Flexibility Studio",
   description: "Σύγχρονο στούντιο κίνησης και yoga στην Αρτέμιδος 42, Θεσσαλονίκη.",
@@ -32,7 +37,7 @@ export default function RootLayout({
   return (
     <html
       lang="el"
-      className={`${geistSans.variable} ${geistMono.variable} ${ebGaramond.variable} h-full antialiased`}
+      className={`${geistSans.variable} ${geistMono.variable} ${ebGaramond.variable} ${ubuntuSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
         <Navbar />

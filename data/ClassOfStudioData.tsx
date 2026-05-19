@@ -56,7 +56,7 @@ export const classes: Class[] = [
   {
     id: 2,
     className: "Aerial Yoga Kids",
-    icon: "/icons/aerial-yoga-kids.png",
+    icon: "/icons/aerial-yoga-kid.png",
     image: "/classes/aerial-yoga-kids.webp",
     shortDescription: "Τα παιδιά (Ηλικίες από 5 και άνω) διασκεδάζουν μέσω της αιώρας ενώ ταυτόχρονα βελτιώνεται η φυσική τους κατάσταση, η σωματική τους δύναμη, η ευλυγισία, η ισορροπία, ο κινητικός συντονισμός και ψυχοσωματική τους ανάπτυξη.",
     description: `
@@ -89,7 +89,7 @@ export const classes: Class[] = [
   {
     id: 3,
     className: "Aerial Yoga Teens",
-    icon: "/icons/aerial-yoga-teens.png",
+    icon: "/icons/aerial-yoga-teen.png",
     image: "/classes/aerial-yoga-kids.webp",
     shortDescription: "Οι έφηβοι (Ηλικίες από 9 και άνω) καλλιεργούν την αυτοπεποίθησή τους και ανακαλύπτουν τις δυνατότητες του σώματός τους μέσα από τη ροή και την αιώρηση.",
     description: `

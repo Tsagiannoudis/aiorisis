@@ -66,7 +66,7 @@ export const teachers: Teacher[] = [
     </ul>
     </div>
 `,
-    image: "",
+    image: "/teacherProfiles/evi-priona.webp",
     mailAddress: "info@aiorisis.gr",
     phoneNumber: 6948577225,
     socialAccounts: {
@@ -99,7 +99,7 @@ export const teachers: Teacher[] = [
       </span>
     </p>
 `,
-    image: "",
+    image: "/teacherProfiles/rafaela-xatzikosta.webp",
     mailAddress: "",
     phoneNumber: 0,
     socialAccounts: {
@@ -131,7 +131,7 @@ export const teachers: Teacher[] = [
       </span>
     </p>
 `,
-    image: "",
+    image: "/teacherProfiles/natasa-petridou.webp",
     mailAddress: "",
     phoneNumber: 0,
     socialAccounts: {
@@ -163,7 +163,7 @@ export const teachers: Teacher[] = [
       </span>
     </p>
 `,
-    image: "",
+    image: "/teacherProfiles/marialina-papadopoulou.webp",
     mailAddress: "",
     phoneNumber: 0,
     socialAccounts: {
@@ -195,7 +195,7 @@ export const teachers: Teacher[] = [
       </span>
     </p>
 `,
-    image: "",
+    image: "/teacherProfiles/natalia-michail.webp",
     mailAddress: "",
     phoneNumber: 0,
     socialAccounts: {
@@ -232,7 +232,7 @@ export const teachers: Teacher[] = [
       </span>
     </p>
 `,
-    image: "",
+    image: "/teacherProfiles/stella-tzirti.webp",
     mailAddress: "",
     phoneNumber: 0,
     socialAccounts: {
