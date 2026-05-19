@@ -18,7 +18,7 @@ const OurTeamOfAiorisis = () => {
         <h2 className="text-4xl md:text-6xl font-bold text-center text-black mb-8">
           Η ομάδας μας
         </h2>
-        <p className="text-grey font-light leading-relaxed text-center max-w-3xl mx-auto ">
+        <p className="text-gray-800 font-light leading-relaxed text-center max-w-3xl mx-auto ">
             Η ομάδα της Αιώρησις αποτελείται από έμπειρους και παθιασμένους εκπαιδευτές, που είναι αφοσιωμένοι στο να σας βοηθήσουν να εξερευνήσετε τις δυνατότητες του σώματός σας και να ανακαλύψετε τη χαρά της κίνησης στον αέρα. 
         </p>
 

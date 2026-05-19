@@ -34,10 +34,10 @@ const ExperienceOfAiorisis = () => {
           <div className="space-y-8" data-aos="fade-right" data-aos-delay="200">
             <div className="border-l-4 border-[#B9007C] pl-6">
               <h3 className="text-2xl font-bold mb-4 text-black">Ασφάλεια & Ποιότητα</h3>
-              <p className="text-gray  font-light leading-relaxed">
+              <p className="text-gray-800 font-light leading-relaxed">
                 Με ύψος 6 μέτρα, ο χώρος μας είναι ιδανικός για να εκτελέσετε ακόμα και τις πιο απαιτητικές εναέριες ασκήσεις με απόλυτη άνεση. 
               </p>
-              <p className="text-gray   font-light leading-relaxed">
+              <p className="text-gray-800 font-light leading-relaxed">
                 Ο εξοπλισμός μας είναι πιστοποιημένος και καινούργιος, διασφαλίζοντας την υψηλότερη ποιότητα και ασφάλεια κατά τη διάρκεια της πρακτικής σας. Είτε πρόκειται για aerial yoga, aerial silks, aerial hoop, rope, straps, ή flying pole.
               </p>
             </div>
@@ -46,7 +46,7 @@ const ExperienceOfAiorisis = () => {
               <h3 className="text-2xl font-bold mb-4 text-black ">
                 Φροντίδα & Καθοδήγηση
               </h3>
-              <p className="text-gray  font-light leading-relaxed">
+              <p className="text-gray-800 font-light leading-relaxed">
                 Δίνουμε έμφαση στην καθαριότητα και τη φροντίδα, προσφέροντας ένα ήρεμο περιβάλλον. Τα τμήματά μας είναι ολιγομελή, επιτρέποντας στους εκπαιδευτές μας να προσφέρουν εξατομικευμένη καθοδήγηση ανάλογα με τις δικές σας ανάγκες.
               </p>
             </div>
