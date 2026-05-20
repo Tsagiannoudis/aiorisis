@@ -1,24 +1,40 @@
+'use client';
+
+import { useState } from 'react';
 import { schedule, getClassByName, days, classRooms } from '@/data/ScheduleData';
 
 export default function Schedule() {
+  const [activeRoom, setActiveRoom] = useState<typeof classRooms[number]>(classRooms[0]);
+
   return (
     <div className="container mx-auto px-4 py-12">
-      <div className="mb-18 mt-18">
+      <div className="mb-12 mt-6">
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 text-center tracking-tighter italic">Ώρες Μαθημάτων</h2>
       </div>
 
-      {classRooms.map((room) => {
-        // Φιλτράρουμε τα μαθήματα που ανήκουν στη συγκεκριμένη αίθουσα
-        const roomEntries = schedule.filter((entry) => entry.classRoom === room);
+      {/* Room Switcher Tabs */}
+      <div className="flex justify-center gap-3 mb-12">
+        {classRooms.map((room) => (
+          <button
+            key={room}
+            onClick={() => setActiveRoom(room)}
+            className={`px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 border ${
+              activeRoom === room
+                ? 'bg-[#B9007C] text-white border-[#B9007C] shadow-md'
+                : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
+            }`}
+          >
+            {room}
+          </button>
+        ))}
+      </div>
 
-        if (roomEntries.length === 0) return null;
+      <div key={activeRoom} className="animate-in fade-in duration-500">
+        {(() => {
+          const roomEntries = schedule.filter((entry) => entry.classRoom === activeRoom);
+          if (roomEntries.length === 0) return null;
 
-        return (
-          <div key={room} className="mb-24 last:mb-0 p-4 md:p-8 bg-white/50 rounded-[2rem] md:rounded-[3rem] border border-gray-100 shadow-xl">
-            <h3 className="text-1xl md:text-2xl font-black text-gray-700 mb-8 md:12 text-right  tracking-tighter italic">
-              {room}
-            </h3>
-            
+          return (
             <div className="space-y-10">
               {days.map((day) => {
                 const dayRoomEntries = roomEntries.filter((entry) => entry.day === day);
@@ -62,9 +78,9 @@ export default function Schedule() {
                 );
               })}
             </div>
-          </div>
-        );
-      })}
+          );
+        })()}
+      </div>
     </div>
   );
 }

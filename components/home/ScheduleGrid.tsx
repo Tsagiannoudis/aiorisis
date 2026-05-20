@@ -1,3 +1,6 @@
+'use client';
+
+import { useState } from 'react';
 import {
   schedule,
   getClassByName,
@@ -11,6 +14,7 @@ import {
 } from '@/data/ScheduleData';
 
 export default function ScheduleGrid() {
+  const [activeRoom, setActiveRoom] = useState<typeof classRooms[number]>(classRooms[0]);
   const visibleDays = days.filter((day) => day !== 'Κυριακή');
 
   return (
@@ -20,19 +24,30 @@ export default function ScheduleGrid() {
           Ώρες Μαθημάτων
         </h2>
 
-        {classRooms.map((room) => {
-          const roomEntries = schedule.filter(
-            (entry) => entry.classRoom === room
-          );
+        {/* Room Switcher Tabs */}
+        <div className="flex justify-center gap-4 mb-12">
+          {classRooms.map((room) => (
+            <button
+              key={room}
+              onClick={() => setActiveRoom(room)}
+              className={`px-8 py-3 rounded-full text-lg font-bold transition-all duration-300 border ${
+                activeRoom === room
+                  ? 'bg-[#B9007C] text-white border-[#B9007C] scale-105 shadow-lg shadow-[#B9007C]/20'
+                  : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
+              }`}
+            >
+              {room}
+            </button>
+          ))}
+        </div>
 
-          if (!roomEntries.length) return null;
+        {/* Active Grid Content */}
+        <div key={activeRoom} className="animate-in fade-in duration-500">
+          {(() => {
+            const roomEntries = schedule.filter((entry) => entry.classRoom === activeRoom);
+            if (!roomEntries.length) return null;
 
-          return (
-            <div key={room} className="mb-24 last:mb-0">
-              <h3 className="text-2xl font-black text-[#B9007C] mb-2  tracking-widest italic">
-                {room}
-              </h3>
-
+            return (
               <div className="overflow-x-auto rounded-3xl border border-gray-200 bg-white shadow-xl p-4 md:p-8">
                 <div
                   className="relative grid min-w-[1000px] bg-white"
@@ -94,7 +109,7 @@ export default function ScheduleGrid() {
 
                         return (
                           <div
-                            key={`${room}-${entry.day}-${entry.start}-${entry.className}`}
+                            key={`${activeRoom}-${entry.day}-${entry.start}-${entry.className}`}
                             className="z-10 m-[2px] p-2 text-center flex flex-col items-center justify-center overflow-hidden rounded-lg shadow-sm transition-all duration-300 hover:scale-[1.02] hover:z-20 hover:shadow-md border border-white/20"
                             style={{
                               gridColumn: dayIndex + 2,
@@ -122,9 +137,9 @@ export default function ScheduleGrid() {
                   )}
                 </div>
               </div>
-            </div>
-          );
-        })}
+            );
+          })()}
+        </div>
       </div>
     </section>
   );
