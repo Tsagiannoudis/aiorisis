@@ -12,7 +12,16 @@ export default function Home() {
       <ExperienceOfAiorisis />
       <ClassesOfStudio />
       <OurTeamOfAiorisis />
-      <ScheduleGrid />
+      
+      {/* Εμφάνιση Grid σε μεγάλες οθόνες (lg: 1024px+) */}
+      <div className="hidden lg:block">
+        <ScheduleGrid />
+      </div>
+
+      {/* Εμφάνιση Λίστας σε μικρότερες οθόνες (κάτω από 1024px) */}
+      <div className="block lg:hidden">
+        <ScheduleList />
+      </div>
     </main>
   );
 };
