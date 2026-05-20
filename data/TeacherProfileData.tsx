@@ -49,7 +49,7 @@ export const teachers: Teacher[] = [
     fullName: "Πριόνα Εύη",
     experience: 13,
     categoryType: "Owner",
-    specialties: [1, 2, 3, 9],
+    specialties: [1, 2, 3, 4, 8, 9],
     shortDescription: `Ασχολείται με τον αθλητισμό από πολύ μικρή ηλικία. Έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks) το 2015 και η αγάπη της γι'αυτές την οδήγησε να ασχοληθεί επαγγελματικά και να διδάσκει από το 2020. Είναι πιστοποιημένη δασκάλα της Aerial Yoga 150hrs, Aerial Yin Yoga 50hrs, Yoga 500 hrs και Prenatal/Postnatal Yoga 50hrs από την Yoga Alliance.`,
     fullDescription: `
     <div>
@@ -84,7 +84,7 @@ export const teachers: Teacher[] = [
     fullName: "Χατζηκώστα Ραφαέλα",
     experience: 8,
     categoryType: "Instructor",
-    specialties: [1, 2, 9],
+    specialties: [1, 2, 3, 9],
     shortDescription: "",
     fullDescription: `
     <p>
@@ -117,7 +117,7 @@ export const teachers: Teacher[] = [
     fullName: "Πετρίδου Νατάσα",
     experience: 7,
     categoryType: "Instructor",
-    specialties: [1, 2, 9],
+    specialties: [1, 2, 3, 9],
     shortDescription: "",
     fullDescription: `
     <p>
@@ -213,7 +213,7 @@ export const teachers: Teacher[] = [
     fullName: "Τζίρτη Στέλλα",
     experience: 12,
     categoryType: "Instructor",
-    specialties: [3, 5, 6],
+    specialties: [4, 5, 6],
     shortDescription: "",
     fullDescription: `
     <p>

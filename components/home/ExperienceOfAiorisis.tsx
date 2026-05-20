@@ -1,16 +1,22 @@
+'use client';
 import Image from 'next/image';
+import SquareBackground from '@/components/animations/SquareBackground';
+
+
 
 const ExperienceOfAiorisis = () => {
   return (
     <section className="relative py-24 bg-[#85c9bb8d] overflow-hidden">
+    
       {/* Διακοσμητικό Background Logo (Watermark) */}
-      <div className="absolute -bottom-20 -right-20 opacity-20 pointer-events-none -rotate-12 hidden lg:block">
-        <Image 
+      <div className="absolute -bottom-20 -right-20 opacity-40 pointer-events-none -rotate-12 hidden lg:block">
+        <SquareBackground />
+        {/* <Image 
           src="/lotus-white4.png" 
           alt='LOTUS DECOR' 
           width={600} 
           height={600} 
-        />
+        /> */}
       </div>
 
       <div className="container relative mx-auto px-4 max-w-6xl z-10">
