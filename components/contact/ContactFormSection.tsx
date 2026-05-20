@@ -60,7 +60,7 @@ const ContactFormSection = () => {
 
           {/* Form Column - Clean White */}
           <div className="lg:w-3/5 p-8 md:p-12">
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-8 text-black">
               <div className="flex flex-col gap-2">
                 <label htmlFor="fullname" className="text-xs font-bold tracking-widest text-gray-400 ml-1">Ονοματεπώνυμο</label>
                 <input 

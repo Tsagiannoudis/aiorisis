@@ -1,4 +1,4 @@
-# Αιώρησις (Aiorisis) - Yoga & Movement Studio
+# Αιώρησις (Aiorisis) - Yoga & Aerial Studio
 
 Αυτό είναι το επίσημο web application για το στούντιο κίνησης και yoga **Αιώρησις**. Το project είναι κατασκευασμένο με **Next.js** και εστιάζει στην παροχή μιας σύγχρονης, γρήγορης και πλήρως responsive εμπειρίας για την παρουσίαση μαθημάτων, retreats και events.
 
@@ -7,8 +7,6 @@
 - **Framework:** Next.js 14/15 (App Router)
 - **Styling:** Tailwind CSS
 - **Γλώσσα:** TypeScript
-- **Icons/Images:** Lucide-style SVGs & Next/Image για βελτιστοποίηση
-- **Validation:** Zod (με πλήρη υποστήριξη Ελληνικών locales)
 
 ## 🎨 Σχεδιαστικές Επιλογές
 
