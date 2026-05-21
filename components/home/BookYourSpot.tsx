@@ -28,13 +28,14 @@ const BookYourSpot = () => {
 
           {/* Image */}
           <div className="lg:w-1/2 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[320px] h-[320px] sm:max-w-md sm:h-[500px] md:h-[600px] rounded-t-full overflow-hidden shadow-2xl bg-gray-200 transform-gpu translate-z-0">
+            <div className="relative w-full max-w-[320px] h-[320px] sm:max-w-md sm:h-[500px] md:h-[600px] rounded-t-full overflow-hidden shadow-2xl bg-gray-200 transform-gpu translate-z-0"
+                            data-aos="fade-in"
+                data-aos-delay="200">
               <img
                 src="/studio/classRoom1.webp"
                 alt="Εσωτερικός χώρος στούντιο με εναέριο εξοπλισμό"
-                className="w-[320px] h-[320px] object-cover rounded-t-full shadow-2xl"
-                data-aos="fade-in"
-                data-aos-delay="200"
+                className="w-[320px] h-[320px] sm:h-[500px] md:h-[600px] sm:w-[400px] md:w-[450px]   object-cover rounded-t-full shadow-2xl"
+
               />
             </div>
           </div>
