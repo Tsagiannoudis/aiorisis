@@ -4,6 +4,8 @@ import ClassesOfStudio from "@/components/home/ClassesOfStudio";
 import OurTeamOfAiorisis from "@/components/home/OurTeamOfAiorisis";
 import ScheduleList from "@/components/home/ScheduleList";
 import ScheduleGrid from "@/components/home/ScheduleGrid";
+import BookYourSpot from "@/components/home/BookYourSpot";
+
 
 export default function Home() {
   return (
@@ -22,6 +24,8 @@ export default function Home() {
       <div className="block lg:hidden">
         <ScheduleList />
       </div>
+
+      <BookYourSpot />
     </main>
   );
 };

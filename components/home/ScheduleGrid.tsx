@@ -50,7 +50,7 @@ export default function ScheduleGrid() {
             return (
               <div className="overflow-x-auto rounded-3xl border border-gray-200 bg-white shadow-xl p-4 md:p-8">
                 <div
-                  className="relative grid min-w-[1000px] bg-white"
+                  className="relative grid min-w-[800px] bg-white"
                   style={{
                     gridTemplateColumns: `70px repeat(${visibleDays.length}, minmax(120px, 1fr))`,
                     gridTemplateRows: `42px repeat(${totalRows}, 18px)`,
