@@ -1,15 +1,14 @@
-import Image from "next/image";
 import Link from "next/link";
 
 const BookYourSpot = () => {
   return (
-    <section className="relative py-10 md:py-12 overflow-hidden">
-      <div className="container mx-auto px-4 max-w-6xl z-10">
+    <section className="relative py-12 md:py-24 overflow-hidden isolate">
+      <div className="container mx-auto px-4 max-w-6xl relative z-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 p-4 md:p-12">
           {/* Text Content */}
           <div
             className="lg:w-1/2 text-center lg:text-left"
-            data-aos="fade-right"
+            data-aos="fade-up"
             data-aos-delay="100"
           >
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
@@ -28,19 +27,14 @@ const BookYourSpot = () => {
           </div>
 
           {/* Image */}
-          <div
-            className="lg:w-1/2 flex justify-center lg:justify-end"
-            data-aos="fade-up"
-            data-aos-delay="200"
-          >
-            <div className="relative w-full max-w-[320px] h-[320px] sm:max-w-md sm:h-[500px] md:h-[600px] rounded-t-full overflow-hidden shadow-2xl bg-gray-100">
-              <Image
+          <div className="lg:w-1/2 flex justify-center lg:justify-end">
+            <div className="relative w-full max-w-[320px] h-[320px] sm:max-w-md sm:h-[500px] md:h-[600px] rounded-t-full overflow-hidden shadow-2xl bg-gray-200 transform-gpu translate-z-0">
+              <img
                 src="/studio/classRoom1.webp"
                 alt="Εσωτερικός χώρος στούντιο με εναέριο εξοπλισμό"
-                fill
-                className="object-cover"
-                sizes="(max-width: 768px) 90vw, (max-width: 1200px) 50vw, 33vw"
-                priority
+                className="w-[320px] h-[320px] object-cover rounded-t-full shadow-2xl"
+                data-aos="fade-in"
+                data-aos-delay="200"
               />
             </div>
           </div>
