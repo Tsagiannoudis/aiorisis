@@ -35,12 +35,12 @@ const Navbar = () => {
                 </li>
               )}
               <li className="nav-item">
-                              <Link
+                  <Link
                 href={link.href}
-                className={`px-4 py-2 rounded-xl text-sm font-medium transition-all duration-200 ${
+                className={`px-2 py-1 text-sm font-medium transition-all duration-200 ${
                   pathname === link.href
-                    ? "bg-[#B9007C] text-white shadow-md"
-                    : "hover:bg-gray-200 text-gray-700"
+                    ? "text-[#B9007C] border-b-2 border-[#B9007C]"
+                    : "text-gray-700 hover:text-[#B9007C] border-b-2 border-transparent"
                 }`}
               >
                   {link.label}
@@ -100,7 +100,11 @@ const Navbar = () => {
                 <Link
                   href={link.href}
                   onClick={() => setIsOpen(false)}
-                  className="block px-4 py-3 text-base font-medium text-[#B9007C] hover:bg-gray-100 rounded-lg"
+                  className={`block px-4 py-3 text-base font-bold rounded-lg transition-colors ${
+                    pathname === link.href
+                      ? "text-[#B9007C] bg-[#B9007C]/5 border-l-4 border-[#B9007C]"
+                      : "text-gray-700 hover:bg-gray-50"
+                  }`}
                 >
                   {link.label}
                 </Link>
