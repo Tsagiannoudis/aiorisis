@@ -46,7 +46,7 @@ useEffect(() => {
         <div className="container mx-auto px-4 max-w-6xl flex flex-col md:flex-row items-center">
           {/* Κείμενο  */}
           <div className="md:w-3/5 w-full text-right md:text-right md:pr-8">
-            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight">
+            <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight opacity-60">
               Δώσε στο σώμα <br />
               και στο νου,
             </h2>

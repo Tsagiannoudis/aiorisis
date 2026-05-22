@@ -26,11 +26,11 @@ const HeroSectionContact = () => {
       {/* Content */}
       <div 
         className="relative z-10 text-center px-6 mt-12"
-        data-aos="fade-up"
-        data-aos-duration="1000"
+        data-aos="fade-down"
+        data-aos-duration="500"
       >
         <h1 className="text-5xl md:text-7xl font-black text-white tracking-tighter drop-shadow-2xl">
-          Επικοινωνήστε Μαζί μας
+          Επικοινωνήστε μαζί μας
         </h1>
         <div className="w-24 h-1.5 bg-[#B9007C] mx-auto mt-6 rounded-full shadow-lg shadow-[#B9007C]/50"></div>
       </div>
