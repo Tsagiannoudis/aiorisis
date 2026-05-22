@@ -36,6 +36,7 @@ const Footer = () => {
               height={120}
               className="h-auto max-w-[160px] md:max-w-[220px] lg:max-w-[260px] mb-4"
             />
+            <p className="text-sm text-gray-600 -m-5">est. 2021</p>
           </div>
 
           {/* Δεξιά Στήλη: Ώρες Λειτουργίας */}
@@ -59,7 +60,7 @@ const Footer = () => {
 
         <div className="mt-12 pt-8 border-t border-gray-400/30">
           <p className="text-center text-sm text-gray-600">
-            Αιώρησις &copy; {new Date().getFullYear()}. | All rights reserved. | Power by tSagian Projects.
+            Αιώρησις &copy; {new Date().getFullYear()}. | All rights reserved. | Power by <Link href="https://www.tsagiannoudis.gr/">tSagian Projects.</Link>
           </p>
         </div>
       </div>

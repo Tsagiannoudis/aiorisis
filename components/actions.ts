@@ -19,9 +19,9 @@ export async function sendEmailAction(formData: FormData) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Aiorisis Web <onboarding@resend.dev>', // Αργότερα βάλε το δικό σου domain
-      to: 'info@aiorisis.gr', // Το email που θα λάβει το μήνυμα
-      reply_to: email, // Για να μπορείς να πατήσεις "Απάντηση" απευθείας στον χρήστη
+      from: 'Aiorisis Web <onboarding@resend.dev>', 
+      to: 'info@aiorisis.gr', 
+      replyTo: email, 
       subject: `Νέα επικοινωνία: ${subject}`,
       html: `
         <h2>Νέο μήνυμα από τη φόρμα επικοινωνίας</h2>
