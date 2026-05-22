@@ -4,38 +4,57 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const HeroSectionContact = () => {
+const HeroSectionRetreats = () => {
   useEffect(() => {
-    AOS.refresh();
+    AOS.init({ duration: 1000 });
   }, []);
 
   return (
-    <section className="relative h-[25vh] md:h-[40vh] w-full flex items-center justify-center overflow-hidden">
+    <section className="relative h-[40vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-white">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
-          src="/curtain.webp"
+          src="/2.webp"
           alt="Retreat - Αιώρησις"
-          fill
+          object-fit="cover"
+          layout="fill"
           className="object-cover scale-110 animate-subtle-zoom"
           priority
         />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-white" />
+        <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white" />
       </div>
 
       {/* Content */}
-      <div 
-        className="relative z-10 text-center px-6 mt-12"
-        data-aos="fade-down"
-        data-aos-duration="500"
-      >
-        <h1 className="text-3xl md:text-5xl font-black text-white tracking-tighter drop-shadow-2xl">
-          Retreats
-        </h1>
-        <div className="w-24 h-1.5 bg-[#B9007C] mx-auto mt-6 rounded-full shadow-lg shadow-[#B9007C]/50"></div>
+      <div className="container mx-auto px-4 relative z-10">
+        <div 
+          className="max-w-2xl text-white"
+          data-aos="fade-right"
+          data-aos-delay="200"
+        >
+          <div className="inline-block px-4 py-1 rounded-full bg-[#B9007C]/20 backdrop-blur-sm text-[#ef92ce] text-xs font-bold tracking-[0.2em] uppercase mb-4">
+            Experience Freedom
+          </div>
+          <h1 className="text-5xl md:text-8xl font-black tracking-tighter drop-shadow-2xl mb-2">
+            Retreats
+          </h1>
+          <div className="w-24 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mb-8"></div>
+
+          <div className="space-y-2" data-aos="fade-up" data-aos-delay="400">
+            <p className="text-2xl md:text-4xl font-light leading-tight">
+              Ένα νέο ξεκίνημα
+            </p>
+            <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
+              Άφησε πίσω την ένταση και ανακάλυψε ξανά τη ροή σου.
+            </p>
+            <p className="text-lg md:text-xl text-white/80 font-medium tracking-wide">
+              Αναπνοή • Ροή • Επανασύνδεση
+            </p>
+          </div>
+        </div>
       </div>
     </section>
   );
 };
 
-export default HeroSectionContact;
+export default HeroSectionRetreats;
