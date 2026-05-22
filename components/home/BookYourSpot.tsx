@@ -1,43 +1,84 @@
+"use client";
+import Image from "next/image";
 import Link from "next/link";
 
 const BookYourSpot = () => {
   return (
-    <section className="relative py-12 md:py-24 overflow-hidden isolate">
+    <section className="relative py-24 md:py-32 overflow-hidden isolate bg-white">
+      {/* Διακοσμητικό Background Blur */}
+      <div className="absolute top-1/2 left-0 -translate-y-1/2 w-72 h-72 bg-[#B9007C]/5 rounded-full blur-[100px] pointer-events-none"></div>
+
       <div className="container mx-auto px-4 max-w-6xl relative z-20">
-        <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 p-4 md:p-12">
+        <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
+          
           {/* Text Content */}
           <div
-            className="lg:w-1/2 text-center lg:text-left"
+            className="lg:w-2/5 text-center lg:text-left order-2 lg:order-1"
             data-aos="fade-up"
-            data-aos-delay="100"
           >
-            <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-black mb-4 leading-tight">
+            {/* <div className="inline-block px-4 py-1 rounded-full bg-[#B9007C]/10 text-[#B9007C] text-sm font-bold tracking-widest mb-6">
+              JOIN US
+            </div> */}
+            <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6 leading-[1.1]">
               Κλείσε τη θέση σου τώρα!
             </h2>
-            <p className="text-gray-800 font-light leading-relaxed mb-8 max-w-lg lg:mx-0 mx-auto">
-              Εξασφάλισε τη συμμετοχή σου στα μαθήματα και τα workshops μας.
-              Περιορισμένες θέσεις!
+            <p className="text-gray-600 text-lg font-light leading-relaxed mb-10 max-w-lg lg:mx-0 mx-auto">
+              Εξασφάλισε τη συμμετοχή σου στα μαθήματα μας.
+              <span className="block mt-2 font-semibold text-gray-900">Περιορισμένες διαθέσιμες θέσεις!</span>
             </p>
             <Link
               href="https://members.aiorisis.gr/"
-              className="inline-block bg-[#B9007C] hover:bg-[#9a0068] text-white font-bold py-4 px-8 rounded-full transition-all duration-300 shadow-lg hover:shadow-[#B9007C]/30 active:scale-[0.98]"
+              className="inline-flex items-center justify-center bg-[#B9007C] hover:bg-[#9a0068] text-white font-bold py-5 px-10 rounded-2xl transition-all duration-300 shadow-xl hover:shadow-[#B9007C]/40 active:scale-[0.98] text-lg"
             >
               Κράτηση θέσης
             </Link>
           </div>
 
-          {/* Image */}
-          <div className="lg:w-1/2 flex justify-center lg:justify-end">
-            <div className="relative w-full max-w-[320px] h-[320px] sm:max-w-md sm:h-[500px] md:h-[600px] rounded-t-full overflow-hidden shadow-2xl bg-gray-200 transform-gpu translate-z-0"
-                            data-aos="fade-in"
-                data-aos-delay="200">
-              <img
-                src="/studio/classRoom1.webp"
-                alt="Εσωτερικός χώρος στούντιο με εναέριο εξοπλισμό"
-                className="w-[320px] h-[320px] sm:h-[500px] md:h-[600px] sm:w-[400px] md:w-[450px]   object-cover rounded-t-full shadow-2xl"
-
+          {/* Image Composition */}
+          <div className="lg:w-3/5 relative order-1 lg:order-2 flex justify-center lg:justify-end items-center h-[450px] md:h-[600px] w-full">
+            
+            {/* Πίσω εικόνα (Αριστερά) */}
+            <div 
+              className="relative w-40 h-64 md:w-56 md:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-white -mr-8 z-10 transition-transform duration-700 hover:scale-105"
+              data-aos="fade-right"
+              data-aos-delay="200"
+            >
+              <Image
+                src="/studio/classRoom1-1.webp"
+                alt="Aiorisis Studio View 1"
+                fill
+                className="object-cover"
               />
             </div>
+            
+            {/* Κεντρική εικόνα (Μεγάλη) */}
+            <div 
+              className="relative w-48 h-80 md:w-72 md:h-[500px] rounded-full overflow-hidden shadow-[0_30px_60px_rgba(0,0,0,0.15)] border-4 border-white z-20 transition-transform duration-700 hover:scale-105"
+              data-aos="fade-up"
+            >
+              <Image
+                src="/studio/classRoom1-2.webp"
+                alt="Aiorisis Studio View 2"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+
+            {/* Πίσω εικόνα (Δεξιά) */}
+            <div 
+              className="relative w-40 h-64 md:w-56 md:h-96 rounded-full overflow-hidden shadow-2xl border-4 border-white -ml-8 z-10 transition-transform duration-700 hover:scale-105"
+              data-aos="fade-left"
+              data-aos-delay="400"
+            >
+              <Image
+                src="/studio/classRoom2.webp"
+                alt="Aiorisis Studio View 3"
+                fill
+                className="object-cover"
+              />
+            </div>
+
           </div>
         </div>
       </div>
