@@ -29,7 +29,7 @@ const HeroSectionContact = () => {
         data-aos="fade-down"
         data-aos-duration="500"
       >
-        <h1 className="text-5xl md:text-7xl font-black text-white tracking-tighter drop-shadow-2xl">
+        <h1 className="text-3xl md:text-5xl font-black text-white tracking-tighter drop-shadow-2xl">
           Retreats
         </h1>
         <div className="w-24 h-1.5 bg-[#B9007C] mx-auto mt-6 rounded-full shadow-lg shadow-[#B9007C]/50"></div>
