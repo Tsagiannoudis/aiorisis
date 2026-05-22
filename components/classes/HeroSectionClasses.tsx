@@ -1,32 +1,41 @@
+"use client";
 import Image from "next/image";
+import { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
+const HeroSectionContact = () => {
+  useEffect(() => {
+    AOS.refresh();
+  }, []);
 
-const HeroSectionClasses = () => {
   return (
-        <section className="relative h-60 w-full flex items-center justify-center overflow-hidden">
+    <section className="relative h-[25vh] md:h-[40vh] w-full flex items-center justify-center overflow-hidden">
       {/* Background Image */}
       <div className="absolute inset-0 z-0">
         <Image
           src="/curtain.webp"
-          alt="Μαθήματα - Αιώρησις"
+          alt="Retreat - Αιώρησις"
           fill
-          className="object-cover"
+          className="object-cover scale-110 animate-subtle-zoom"
           priority
         />
-        <div className="absolute inset-0 bg-black/40" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-white" />
       </div>
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 mt-30">
-        <div className="inline-block bg-black/20 backdrop-blur-md px-8 py-4 rounded-3xl border border-white/10 shadow-1xl">
-          <h1 className="text-4xl md:text-5xl font-black text-white tracking-tight drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)]">
-            <span className="text-[#B9007C] text-border">Μ</span>αθήματα
-          </h1>
-        </div>
+      <div 
+        className="relative z-10 text-center px-6 mt-12"
+        data-aos="fade-up"
+        data-aos-duration="1000"
+      >
+        <h1 className="text-5xl md:text-7xl font-black text-white tracking-tighter drop-shadow-2xl">
+          Μαθήματα
+        </h1>
+        <div className="w-24 h-1.5 bg-[#B9007C] mx-auto mt-6 rounded-full shadow-lg shadow-[#B9007C]/50"></div>
       </div>
-
     </section>
   );
 };
 
-export default HeroSectionClasses;
+export default HeroSectionContact;
