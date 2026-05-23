@@ -12,13 +12,12 @@ const HeroSectionRetreats = () => {
   return (
     <section className="relative h-[40vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-white">
       {/* Background Image */}
-      <div className="absolute inset-0 z-0">
+      <div className="absolute inset-0 z-0 bg-black/35">
         <Image
           src="/2.webp"
           alt="Retreat - Αιώρησις"
-          object-fit="cover"
-          layout="fill"
-          className="object-cover scale-110 animate-subtle-zoom"
+          fill
+          className="object-cover scale-110 animate-subtle-zoom transition-transform duration-1000"
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />

@@ -3,23 +3,30 @@ import Link from "next/link";
 
 const Footer = () => {
   return (
-    <footer className="bg-[#C0C0C0] text-gray-800 py-12">
-      <div className="container mx-auto px-4 max-w-7xl">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-start text-center md:text-left">
-          {/* Αριστερή Στήλη: Πληροφορίες */}
-          <div className="space-y-4">
-            <h4 className="text-xl font-bold text-gray-900 border-b-2 border-[#B9007C] inline-block pb-1 mb-2">
+    <footer className="bg-[#F6F1EB] text-neutral-800">
+      <div className="mx-auto max-w-7xl px-4 py-14 md:px-8">
+        <div className="grid grid-cols-1 gap-12 md:grid-cols-3 md:items-center">
+          <div className="text-center md:text-left">
+            <h4 className="mb-5 text-xs font-bold uppercase tracking-[0.25em] text-[#B9007C]">
               Πληροφορίες
             </h4>
-            <div className="space-y-1 font-light">
+
+            <div className="space-y-2 text-sm leading-7 text-neutral-600">
               <p>Αρτέμιδος 42</p>
               <p>Θεσσαλονίκη, 54644</p>
-              <p className="font-medium pt-2 text-[#B9007C]">6948577225</p>
+
+              <Link
+                href="tel:6948577225"
+                className="inline-block pt-2 font-semibold text-[#B9007C] transition hover:opacity-70"
+              >
+                6948577225
+              </Link>
+
               <div className="pt-4">
                 <Link
                   href="https://www.google.com/maps/search/?api=1&query=Αρτέμιδος+42+Θεσσαλονίκη+54644"
                   target="_blank"
-                  className="inline-flex items-center text-sm font-bold uppercase tracking-wider hover:text-[#B9007C] transition-colors"
+                  className="inline-flex items-center text-xs font-bold uppercase tracking-[0.2em] text-neutral-900 transition hover:text-[#B9007C]"
                 >
                   Άνοιγμα Χάρτη →
                 </Link>
@@ -27,40 +34,52 @@ const Footer = () => {
             </div>
           </div>
 
-          {/* Κεντρική Στήλη: Logo */}
-          <div className="flex flex-col items-center justify-center h-full">
+          <div className="flex flex-col items-center justify-center">
             <Image
               src="/logos/aiorisis_logo-transp-new.png"
-              alt="Logo"
+              alt="Aiorisis logo"
               width={320}
-              height={120}
-              className="h-auto max-w-[160px] md:max-w-[220px] lg:max-w-[260px] mb-4"
+              height={140}
+              className="h-auto w-[180px] md:w-[230px]"
             />
-            <p className="text-sm text-gray-600 -m-5">est. 2021</p>
+
+            <p className="mt-2 text-xs uppercase tracking-[0.25em] text-neutral-500">
+              est. 2021
+            </p>
           </div>
 
-          {/* Δεξιά Στήλη: Ώρες Λειτουργίας */}
-          <div className="space-y-4 md:text-right">
-            <h4 className="text-xl font-bold text-gray-900 border-b-2 border-[#B9007C] inline-block pb-1 mb-2">
+          <div className="text-center md:text-right">
+            <h4 className="mb-5 text-xs font-bold uppercase tracking-[0.25em] text-[#B9007C]">
               Ώρες Λειτουργίας
             </h4>
-            <div className="space-y-3 font-light">
+
+            <div className="space-y-5 text-sm leading-7 text-neutral-600">
               <div>
-                <p className="font-medium text-[#B9007C]">Δευτέρα έως Παρασκευή</p>
+                <p className="font-semibold text-neutral-900">
+                  Δευτέρα έως Παρασκευή
+                </p>
                 <p>10:15 – 13:00</p>
                 <p>17:00 – 23:00</p>
               </div>
-              <div className="pt-1">
-                <p className="font-medium text-[#B9007C]">Σάββατο</p>
+
+              <div>
+                <p className="font-semibold text-neutral-900">Σάββατο</p>
                 <p>10:30 – 14:30</p>
               </div>
             </div>
           </div>
         </div>
 
-        <div className="mt-12 pt-8 border-t border-gray-400/30">
-          <p className="text-center text-sm text-gray-600">
-            Αιώρησις &copy; {new Date().getFullYear()}. | All rights reserved. | Power by <Link href="https://www.tsagiannoudis.gr/">tSagian Projects.</Link>
+        <div className="mt-14 border-t border-black/10 pt-6">
+          <p className="text-center text-xs text-neutral-500">
+            Αιώρησις © {new Date().getFullYear()}. All rights reserved. Powered by{" "}
+            <Link
+              href="https://www.tsagiannoudis.gr/"
+              target="_blank"
+              className="font-medium text-neutral-700 transition hover:text-[#B9007C]"
+            >
+              tSagian Projects.
+            </Link>
           </p>
         </div>
       </div>

@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop menu */}
-        <ul className="hidden lg:flex items-center space-x-1 xl:space-x-2 text-[#B9007C] font-bold ml-30">
+        <ul className="hidden lg:flex items-center space-x-1 xl:space-x-2  text-xl text-[#B9007C] font-bold ml-30">
           {NavLinksMainData.map((link, index) => (
             <Fragment key={link.href}>
               {index > 0 && (

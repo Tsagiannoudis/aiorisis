@@ -3,7 +3,7 @@ import { classes } from "@/data/ClassOfStudioData";
 
 const ClassesOfStudio = () => {
   return (
-    <section className="relative py-32 bg-[#F5F5F5] overflow-hidden">
+    <section className="relative py-32 bg-[#F6F1EB] overflow-hidden">
       {/* Διακοσμητικό Background Blur */}
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#B9007C]/5 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gray-200/50 rounded-full blur-[100px] pointer-events-none"></div>
