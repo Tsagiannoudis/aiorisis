@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Geist, Geist_Mono, EB_Garamond, Ubuntu_Sans } from "next/font/google";
 import "./globals.css";
+import ScrollToTopButton from "@/components/extraComponents/ScrollToTopButton";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
@@ -42,6 +43,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
+              <ScrollToTopButton />
         <Footer />
       </body>
     </html>

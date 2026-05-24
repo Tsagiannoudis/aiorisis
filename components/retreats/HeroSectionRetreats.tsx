@@ -10,7 +10,7 @@ const HeroSectionRetreats = () => {
   }, []);
 
   return (
-    <section className="relative h-[40vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-white">
+    <section className="relative h-[40vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-black/35">
         <Image
@@ -21,7 +21,7 @@ const HeroSectionRetreats = () => {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-r from-black/70 via-black/30 to-transparent" />
-        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-white" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent via-transparent to-[#F6F1EB]" />
       </div>
 
       {/* Content */}
@@ -32,7 +32,7 @@ const HeroSectionRetreats = () => {
           data-aos-delay="200"
         >
           <div className="inline-block px-4 py-1 rounded-full bg-[#B9007C]/20 backdrop-blur-sm text-[#ef92ce] text-xs font-bold tracking-[0.2em] uppercase mb-4">
-            Experience Freedom
+            Αναπνοή • Ροή • Επανασύνδεση
           </div>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter drop-shadow-2xl mb-2">
             Retreats
@@ -46,9 +46,7 @@ const HeroSectionRetreats = () => {
             <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
               Άφησε πίσω την ένταση και ανακάλυψε ξανά τη ροή σου.
             </p>
-            <p className="text-lg md:text-xl text-white/80 font-medium tracking-wide">
-              Αναπνοή • Ροή • Επανασύνδεση
-            </p>
+
           </div>
         </div>
       </div>

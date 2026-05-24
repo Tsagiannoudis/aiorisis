@@ -1,6 +1,6 @@
 import Image from "next/image";
 import { teachers, getSpecialtyNames } from "@/data/TeacherProfileData";
-import RevealCards from "@/components/animations/RevealCards";
+import RevealCards from "@/components/extraComponents/animations/RevealCards";
 
 const OurTeamOfAiorisis = () => {
   return (

@@ -18,7 +18,7 @@ const EventOfRetreats = () => {
     <section className="relative overflow-hidden bg-[#fff] py-20 px-4 md:px-8 lg:px-16 text-black">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 flex flex-col items-center text-center">
-          <span className="mb-4 text-xs uppercase tracking-[0.35em] text-[#9B7B63]">
+          <span className="mb-4 text-xs uppercase tracking-[0.35em] text-[#B9007C]">
             All Retreats
           </span>
 
@@ -68,8 +68,8 @@ const EventOfRetreats = () => {
                 </p>
 
                 <Link
-                  href={`/retreats/${retreat.id}`}
-                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold uppercase tracking-[0.2em] text-[#B9007C] transition hover:gap-4"
+                  href={`/retreats/${retreat.slug}`}
+                  className="mt-6 inline-flex items-center gap-2 text-sm font-semibold tracking-[0.2em] text-[#B9007C] transition hover:gap-4"
                 >
                   Δες περισσότερα
                   <span>→</span>

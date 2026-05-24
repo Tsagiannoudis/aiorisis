@@ -14,7 +14,7 @@ export default function Home() {
       <ExperienceOfAiorisis />
       <ClassesOfStudio />
       <OurTeamOfAiorisis />
-      
+
       {/* Εμφάνιση Grid σε μεγάλες οθόνες (lg: 1024px+) */}
       <div className="hidden lg:block">
         <ScheduleGrid />
@@ -26,6 +26,7 @@ export default function Home() {
       </div>
 
       <BookYourSpot />
+
     </main>
   );
 };

@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { sendEmailAction } from "@/components/actions";
+import { sendEmailAction } from "@/components/extraComponents/FormActions";
 import Link from "next/link";
 
 const ContactFormSection = () => {

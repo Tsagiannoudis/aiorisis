@@ -1,6 +1,6 @@
 'use client';
 import Image from 'next/image';
-import SquareBackground from '@/components/animations/SquareBackground';
+import SquareBackground from '@/components/extraComponents/animations/SquareBackground';
 
 
 
