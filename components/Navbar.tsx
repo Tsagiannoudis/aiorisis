@@ -11,7 +11,7 @@ const Navbar = () => {
     const pathname = usePathname();
 
   return (
-    <header className=" text-black">
+    <header className=" text-black sticky top-0 z-50 bg-[#F6F1EB]">
       <nav className="container mx-auto px-4 py-4 flex items-center max-w-7xl">
         <div className="flex items-center space-x-4">
           <Link href="/" className="nav-logo">
@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
 
         {/* Desktop menu */}
-        <ul className="hidden lg:flex items-center space-x-1 xl:space-x-2  text-xl text-[#B9007C] font-bold ml-30">
+        <ul className="hidden lg:flex items-center space-x-1 xl:space-x-1  text-xl text-[#B9007C] font-bold ml-30">
           {NavLinksMainData.map((link, index) => (
             <Fragment key={link.href}>
               {index > 0 && (
@@ -37,7 +37,7 @@ const Navbar = () => {
               <li className="nav-item">
                   <Link
                 href={link.href}
-                className={`px-2 py-1 text-sm font-medium transition-all duration-200 ${
+                className={`px-2 py-1 text-lg font-medium transition-all duration-200 ${
                   pathname === link.href
                     ? "text-[#B9007C] border-b-2 border-[#B9007C]"
                     : "text-gray-700 hover:text-[#B9007C] border-b-2 border-transparent"

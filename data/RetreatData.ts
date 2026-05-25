@@ -112,7 +112,7 @@ export const RetreatData: Retreat[] = [
     location: "Montanema Handmade Village",
     image: "/retreats/Aerial-Yoga-Retreat-Montanema-Village-7-9-2-2024.webp",
     imageHorizontal:
-      "/retreats/Aerial-Yoga-Retreat-Montanema-7-9-2-2024-horizontal.webp.webp",
+      "/retreats/Aerial-Yoga-Retreat-Montanema-7-9-2-2024-horizontal.webp",
     includes: [
       "2 διανυκτερεύσεις",
       "2 γεύματα την ημέρα (πρωινό κ βραδινό)",
