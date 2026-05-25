@@ -36,7 +36,7 @@ const HeroSectionContact = () => {
             contact
           </div>
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter drop-shadow-2xl mb-2">
-            Επικοινωνή3στε μαζί μας
+            Επικοινωνήστε μαζί μας
           </h1>
           <div className="w-24 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mt-4 mb-8"></div>
 
