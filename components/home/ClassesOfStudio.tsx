@@ -8,7 +8,7 @@ const ClassesOfStudio = () => {
       <div className="absolute top-0 left-1/4 w-96 h-96 bg-[#B9007C]/5 rounded-full blur-[120px] pointer-events-none"></div>
       <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-gray-200/50 rounded-full blur-[100px] pointer-events-none"></div>
 
-      <div className="container relative mx-auto px-4 max-w-6xl z-10">
+      <div className="container relative mx-auto px-4 max-w-7xl z-10">
         <div className="flex justify-center mb-8">
           <Image
             src="/mat.png"

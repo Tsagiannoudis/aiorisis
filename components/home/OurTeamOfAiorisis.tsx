@@ -15,7 +15,7 @@ const OurTeamOfAiorisis = () => {
         />
       </div>
 
-      <div className="container relative mx-auto px-4 max-w-6xl z-10">
+      <div className="container relative mx-auto px-4 max-w-7xl z-10">
         <h2 className="text-4xl md:text-6xl font-bold text-center text-black mb-8">
           Η ομάδας μας
         </h2>

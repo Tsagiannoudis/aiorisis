@@ -20,13 +20,13 @@ const Navbar = () => {
               alt="Logo"
               width={65}
               height={80}
-              className="w-auto h-auto max-w-[120px] md:max-w-[220px] lg:max-w-[280px]" // Διορθώθηκε για να αποφευχθεί η μεγέθυνση
+              className="w-auto h-auto border-white border-7 bg-white rounded-full max-w-[120px] md:max-w-[220px] lg:max-w-[280px]"
             />
           </Link>
         </div>
 
         {/* Desktop menu */}
-        <ul className="hidden lg:flex items-center space-x-1 xl:space-x-1  text-xl text-[#B9007C] font-bold ml-30">
+        <ul className="hidden lg:flex items-center space-x-1 xl:space-x-1  text-xl text-[#B9007C] font-bold ml-18">
           {NavLinksMainData.map((link, index) => (
             <Fragment key={link.href}>
               {index > 0 && (

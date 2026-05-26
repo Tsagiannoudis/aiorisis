@@ -8,7 +8,7 @@ const BookYourSpot = () => {
       {/* Διακοσμητικό Background Blur */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-72 h-72 bg-[#B9007C]/5 rounded-full blur-[100px] pointer-events-none"></div>
 
-      <div className="container mx-auto px-4 max-w-6xl relative z-20">
+      <div className="container mx-auto px-4 max-w-7xl relative z-20">
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12 lg:gap-16">
           
           {/* Text Content */}

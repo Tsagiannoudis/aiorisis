@@ -19,7 +19,7 @@ export default function ScheduleGrid() {
 
   return (
     <section className="bg-[#F6F1EB] py-24">
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 max-w-7xl">
         <h2 className="text-4xl md:text-6xl font-bold text-center text-gray-900 mb-16 tracking-tight">
           Ώρες Μαθημάτων
         </h2>

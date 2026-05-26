@@ -17,7 +17,7 @@ const HeroSectionContact = () => {
           src="/contactphoto.webp"
           alt="Επικοινωνία - Αιώρησις"
           fill
-          className="object-bottom scale-100 animate-subtle-zoom transition-transform duration-1000"
+          className="object-cover scale-100 animate-subtle-zoom transition-transform duration-1000"
           priority
           sizes="100vw"
         />

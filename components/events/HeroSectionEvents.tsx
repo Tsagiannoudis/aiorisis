@@ -32,7 +32,7 @@ const HeroSectionEvents = () => {
           data-aos-delay="200"
         >
           <div className="inline-block px-4 py-1 rounded-full bg-[#B9007C]/20 backdrop-blur-sm text-[#ef92ce] text-xs font-bold tracking-[0.2em] uppercase mb-4">
-            Event
+            Workshops & performances
           </div>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter drop-shadow-2xl mb-2">
             Events
@@ -40,11 +40,11 @@ const HeroSectionEvents = () => {
           <div className="w-24 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mb-8"></div>
 
           <div className="space-y-2" data-aos="fade-up" data-aos-delay="400">
-            <p className="text-2xl md:text-4xl font-light leading-tight">
-              Ένα νέο ξεκίνημα
+            <p className="text-2xl md:text-3xl font-light leading-tight">
+              Ανακάλυψε μοναδικές εμπειρίες
             </p>
             <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
-                Ανακάλυψε μοναδικές εμπειρίες σύνδεσης, χαλάρωσης και αναζωογόνησης,
+                σύνδεσης, έκφρασης και δημιουργικότητας,
             </p>
 
           </div>

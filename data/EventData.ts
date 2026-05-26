@@ -9,6 +9,22 @@ export interface Event {
   includes: string[];
   instructors: string[];
   instructorDetails?: string;
+  pricing?: {
+    earlyBird: {
+      endDate: string;
+      oneDay: string; 
+      secondDay: string;
+      thirdDay: string;
+      forthDay: string;
+    };
+    regular: {
+      endDate: string;
+      oneDay: string; 
+      secondDay: string;
+      thirdDay: string;
+      forthDay: string;
+    };
+  };
   location: string;
   image?: string;
   googleFormLink: string;
@@ -372,7 +388,7 @@ export const events: Event[] = [
     googleFormLink: "",
   },
   {
-    id: 17,
+    id: 18,
     slug: "upside-down-workshop-by-famelis",
     title: "Upside down workshop",
     startDate: "2025-11-30",
@@ -394,7 +410,7 @@ export const events: Event[] = [
     googleFormLink: "",
   },
   {
-    id: 17,
+    id: 19,
     slug: "workshop-creative-flow-with-anthi-roro",
     title: "Workshop Creative Flow with Anthi Roropoulou",
     startDate: "2025-12-07",
@@ -414,5 +430,49 @@ export const events: Event[] = [
     location:"",
     image: "/events/workshop-creative-flow-with-anthi-roro.webp",
     googleFormLink: "",
+  },
+  {
+    id: 20,
+    slug: "flow-to-the-sound",
+    title: "Flow to the sound",
+    startDate: "2026-01-17",
+    date: "Κυριακή 17/01/2026",
+    time: "Ώρα: 18:00 - 19:30",
+    description:
+      "Τι συμβαίνει όταν σταματάς να σκέφτεσαι την ροή αλλά αρχίζεις να την ακούς;\n\nΌταν η πρακτική δεν ακολουθείται μόνο από την κίνηση αλλά από τον ήχο, την αναπνοή και τον ρυθμό.🎶",
+    includes: [
+      "Πρακτική Vinyasa Flow σε πλήρη αρμονία με τον ήχο",
+      "Συντονισμός αναπνοής (Pranayama) με ηχητικά τοπία (Soundscapes)",
+      "Εξερεύνηση της κίνησης μέσα από τον ρυθμό και την εσωτερική ακρόαση",
+      "Εμπειρία βαθιάς χαλάρωσης (Savasana) με θεραπευτικούς ήχους",
+      "Σύνδεση κίνησης, ήχου και ενέργειας",
+    ],
+    instructors: ["Γιάννης Μιτσοκάπας"],
+    instructorDetails: "",
+    location:"",
+    image: "/events/flow-to-the-sound-masterclass-17-01-2026.webp",
+    googleFormLink: "",
+  },
+  {
+    id: 21,
+    slug: "ocean-of-emotions",
+    title: "Ocean of Emotions",
+    startDate: "2026-06-06",
+    date: "Κυριακή 06/06/2026",
+    time: "Ώρα: 18:30",
+    description:
+      "Υπάρχουν συναισθήματα που δεν λέγονται.\nΜόνο κινούνται. Αναπνέουν. Αιωρούνται.\n\nΣώματα στον αέρα γίνονται κύματα, άλλοτε ήρεμα, άλλοτε ορμητικά.\nΗ ένταση συναντά τον ρυθμό, η ευαισθησία μπλέκεται με τη δύναμη, και κάθε κίνηση αφηγείται μια ιστορία.\n\nΑφέσου. Νιώσε. Βυθίσου.\n\nΜια παράσταση εναέριων ακροβατικών που κινείται ανάμεσα στην αγάπη, τη μοναξιά, τη σύγκρουση και την αρμονία.",
+    includes: [
+      "Πρωτότυπη παράσταση εναέριων ακροβατικών & χορού",
+      "Θεματική προσέγγιση συναισθημάτων (Αγάπη, Μοναξιά, Σύγκρουση, Αρμονία)",
+      "Ζωντανή αφήγηση και πρωτότυπα κείμενα",
+      "Συνδυασμός εναέριων τεχνών (Silks, Hoop, Aerial Yoga, Straps, Flying Pole & Rope) και σύγχρονης κίνησης",
+      "Συμμετοχή των σπουδαστών και δασκάλων της σχολής",
+    ],
+    instructors: ["Εύη Πριόνα", "Γιάννης Μιτσοκάπας", "Ανθή Ροροπούλου", "Νατάσα Πετρίδου", "Στέλλα Τζίρτη", "Ναταλία Μιχαήλ", "Μαριαλίνα Παπαδοπούλου"],
+    instructorDetails: "Κείμενο: Εύη Πριόνα | Αφήγηση: Γιάννης Μιτσοκάπας | Χορογραφίες: Εύη Πριόνα, Ανθή Ροροπούλου, Νατάσα Πετρίδου, Στέλλα Τζίρτη, Ναταλία Μιχαήλ, Μαριαλίνα Παπαδοπούλου",
+    location: "Thessaloniki Concert Hall",
+    image: "/events/ocean-of-emotions.webp",
+    googleFormLink: "https://www.more.com/gr-el/tickets/music/aiorisis-ocean-of-emotions/",
   },
 ];

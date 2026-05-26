@@ -7,7 +7,7 @@ export default function Schedule() {
   const [activeRoom, setActiveRoom] = useState<typeof classRooms[number]>(classRooms[0]);
 
   return (
-    <div className="container mx-auto px-4 py-12">
+    <div className="container mx-auto px-4 py-12 max-w-7xl">
       <div className="mb-12 mt-6">
         <h2 className="text-4xl md:text-5xl font-extrabold text-gray-900 text-center tracking-tighter italic">Ώρες Μαθημάτων</h2>
       </div>
