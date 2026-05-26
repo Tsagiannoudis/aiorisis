@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const BookYourSpot = () => {
   return (
-    <section className="relative py-24 md:py-32 overflow-hidden isolate bg-white">
+    <section className="relative py-24 md:py-32 overflow-hidden isolate bg-[#F6F1EB]">
       {/* Διακοσμητικό Background Blur */}
       <div className="absolute top-1/2 left-0 -translate-y-1/2 w-72 h-72 bg-[#B9007C]/5 rounded-full blur-[100px] pointer-events-none"></div>
 

@@ -48,18 +48,16 @@ export const teachers: Teacher[] = [
     slug: "evi-priona",
     firstName: "Εύη",
     lastName: "Πριόνα",
-    fullName: "Πριόνα Εύη",
+    fullName: "Εύη Πριόνα",
     experience: 13,
     categoryType: "Owner",
     specialties: [1, 2, 3, 4, 8, 9],
-    shortDescription: `Ασχολείται με τον αθλητισμό από πολύ μικρή ηλικία. Έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks) το 2015 και η αγάπη της γι'αυτές την οδήγησε να ασχοληθεί επαγγελματικά και να διδάσκει από το 2020. Είναι πιστοποιημένη δασκάλα της Aerial Yoga 150hrs, Aerial Yin Yoga 50hrs, Yoga 500 hrs και Prenatal/Postnatal Yoga 50hrs από την Yoga Alliance.`,
+    shortDescription: "Ασχολείται με τον αθλητισμό από πολύ μικρή ηλικία.\n Έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks) το 2015 και η αγάπη της γι'αυτές την οδήγησε να ασχοληθεί επαγγελματικά και να διδάσκει από το 2020. \nΕίναι πιστοποιημένη δασκάλα της Aerial Yoga 150hrs, Aerial Yin Yoga 50hrs, Yoga 500 hrs και Prenatal/Postnatal Yoga 50hrs από την Yoga Alliance.",
     fullDescription: `
     <div>
     <p>Από πολύ μικρή ηλικία ξεκίνησε να ασχολείται με τον αθλητισμό.</p>
-    <p>
-      Το 2015 έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks), και η αγάπη της γι’ αυτές την οδήγησε να αφιερωθεί επαγγελματικά και να διδάσκει από το 2020.</p>
-    <p>
-      Έχει ολοκληρώσει εκπαιδεύσεις και έχει λάβει πιστοποιήσεις από τη Yoga Alliance στις εξής ειδικότητες:</p>
+    <p>Το 2015 έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks), και η αγάπη της γι’ αυτές την οδήγησε να αφιερωθεί επαγγελματικά και να διδάσκει από το 2020.</p>
+    <p>Έχει ολοκληρώσει εκπαιδεύσεις και έχει λάβει πιστοποιήσεις από τη Yoga Alliance στις εξής ειδικότητες:</p>
     <ul>
       <li>Aerial Yoga (150 ώρες),</li>
       <li>Aerial Yin Yoga (50 ώρες),</li>
@@ -84,23 +82,16 @@ export const teachers: Teacher[] = [
     slug: "rafaela-xatzikosta",
     firstName: "Ραφαέλα",
     lastName: "Χατζηκώστα",
-    fullName: "Χατζηκώστα Ραφαέλα",
+    fullName: "Ραφαέλα Χατζηκώστα",
     experience: 8,
     categoryType: "Instructor",
     specialties: [1, 2, 3, 9],
     shortDescription: "",
     fullDescription: `
-    <p>
-      <span>
-        Πιστοποιημένη yoga instructor (700hr RYT) από το 2019.
-      </span>
-    </p>
-    <p>
-      <span>
-        Το 2021 εξειδικεύτηκε στην Aerial yoga και η αγάπη της για τα παιδιά την οδήγησε σε ένα ακόμα εκπαιδευτικό, αυτό της παιδικής Yoga.
-        Επίσης, έχει εκπαιδευτεί στην Prenatal & Postnatal yoga, και έχει παρακολουθήσει διάφορα σεμινάρια και workshop διαλογισμού, breathworking, ψυχολογίας και πολλά άλλα.
-      </span>
-    </p>
+    <div>
+      <p>Πιστοποιημένη yoga instructor (700hr RYT) από το 2019.</p>
+      <p>Το 2021 εξειδικεύτηκε στην Aerial yoga και η αγάπη της για τα παιδιά την οδήγησε σε ένα ακόμα εκπαιδευτικό, αυτό της παιδικής Yoga. Επίσης, έχει εκπαιδευτεί στην Prenatal & Postnatal yoga, και έχει παρακολουθήσει διάφορα σεμινάρια και workshop διαλογισμού, breathworking, ψυχολογίας και πολλά άλλα.</p>
+    </div>
 `,
     image: "/teacherProfiles/rafaela-xatzikosta.webp",
     mailAddress: "",
@@ -118,22 +109,16 @@ export const teachers: Teacher[] = [
     slug: "natasa-petridou",
     firstName: "Νατάσα",
     lastName: "Πετρίδου",
-    fullName: "Πετρίδου Νατάσα",
+    fullName: "Νατάσα Πετρίδου",
     experience: 7,
     categoryType: "Instructor",
     specialties: [1, 2, 3, 9],
     shortDescription: "",
     fullDescription: `
-    <p>
-      <span>
-        Πιστοποίημενη δασκάλα της Yoga και μέλος της Yoga Alliance USA E-RYT 300h.
-      </span>
-    </p>
-    <p>
-      <span>
-        Το ταξίδι γύρω από την φιλοσοφία της Yoga ξεκινάει το 2011 .Το 2018 εκπαιδεύτηκε στην Yoga και ξεκίνησε να διδάσκει και τα πρώτα της μαθήματα. Η ευγνωμοσύνη προς τους μαθητές της, την οδήγησε σε σεμινάρια αυτοβελτίωσης και προσωπικής ανάπτυξης, καθώς ακολούθησαν και επιπλέον εκπαιδεύσεις στην Aerial, στη Yin Yoga, στην ανατομία και την σωστή ευθυγράμμιση των θέσεων.
-      </span>
-    </p>
+    <div>
+      <p>Πιστοποίημενη δασκάλα της Yoga και μέλος της Yoga Alliance USA E-RYT 300h.</p>
+      <p>Το ταξίδι γύρω από την φιλοσοφία της Yoga ξεκινάει το 2011 .Το 2018 εκπαιδεύτηκε στην Yoga και ξεκίνησε να διδάσκει και τα πρώτα της μαθήματα. Η ευγνωμοσύνη προς τους μαθητές της, την οδήγησε σε σεμινάρια αυτοβελτίωσης και προσωπικής ανάπτυξης, καθώς ακολούθησαν και επιπλέον εκπαιδεύσεις στην Aerial, στη Yin Yoga, στην ανατομία και την σωστή ευθυγράμμιση των θέσεων.</p>
+    </div>
 `,
     image: "/teacherProfiles/natasa-petridou.webp",
     mailAddress: "",
@@ -151,22 +136,16 @@ export const teachers: Teacher[] = [
     slug: "marialina-papadopoulou",
     firstName: "Μαριαλίνα",
     lastName: "Παπαδοπούλου",
-    fullName: "Παπαδοπούλου Μαριαλίνα",
+    fullName: "Μαριαλίνα Παπαδοπούλου",
     experience: 6,
     categoryType: "Instructor",
     specialties: [7],
     shortDescription: "",
     fullDescription: `
-    <p>
-      <span>
-        Δραστηριοποιείται στον χώρο του pole dance από το 2013. Τα τελευταία 6 χρόνια διδάσκει σε αθλητές όλως των επιπέδων (amateur, intermediate, advanced) αλλά και σε αγωνιστικό επίπεδο.
-      </span>
-    </p>
-    <p>
-      <span>
-        Παράλληλα, από το 2017 μέχρι το 2022 έπαιρνε μέρος στον πανελλήνιο διαγωνισμό αθλημάτων επί στύλου στις κατηγορίες pole sport και artistic pole κατακτώντας δύο φορές την 4η θέση δύο φορές την 1η θέση μια την 6η και μία την 3η θέση.
-      </span>
-    </p>
+    <div>
+      <p>Δραστηριοποιείται στον χώρο του pole dance από το 2013. Τα τελευταία 6 χρόνια διδάσκει σε αθλητές όλως των επιπέδων (amateur, intermediate, advanced) αλλά και σε αγωνιστικό επίπεδο.</p>
+      <p>Παράλληλα, από το 2017 μέχρι το 2022 έπαιρνε μέρος στον πανελλήνιο διαγωνισμό αθλημάτων επί στύλου στις κατηγορίες pole sport και artistic pole κατακτώντας δύο φορές την 4η θέση δύο φορές την 1η θέση μια την 6η και μία την 3η θέση.</p>
+    </div>
 `,
     image: "/teacherProfiles/marialina-papadopoulou.webp",
     mailAddress: "",
@@ -184,22 +163,16 @@ export const teachers: Teacher[] = [
     slug: "natalia-michail",
     firstName: "Ναταλία",
     lastName: "Μιχαήλ",
-    fullName: "Μιχαήλ Ναταλία",
+    fullName: "Ναταλία Μιχαήλ",
     experience: 4,
     categoryType: "Instructor",
     specialties: [8],
     shortDescription: "",
     fullDescription: `
-    <p>
-      <span>
-        Ξεκίνησε να ασχολείται με το μπαλέτο από την ηλικια των 3 ετών, αλλά στην συνέχεια την κέρδισε ο σύγχρονος και ο εναέριος χορός (Aerial Hoop), τους οποίους και διδάσκει τα τελευταία 7 χρονια. 
-      </span>
-    </p>
-    <p>
-      <span>
-        Είναι πιστοποιημένη καθηγήτρια από την I.S.T.D. στον σύγχρονο και μοντέρνο χορό, έχοντας τίτλους σπουδών όπως : DDE (Diploma in Dance Education), Advanced 2 in Modern Theatre και Intermediate Foundation in Contemporary, καθώς και πιστοποιήσεις παρακολούθησης σεμιναρίων στα παραπάνω είδη.
-      </span>
-    </p>
+    <div>
+      <p>Ξεκίνησε να ασχολείται με το μπαλέτο από την ηλικια των 3 ετών, αλλά στην συνέχεια την κέρδισε ο σύγχρονος και ο εναέριος χορός (Aerial Hoop), τους οποίους και διδάσκει τα τελευταία 7 χρονια.</p>
+      <p>Είναι πιστοποιημένη καθηγήτρια από την I.S.T.D. στον σύγχρονο και μοντέρνο χορό, έχοντας τίτλους σπουδών όπως : DDE (Diploma in Dance Education), Advanced 2 in Modern Theatre και Intermediate Foundation in Contemporary, καθώς και πιστοποιήσεις παρακολούθησης σεμιναρίων στα παραπάνω είδη.</p>
+    </div>
 `,
     image: "/teacherProfiles/natalia-michail.webp",
     mailAddress: "",
@@ -217,28 +190,18 @@ export const teachers: Teacher[] = [
     slug: "stella-tzirta",
     firstName: "Στέλλα",
     lastName: "Τζίρτη",
-    fullName: "Τζίρτη Στέλλα",
+    fullName: "Στέλλα Τζίρτη",
     experience: 12,
     categoryType: "Instructor",
     specialties: [4, 5, 6],
     shortDescription: "",
     fullDescription: `
-    <p>
-      <span>
-        Ασχολείται με τα εναέρια ακροβατικά τα τελευταία δέκα χρόνια.
-      </span>
-    </p>
-    <p>
-      <span>
-        Από τότε και μέχρι σήμερα, παρακολουθεί σεμινάρια στην Ελλάδα και το εξωτερικό, από διεθνώς αναγνωρισμένους προπονητές, μαθαίνοντας έτσι διάφορες μεθόδους προσέγγισης της εναέριας τεχνικής και δημιουργώντας το δικό της στυλ, μέσα από τη συνεχή προσωπική προπόνηση.
-      </span>
-    </p>
-    <p>
-      <span>
-        Ειδικεύεται στο ακροβατικό πανί και σχοινί, δίνοντας ιδιαίτερη έμφαση στην τεχνική και κατανόηση του element.
-      </span>
-    </p>
-`,
+    <div>
+      <p>Ασχολείται με τα εναέρια ακροβατικά τα τελευταία δέκα χρόνια.</p>
+      <p>Από τότε και μέχρι σήμερα, παρακολουθεί σεμινάρια στην Ελλάδα και το εξωτερικό, από διεθνώς αναγνωρισμένους προπονητές, μαθαίνοντας έτσι διάφορες μεθόδους προσέγγισης της εναέριας τεχνικής και δημιουργώντας το δικό της στυλ, μέσα από τη συνεχή προσωπική προπόνηση.</p>
+      <p>Ειδικεύεται στο ακροβατικό πανί και σχοινί, δίνοντας ιδιαίτερη έμφαση στην τεχνική και κατανόηση του element.</p>
+    </div>
+    `,
     image: "/teacherProfiles/stella-tzirti.webp",
     mailAddress: "",
     phoneNumber: 0,

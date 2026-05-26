@@ -7,6 +7,7 @@ const OurTeam = () => {
   return (
     <section className="bg-white py-24">
       <div className="container mx-auto px-4 max-w-7xl">
+        
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-6xl font-bold text-gray-900 mb-6">
             Η ομάδα μας
@@ -66,6 +67,7 @@ const OurTeam = () => {
           ))}
         </div>
       </div>
+      
     </section>
   );
 };

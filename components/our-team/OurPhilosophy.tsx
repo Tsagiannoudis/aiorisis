@@ -1,6 +1,6 @@
 const OurPhilosophy = () => {
   return (
-    <section className="bg-[#F6F1EB] py-24">
+    <section className="bg-gradient-to-b from-[#F6F1EB] to-white py-24">
       <div className="container grid grid-cols-1 lg:grid-cols-2 items-center gap-12 mx-auto px-4 max-w-7xl">
         <div className="text-left mb-16">
           <p className="text-[#B9007C] text-sm font-bold tracking-widest mb-4">
