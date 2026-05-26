@@ -44,7 +44,7 @@ const HeroSectionEvents = () => {
               Ανακάλυψε μοναδικές εμπειρίες
             </p>
             <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
-                σύνδεσης, έκφρασης και δημιουργικότητας,
+                σύνδεσης, έκφρασης και δημιουργικότητας.
             </p>
 
           </div>

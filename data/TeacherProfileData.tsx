@@ -3,6 +3,7 @@ import { classes } from "./ClassOfStudioData";
 
 export interface Teacher {
   id: number;
+  slug: string;
   firstName: string;
   lastName: string;
   fullName: string;
@@ -44,6 +45,7 @@ export const getSpecialtyNames = (teacherSpecialties: number[]) => {
 export const teachers: Teacher[] = [
   {
     id: 1,
+    slug: "evi-priona",
     firstName: "Εύη",
     lastName: "Πριόνα",
     fullName: "Πριόνα Εύη",
@@ -79,6 +81,7 @@ export const teachers: Teacher[] = [
   },
   {
     id: 2,
+    slug: "rafaela-xatzikosta",
     firstName: "Ραφαέλα",
     lastName: "Χατζηκώστα",
     fullName: "Χατζηκώστα Ραφαέλα",
@@ -112,6 +115,7 @@ export const teachers: Teacher[] = [
   },
     {
     id: 3,
+    slug: "natasa-petridou",
     firstName: "Νατάσα",
     lastName: "Πετρίδου",
     fullName: "Πετρίδου Νατάσα",
@@ -144,6 +148,7 @@ export const teachers: Teacher[] = [
   },
     {
     id: 4,
+    slug: "marialina-papadopoulou",
     firstName: "Μαριαλίνα",
     lastName: "Παπαδοπούλου",
     fullName: "Παπαδοπούλου Μαριαλίνα",
@@ -176,6 +181,7 @@ export const teachers: Teacher[] = [
   },
     {
     id: 5,
+    slug: "natalia-michail",
     firstName: "Ναταλία",
     lastName: "Μιχαήλ",
     fullName: "Μιχαήλ Ναταλία",
@@ -208,6 +214,7 @@ export const teachers: Teacher[] = [
   },
     {
     id: 6,
+    slug: "stella-tzirta",
     firstName: "Στέλλα",
     lastName: "Τζίρτη",
     fullName: "Τζίρτη Στέλλα",
