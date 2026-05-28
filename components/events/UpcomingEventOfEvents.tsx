@@ -1,6 +1,8 @@
 import { events } from "@/data/EventData";
 import Image from "next/image";
 import Link from "next/link";
+import ShareAction from "@/components/extraComponents/ShareAction";
+
 
 const isUpcoming = (dateString: string): boolean => {
   const today = new Date();
@@ -18,7 +20,7 @@ const EventOfEvents= () => {
   );
 
   return (
-    <section className="bg-[#F6F1EB] px-4 py-12 md:py-20 text-black md:px-8 lg:px-16">
+    <section className="bg-[#F6F1EB] px-4 py-20 text-black md:px-8 lg:px-16">
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 text-center">
           <span className="mb-4 block text-xs font-semibold uppercase tracking-[0.35em] text-[#B9007C]">
@@ -46,13 +48,13 @@ const EventOfEvents= () => {
             </p>
           </div>
         ) : (
-          <div className="grid gap-6 md:grid-cols-2"> {/* Αλλαγή σε grid για να εμφανίζονται τα events δίπλα-δίπλα */}
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1"> {/* Αλλαγή σε grid για να εμφανίζονται τα events δίπλα-δίπλα */}
             {upcomingEvents.map((event, index) => (
               <article
                 key={event.id}
                 className="group overflow-hidden rounded-[2rem] border border-black/5 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl" /* Αφαίρεση lg:grid lg:grid-cols-2 από την κάρτα του event */
               >
-                <div className="relative h-[240px] sm:h-[360px] overflow-hidden"> {/* Αφαίρεση lg:h-full, χρήση σταθερού ύψους */}
+                <div className="relative h-[270px] overflow-hidden sm:h-[360px]"> {/* Αφαίρεση lg:h-full, χρήση σταθερού ύψους */}
                   <Image
                     src={event.image || "/placeholder.webp"}
                     alt={event.title}
@@ -74,7 +76,7 @@ const EventOfEvents= () => {
                   </div> */}
                 </div>
 
-                <div className="flex flex-col p-6 sm:p-10 lg:p-14">
+                <div className="flex flex-col p-7 md:p-10 lg:p-14">
                   <span className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#B9007C]">
                     Featured Event
                   </span>
@@ -162,12 +164,19 @@ const EventOfEvents= () => {
                     </div>
                   </div>
 
-                  <Link
-                    href={`/events/${event.slug}`}
-                    className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-[#B9007C] px-8 py-3 text-sm font-bold text-white shadow-md transition hover:bg-[#950064] md:w-max"
-                  >
-                    Δείτε περισσότερα
-                  </Link>
+                  <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
+                    <Link
+                      href={`/events/${event.slug}`}
+                      className="inline-flex w-full items-center justify-center rounded-full bg-[#B9007C] px-8 py-3 text-sm font-bold text-white shadow-md transition hover:bg-[#950064] md:w-max"
+                    >
+                      Δείτε περισσότερα
+                    </Link>
+                    <ShareAction 
+                        title={event.title}
+                        text={`Δες το event: ${event.title} στο Αιώρησις Studio!`}
+                        path={`/events/${event.slug}`}
+                      />
+                  </div>
                 </div>
               </article>
             ))}

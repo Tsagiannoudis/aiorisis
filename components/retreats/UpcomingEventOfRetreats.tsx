@@ -1,6 +1,7 @@
 import { RetreatData } from "@/data/RetreatData";
 import Image from "next/image";
 import Link from "next/link";
+import ShareAction from "@/components/extraComponents/ShareAction";
 
 const isUpcoming = (dateString: string): boolean => {
   const today = new Date();
@@ -230,12 +231,19 @@ const EventOfRetreats = () => {
                     </div>
                   </div>
 
-                  <Link
-                    href={`/retreats/${retreat.slug}`}
-                    className="mt-8 inline-flex w-full items-center justify-center rounded-full bg-[#B9007C] px-8 py-3 text-sm font-bold text-white shadow-md transition hover:bg-[#950064] md:w-max"
-                  >
-                    Δείτε περισσότερα
-                  </Link>
+                  <div className="mt-8 flex flex-col sm:flex-row items-center gap-4">
+                    <Link
+                      href={`/retreats/${retreat.slug}`}
+                      className="inline-flex w-full items-center justify-center rounded-full bg-[#B9007C] px-8 py-3 text-sm font-bold text-white shadow-md transition hover:bg-[#950064] md:w-max"
+                    >
+                      Δείτε περισσότερα
+                    </Link>
+                    <ShareAction 
+                        title={retreat.title}
+                        text={`Δες το Retreat: ${retreat.title} τού Αιώρησις Studio!`}
+                        path={`/retreats/${retreat.slug}`}
+                      />
+                  </div>
                 </div>
               </article>
             ))}
