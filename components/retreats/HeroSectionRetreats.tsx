@@ -10,7 +10,7 @@ const HeroSectionRetreats = () => {
   }, []);
 
   return (
-    <section className="relative h-[40vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
+    <section className="relative min-h-[450px] h-[55vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-black/35">
         <Image
@@ -37,7 +37,7 @@ const HeroSectionRetreats = () => {
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter drop-shadow-2xl mb-2">
             Retreats
           </h1>
-          <div className="w-24 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mb-8"></div>
+          <div className="w-24 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mb-6 md:mb-8"></div>
 
           <div className="space-y-2" data-aos="fade-up" data-aos-delay="400">
             <p className="text-2xl md:text-4xl font-light leading-tight">

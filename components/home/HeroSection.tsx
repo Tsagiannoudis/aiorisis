@@ -20,7 +20,7 @@ useEffect(() => {
 
   return (
     <>
-      <section className="relative z-10 text-gray-900 pt-18 md:pt-12 pb-4 md:pb-8">
+      <section className="relative z-10 text-gray-900 pt-24 md:pt-12 pb-10 md:pb-8">
         <div className="container mx-auto px-4 max-w-7xl overflow-hidden">
           <div className="font-[family-name:var(--font-ubuntu-sans)] opacity-60">
             <h1
@@ -45,7 +45,7 @@ useEffect(() => {
       <section className="relative overflow-hidden text-gray-800 pb-16 md:pb-32 md:-mt-35">
         <div className="container mx-auto px-4 max-w-7xl flex flex-col md:flex-row items-center">
           {/* Κείμενο  */}
-          <div className="md:w-3/5 w-full text-right md:text-right md:pr-8">
+          <div className="md:w-3/5 w-full text-right md:text-right md:pr-8 mb-10 md:mb-0">
             <h2 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 md:mb-6 leading-tight opacity-60">
               Δώσε στο σώμα <br />
               και στο νου,

@@ -15,7 +15,7 @@ const EventOfRetreats = () => {
     const outComing = RetreatData.filter(retreat => outUpcoming(retreat.startDate));
 
   return (
-    <section className="relative overflow-hidden bg-[#fff] py-20 px-4 md:px-8 lg:px-16 text-black">
+    <section className="relative overflow-hidden bg-[#fff] py-12 md:py-20 px-4 md:px-8 lg:px-16 text-black">
       <div className="mx-auto max-w-6xl">
         <div className="mb-12 flex flex-col items-center text-center">
           <span className="mb-4 text-xs uppercase tracking-[0.35em] text-[#B9007C]">
@@ -41,7 +41,7 @@ const EventOfRetreats = () => {
               key={retreat.id}
               className="group overflow-hidden rounded-[2rem] bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
             >
-              <div className="relative h-[360px] overflow-hidden">
+              <div className="relative h-[280px] sm:h-[360px] overflow-hidden">
                 <Image
                   src={retreat.image}
                   alt={retreat.title}

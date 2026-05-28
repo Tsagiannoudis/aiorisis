@@ -18,7 +18,7 @@ const EventOfEvents= () => {
   );
 
   return (
-    <section className="bg-[#F6F1EB] px-4 py-20 text-black md:px-8 lg:px-16">
+    <section className="bg-[#F6F1EB] px-4 py-12 md:py-20 text-black md:px-8 lg:px-16">
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 text-center">
           <span className="mb-4 block text-xs font-semibold uppercase tracking-[0.35em] text-[#B9007C]">
@@ -46,13 +46,13 @@ const EventOfEvents= () => {
             </p>
           </div>
         ) : (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1"> {/* Αλλαγή σε grid για να εμφανίζονται τα events δίπλα-δίπλα */}
+          <div className="grid gap-6 md:grid-cols-2"> {/* Αλλαγή σε grid για να εμφανίζονται τα events δίπλα-δίπλα */}
             {upcomingEvents.map((event, index) => (
               <article
                 key={event.id}
                 className="group overflow-hidden rounded-[2rem] border border-black/5 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl" /* Αφαίρεση lg:grid lg:grid-cols-2 από την κάρτα του event */
               >
-                <div className="relative h-[270px] overflow-hidden sm:h-[360px]"> {/* Αφαίρεση lg:h-full, χρήση σταθερού ύψους */}
+                <div className="relative h-[240px] sm:h-[360px] overflow-hidden"> {/* Αφαίρεση lg:h-full, χρήση σταθερού ύψους */}
                   <Image
                     src={event.image || "/placeholder.webp"}
                     alt={event.title}
@@ -74,7 +74,7 @@ const EventOfEvents= () => {
                   </div> */}
                 </div>
 
-                <div className="flex flex-col p-7 md:p-10 lg:p-14">
+                <div className="flex flex-col p-6 sm:p-10 lg:p-14">
                   <span className="mb-4 text-xs font-semibold uppercase tracking-[0.3em] text-[#B9007C]">
                     Featured Event
                   </span>

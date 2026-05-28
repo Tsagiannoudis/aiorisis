@@ -6,7 +6,7 @@ import Link from "next/link";
 
 const OurTeamOfAiorisis = () => {
   return (
-    <section className="relative py-24 bg-[#85c9bb8d] overflow-hidden">
+    <section className="relative py-16 md:py-24 bg-[#85c9bb8d] overflow-hidden">
       {/* Διακοσμητικό Background Logo (Watermark) */}
       <div className="absolute -bottom-20 -left-20 opacity-20 pointer-events-none -rotate-12 hidden lg:block">
         <Image
@@ -37,7 +37,7 @@ const OurTeamOfAiorisis = () => {
           />
         </div>
 
-        <RevealCards className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
+        <RevealCards className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 lg:gap-16 items-start">
           {teachers.map((teacher) => (
             <Link href={`/our-team/${teacher.slug}`}
               key={teacher.id}
