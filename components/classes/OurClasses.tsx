@@ -35,7 +35,7 @@ const OurClasses = () => {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-x-10 gap-y-16">
           {classes.map((classRoom, index) => (
             <Link
-              href={`/classes/${classRoom.id}`}
+              href={`/classes/${classRoom.slug}`}
               key={classRoom.id}
               data-aos="fade-up"
               data-aos-delay={index * 80}

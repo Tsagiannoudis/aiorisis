@@ -51,18 +51,18 @@ export const teachers: Teacher[] = [
     fullName: "Εύη Πριόνα",
     experience: 13,
     categoryType: "Owner",
-    specialties: [1, 2, 3, 4, 8, 9],
+    specialties: [1, 2, 3, 4, 9],
     shortDescription: "Ασχολείται με τον αθλητισμό από πολύ μικρή ηλικία.\n Έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks) το 2015 και η αγάπη της γι'αυτές την οδήγησε να ασχοληθεί επαγγελματικά και να διδάσκει από το 2020. \nΕίναι πιστοποιημένη δασκάλα της Aerial Yoga 150hrs, Aerial Yin Yoga 50hrs, Yoga 500 hrs και Prenatal/Postnatal Yoga 50hrs από την Yoga Alliance.",
     fullDescription: `
-    <div>
-    <p>Από πολύ μικρή ηλικία ξεκίνησε να ασχολείται με τον αθλητισμό.</p>
-    <p>Το 2015 έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks), και η αγάπη της γι’ αυτές την οδήγησε να αφιερωθεί επαγγελματικά και να διδάσκει από το 2020.</p>
-    <p>Έχει ολοκληρώσει εκπαιδεύσεις και έχει λάβει πιστοποιήσεις από τη Yoga Alliance στις εξής ειδικότητες:</p>
-    <ul>
-      <li>Aerial Yoga (150 ώρες),</li>
-      <li>Aerial Yin Yoga (50 ώρες),</li>
-      <li>Yoga (500 ώρες) και</li>
-      <li>Prenatal/Postnatal Yoga (50 ώρες).</li>
+    <div class="space-y-6">
+    <p class="text-lg font-medium text-neutral-800 leading-relaxed">Από πολύ μικρή ηλικία ξεκίνησε να ασχολείται με τον αθλητισμό, χτίζοντας μια γερή βάση σωματικής επίγνωσης.</p>
+    <p class="text-neutral-600">Το 2015 έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks), και η αγάπη της γι’ αυτές την οδήγησε να αφιερωθεί επαγγελματικά και να διδάσκει από το 2020.</p>
+    <p class="text-[#B9007C] font-bold uppercase tracking-wider text-sm">Πιστοποιήσεις Yoga Alliance:</p>
+    <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none !pl-0">
+      <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Aerial Yoga (150 ώρες)</li>
+      <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Aerial Yin Yoga (50 ώρες)</li>
+      <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Yoga (500 ώρες)</li>
+      <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Prenatal/Postnatal Yoga (50 ώρες)</li>
     </ul>
     </div>
 `,
@@ -88,9 +88,15 @@ export const teachers: Teacher[] = [
     specialties: [1, 2, 3, 9],
     shortDescription: "",
     fullDescription: `
-    <div>
-      <p>Πιστοποιημένη yoga instructor (700hr RYT) από το 2019.</p>
-      <p>Το 2021 εξειδικεύτηκε στην Aerial yoga και η αγάπη της για τα παιδιά την οδήγησε σε ένα ακόμα εκπαιδευτικό, αυτό της παιδικής Yoga. Επίσης, έχει εκπαιδευτεί στην Prenatal & Postnatal yoga, και έχει παρακολουθήσει διάφορα σεμινάρια και workshop διαλογισμού, breathworking, ψυχολογίας και πολλά άλλα.</p>
+    <div class="space-y-6">
+      <p class="text-lg font-medium text-neutral-800 leading-relaxed">Πιστοποιημένη yoga instructor (700hr RYT) από το 2019, με βαθιά προσήλωση στη θεραπευτική δύναμη της κίνησης.</p>
+      <p class="text-neutral-600 leading-relaxed">Το 2021 εξειδικεύτηκε στην Aerial yoga και η αγάπη της για τα παιδιά την οδήγησε στην απόκτηση εξειδίκευσης στην Παιδική Yoga.</p>
+      <p class="text-[#B9007C] font-bold uppercase tracking-wider text-sm">Εξειδικεύσεις & Επιμορφώσεις:</p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none !pl-0">
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Aerial Yoga</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Prenatal & Postnatal Yoga</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Breathworking & Meditation</li>
+      </ul>
     </div>
 `,
     image: "/teacherProfiles/rafaela-xatzikosta.webp",
@@ -115,9 +121,15 @@ export const teachers: Teacher[] = [
     specialties: [1, 2, 3, 9],
     shortDescription: "",
     fullDescription: `
-    <div>
-      <p>Πιστοποίημενη δασκάλα της Yoga και μέλος της Yoga Alliance USA E-RYT 300h.</p>
-      <p>Το ταξίδι γύρω από την φιλοσοφία της Yoga ξεκινάει το 2011 .Το 2018 εκπαιδεύτηκε στην Yoga και ξεκίνησε να διδάσκει και τα πρώτα της μαθήματα. Η ευγνωμοσύνη προς τους μαθητές της, την οδήγησε σε σεμινάρια αυτοβελτίωσης και προσωπικής ανάπτυξης, καθώς ακολούθησαν και επιπλέον εκπαιδεύσεις στην Aerial, στη Yin Yoga, στην ανατομία και την σωστή ευθυγράμμιση των θέσεων.</p>
+    <div class="space-y-6">
+      <p class="text-lg font-medium text-neutral-800 leading-relaxed">Πιστοποιημένη δασκάλα της Yoga και μέλος της Yoga Alliance USA (E-RYT 300h).</p>
+      <p class="text-neutral-600 leading-relaxed italic">"Το ταξίδι γύρω από την φιλοσοφία της Yoga ξεκινάει το 2011, μια αναζήτηση που έγινε τρόπος ζωής."</p>
+      <p class="text-[#B9007C] font-bold uppercase tracking-wider text-sm">Εκπαιδεύσεις & Σεμινάρια:</p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none !pl-0">
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Aerial Yoga</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Yin Yoga</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Ανατομία & Ευθυγράμμιση</li>
+      </ul>
     </div>
 `,
     image: "/teacherProfiles/natasa-petridou.webp",
@@ -142,9 +154,15 @@ export const teachers: Teacher[] = [
     specialties: [7],
     shortDescription: "",
     fullDescription: `
-    <div>
-      <p>Δραστηριοποιείται στον χώρο του pole dance από το 2013. Τα τελευταία 6 χρόνια διδάσκει σε αθλητές όλως των επιπέδων (amateur, intermediate, advanced) αλλά και σε αγωνιστικό επίπεδο.</p>
-      <p>Παράλληλα, από το 2017 μέχρι το 2022 έπαιρνε μέρος στον πανελλήνιο διαγωνισμό αθλημάτων επί στύλου στις κατηγορίες pole sport και artistic pole κατακτώντας δύο φορές την 4η θέση δύο φορές την 1η θέση μια την 6η και μία την 3η θέση.</p>
+    <div class="space-y-6">
+      <p class="text-lg font-medium text-neutral-800 leading-relaxed">Δραστηριοποιείται στον χώρο του pole dance από το 2013, διδάσκοντας σε όλα τα επίπεδα.</p>
+      <p class="text-neutral-600 leading-relaxed">Τα τελευταία 6 χρόνια προετοιμάζει αθλητές για αγωνιστικό επίπεδο, δίνοντας έμφαση στην ακρίβεια της τεχνικής και την καλλιτεχνική έκφραση.</p>
+      <p class="text-[#B9007C] font-bold uppercase tracking-wider text-sm">Διακρίσεις (2017 - 2022):</p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none !pl-0">
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· 1η Θέση - Πανελλήνιος Διαγωνισμός</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· 3η Θέση - Artistic Pole</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· 4η Θέση - Pole Sport</li>
+      </ul>
     </div>
 `,
     image: "/teacherProfiles/marialina-papadopoulou.webp",
@@ -169,9 +187,15 @@ export const teachers: Teacher[] = [
     specialties: [8],
     shortDescription: "",
     fullDescription: `
-    <div>
-      <p>Ξεκίνησε να ασχολείται με το μπαλέτο από την ηλικια των 3 ετών, αλλά στην συνέχεια την κέρδισε ο σύγχρονος και ο εναέριος χορός (Aerial Hoop), τους οποίους και διδάσκει τα τελευταία 7 χρονια.</p>
-      <p>Είναι πιστοποιημένη καθηγήτρια από την I.S.T.D. στον σύγχρονο και μοντέρνο χορό, έχοντας τίτλους σπουδών όπως : DDE (Diploma in Dance Education), Advanced 2 in Modern Theatre και Intermediate Foundation in Contemporary, καθώς και πιστοποιήσεις παρακολούθησης σεμιναρίων στα παραπάνω είδη.</p>
+    <div class="space-y-6">
+      <p class="text-lg font-medium text-neutral-800 leading-relaxed">Με αφετηρία το μπαλέτο από την ηλικία των 3 ετών, η Ναταλία εξελίχθηκε στον σύγχρονο και εναέριο χορό.</p>
+      <p class="text-neutral-600 leading-relaxed">Διδάσκει τα τελευταία 7 χρόνια, συνδυάζοντας την πειθαρχία του κλασικού χορού με την ελευθερία του Aerial Hoop.</p>
+      <p class="text-[#B9007C] font-bold uppercase tracking-wider text-sm">Τίτλοι Σπουδών I.S.T.D.:</p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none !pl-0">
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· DDE (Diploma in Dance Education)</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Advanced 2 in Modern Theatre</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Contemporary Foundation</li>
+      </ul>
     </div>
 `,
     image: "/teacherProfiles/natalia-michail.webp",
@@ -196,10 +220,15 @@ export const teachers: Teacher[] = [
     specialties: [4, 5, 6],
     shortDescription: "",
     fullDescription: `
-    <div>
-      <p>Ασχολείται με τα εναέρια ακροβατικά τα τελευταία δέκα χρόνια.</p>
-      <p>Από τότε και μέχρι σήμερα, παρακολουθεί σεμινάρια στην Ελλάδα και το εξωτερικό, από διεθνώς αναγνωρισμένους προπονητές, μαθαίνοντας έτσι διάφορες μεθόδους προσέγγισης της εναέριας τεχνικής και δημιουργώντας το δικό της στυλ, μέσα από τη συνεχή προσωπική προπόνηση.</p>
-      <p>Ειδικεύεται στο ακροβατικό πανί και σχοινί, δίνοντας ιδιαίτερη έμφαση στην τεχνική και κατανόηση του element.</p>
+    <div class="space-y-6">
+      <p class="text-lg font-medium text-neutral-800 leading-relaxed">Ασχολείται με τα εναέρια ακροβατικά τα τελευταία δέκα χρόνια, αναζητώντας πάντα την τελειότητα στην κίνηση.</p>
+      <p class="text-neutral-600 leading-relaxed">Μέσα από τη συνεχή προσωπική προπόνηση και σεμινάρια με διεθνείς προπονητές, έχει διαμορφώσει ένα μοναδικό στυλ προσέγγισης της εναέριας τεχνικής.</p>
+      <p class="text-[#B9007C] font-bold uppercase tracking-wider text-sm">Κύρια Ειδίκευση:</p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none !pl-0">
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Ακροβατικό Πανί (Silks)</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Ακροβατικό Σχοινί (Rope)</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Εναέρια Τεχνική & Element Understanding</li>
+      </ul>
     </div>
     `,
     image: "/teacherProfiles/stella-tzirti.webp",

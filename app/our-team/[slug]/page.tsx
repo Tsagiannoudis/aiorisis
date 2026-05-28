@@ -2,7 +2,8 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
-import { teachers, getSpecialtyNames } from "@/data/TeacherProfileData";
+import { teachers } from "@/data/TeacherProfileData";
+import { classes } from "@/data/ClassOfStudioData";
 
 interface PageProps {
   params: Promise<{ slug: string }>;
@@ -32,7 +33,8 @@ export default async function TeacherDetailPage({ params }: PageProps) {
 
   if (!teacher) notFound();
 
-  const specialties = getSpecialtyNames(teacher.specialties).filter(Boolean);
+  // Βρίσκουμε ολόκληρα τα αντικείμενα των μαθημάτων για να έχουμε πρόσβαση σε slugs και ονόματα
+  const teacherClasses = classes.filter((c) => teacher.specialties.includes(c.id));
 
   return (
     <main className="bg-[#F5F2EA] text-gray-900">
@@ -58,25 +60,25 @@ export default async function TeacherDetailPage({ params }: PageProps) {
                     {teacher.categoryType}
                   </p>
 
-                  <h1 className="text-4xl md:text-5xl font-black leading-tight mb-5">
+                  <h1 className="text-3xl md:text-4xl font-black leading-tight mb-5">
                     {teacher.fullName}
                   </h1>
 
                   <div className="w-20 h-1 bg-[#B9007C] mb-6" />
 
-                  <div className="flex flex-wrap gap-2 mb-8">
-                    {specialties.map((specialty) => (
+                  {/* <div className="flex flex-wrap gap-2 mb-8">
+                    {teacherClasses.map((cls) => (
                       <span
-                        key={specialty}
+                        key={cls.id}
                         className="rounded-full bg-[#F5F2EA] px-4 py-2 text-xs font-semibold text-gray-700"
                       >
-                        {specialty}
+                        {cls.className}
                       </span>
                     ))}
-                  </div>
+                  </div> */}
 
                   {teacher.experience > 0 && (
-                    <div className="border-t border-black/10 pt-6">
+                    <div className="pt-6">
                       <p className="text-4xl font-black text-[#B9007C]">
                         {teacher.experience}+
                       </p>
@@ -139,13 +141,14 @@ export default async function TeacherDetailPage({ params }: PageProps) {
                 </h3>
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
-                  {specialties.map((specialty) => (
-                    <div
-                      key={specialty}
+                  {teacherClasses.map((cls) => (
+                    <Link 
+                      href={`/classes/${cls.slug}`}
+                      key={cls.id}
                       className="rounded-2xl bg-white/10 px-5 py-4 text-sm font-semibold"
                     >
-                    · {specialty}
-                    </div>
+                    · {cls.className}
+                    </Link>
                   ))}
                 </div>
                 <div className="flex justify-end">
@@ -161,7 +164,7 @@ export default async function TeacherDetailPage({ params }: PageProps) {
               {/* Back button */}
               <div className="flex justify-end">
                 <Link
-                  href="/our-team"
+                  href="/our-team#our-team"
                   className="inline-flex items-center text-sm font-bold text-[#B9007C] hover:underline mt-10 mb-10 pr-15"
                 >
                   ← Πίσω στην ομάδα

@@ -130,10 +130,10 @@ export default async function EventDetailPage({ params }: PageProps) {
                 </Link>
               </div>
 
-          <div className="relative mt-20">
+          <div className="pt-4">
             <Link
               href="/events"
-              className="absolute flex items-center right-1 top-8 rounded-full bg-white/90 px-4 py-2 text-sm font-medium tracking-wide text-black backdrop-blur-md shadow-sm transition hover:bg-white/100"
+              className="flex items-center justify-center gap-2 rounded-full border border-black/10 bg-white px-6 py-3 text-sm font-medium text-black transition hover:bg-neutral-50"
             >
               ← Πίσω στα Events
             </Link>
