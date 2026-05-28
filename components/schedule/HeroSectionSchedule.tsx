@@ -14,7 +14,7 @@ const HeroSectionContact = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-black/35">
         <Image
-          src="/4.webp"
+          src="/6.webp"
           alt="Πρόγραμμα - Αιώρησις"
           fill
           className="object-cover scale-110 animate-subtle-zoom transition-transform duration-1000"
