@@ -10,7 +10,7 @@ const HeroSectionEvents = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[450px] h-[55vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
+    <section className="relative min-h-[450px] h-[55vh] md:h-[85vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-black/35">
         <Image
