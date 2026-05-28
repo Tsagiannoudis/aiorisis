@@ -33,7 +33,7 @@ const HeroSectionContact = () => {
             </span>
           </div>
           
-          <h1 className="text-6xl md:text-9xl font-black text-white tracking-tighter leading-[0.85] mb-8">
+          <h1 className="text-5xl md:text-9xl font-black text-white tracking-tighter leading-[0.85] mb-8">
             Τα Μαθήματά Μας
           </h1>
           <div className="w-12 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mb-6"></div>

@@ -41,8 +41,8 @@ const OurClasses = () => {
               data-aos-delay={index * 80}
               className="group block"
             >
-              <article className="flex flex-col items-center text-center">
-                <div className="relative mb-6 aspect-square w-full max-w-[320px] overflow-hidden rounded-full border border-[#B9007C]/25 bg-white p-2 shadow-sm transition-all duration-700 group-hover:-translate-y-2 group-hover:shadow-xl">
+              <article className="flex flex-col items-center text-center"> {/* Το article εξασφαλίζει οριζόντια στοίχιση των παιδιών του */}
+                <div className="relative mb-6 aspect-square w-full max-w-[320px] overflow-hidden rounded-full border border-[#B9007C]/25 bg-white shadow-sm transition-all duration-700 group-hover:-translate-y-2 group-hover:shadow-xl"> {/* Αφαιρέθηκε το p-2 για να εφάπτεται η εικόνα απευθείας στο περίγραμμα */}
                   <div className="relative h-full w-full overflow-hidden rounded-full">
                     <Image
                       src={classRoom.image}
