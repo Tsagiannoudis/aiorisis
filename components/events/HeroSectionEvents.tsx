@@ -43,7 +43,7 @@ const HeroSectionEvents = () => {
             <p className="text-2xl md:text-3xl font-light leading-tight">
               Ανακάλυψε μοναδικές εμπειρίες
             </p>
-            <p className="text-sm md:text-sm text-black/80 font-medium tracking-wide">
+            <p className="text-sm md:text-sm text-wihte/80 font-medium tracking-wide">
                 σύνδεσης, έκφρασης και δημιουργικότητας.
             </p>
 

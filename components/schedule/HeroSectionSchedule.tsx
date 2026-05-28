@@ -37,13 +37,13 @@ const HeroSectionContact = () => {
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter drop-shadow-2xl mb-2">
             Πρόγραμμα
           </h1>
-          <div className="w-24 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mb-8"></div>
+          <div className="w-24 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mb-6"></div>
 
           <div className="space-y-2" data-aos="fade-up" data-aos-delay="400">
             <p className="text-2xl md:text-3xl font-light leading-tight">
               Ανακάλυψε τα μαθήματα
             </p>
-            <p className="text-sm md:text-sm text-black/80 font-medium tracking-wide">
+            <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
                 και τις ώρες που είναι διαθέσιμα.
             </p>
 

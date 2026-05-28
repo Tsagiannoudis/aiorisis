@@ -38,13 +38,13 @@ const HeroSectionContact = () => {
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter drop-shadow-2xl mb-2">
             Επικοινωνήστε μαζί μας
           </h1>
-          <div className="w-24 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mt-4 mb-8"></div>
+          <div className="w-24 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mt-4 mb-6"></div>
 
           <div className="space-y-2" data-aos="fade-up" data-aos-delay="400">
             <p className="text-2xl md:text-4xl font-light leading-tight">
               Είμαστε εδώ για εσάς
             </p>
-            <p className="text-sm md:text-sm text-black/80 font-medium tracking-wide">
+            <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
               Επικοινωνήστε μαζί μας για οποιαδήποτε πληροφορία ή απορία σχετικά με τα μαθήματα και τις δράσεις μας.
             </p>
           </div>

@@ -43,7 +43,7 @@ const HeroSectionContact = () => {
             <p className="text-2xl md:text-3xl font-light leading-tight">
               γνωρίστε την ομάδα μας
             </p>
-            <p className="text-sm md:text-sm text-black/80 font-medium tracking-wide">
+            <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
                 
             </p>
           </div>
