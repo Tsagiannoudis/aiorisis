@@ -10,7 +10,7 @@ const HeroSectionContact = () => {
   }, []);
 
   return (
-    <section className="relative h-[40vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
+    <section className="relative h-[50vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-black/35">
         <Image
