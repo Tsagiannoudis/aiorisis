@@ -1,6 +1,8 @@
 import Image from "next/image";
 import { teachers, getSpecialtyNames } from "@/data/TeacherProfileData";
 import RevealCards from "@/components/extraComponents/animations/RevealCards";
+import Link from "next/link";
+
 
 const OurTeamOfAiorisis = () => {
   return (
@@ -37,7 +39,7 @@ const OurTeamOfAiorisis = () => {
 
         <RevealCards className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12 lg:gap-16 items-start">
           {teachers.map((teacher) => (
-            <div
+            <Link href={`/our-team/${teacher.slug}`}
               key={teacher.id}
               className="flex flex-col items-center group"
             >
@@ -69,7 +71,7 @@ const OurTeamOfAiorisis = () => {
                   )}
                 </p> */}
               </div>
-            </div>
+            </Link>
           ))}
         </RevealCards>
       </div>

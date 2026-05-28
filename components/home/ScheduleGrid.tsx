@@ -1,5 +1,6 @@
 'use client';
 
+import Link from 'next/link';
 import { useState } from 'react';
 import {
   schedule,
@@ -108,7 +109,7 @@ export default function ScheduleGrid() {
                         const classData = getClassByName(entry.className);
 
                         return (
-                          <div
+                          <Link href={`/classes/${entry.className.replace(/\s+/g, '-').toLowerCase()}`}
                             key={`${activeRoom}-${entry.day}-${entry.start}-${entry.className}`}
                             className="z-10 m-[2px] p-2 text-center flex flex-col items-center justify-center overflow-hidden rounded-lg shadow-sm transition-all duration-300 hover:scale-[1.02] hover:z-20 hover:shadow-md border border-white/20"
                             style={{
@@ -131,7 +132,7 @@ export default function ScheduleGrid() {
                             <p className="text-[9px] md:text-[10px] font-bold text-gray-900 mt-1 opacity-60">
                               {entry.start} - {entry.end}
                             </p>
-                          </div>
+                          </Link>
                         );
                       })
                   )}

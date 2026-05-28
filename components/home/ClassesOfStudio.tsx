@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import { classes } from "@/data/ClassOfStudioData";
 
 const ClassesOfStudio = () => {
@@ -31,7 +32,7 @@ const ClassesOfStudio = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 md:gap-12" data-aos="fade-in" data-aos-delay="200">
           {classes.map((classData) => (
-            <div
+            <Link href={`/classes/${classData.slug}`}
               key={classData.id}
               className="group relative flex flex-col items-center text-center p-10 rounded-[3rem] bg-white backdrop-blur-sm border border-white/80 shadow-[0_8px_30px_rgb(0,0,0,0.02)] transition-all duration-500 hover:shadow-[0_20px_50px_rgba(185,0,124,0.08)] hover:-translate-y-2 lg:last:col-start-2"
             >
@@ -58,11 +59,11 @@ const ClassesOfStudio = () => {
 
               {/* Διακριτικό "Learn More" link */}
               <div className="mt-8 opacity-0 translate-y-2 group-hover:opacity-100 group-hover:translate-y-0 transition-all duration-500">
-                <span className="text-[#B9007C] text-sm font-semibold tracking-wider uppercase">
-                  Περισσότερα +
+                <span className="text-[#B9007C] text-sm font-semibold tracking-wider">
+                  Μάθε περισσότερα
                 </span>
               </div>
-            </div>
+            </Link>
           ))}
         </div>
       </div>
