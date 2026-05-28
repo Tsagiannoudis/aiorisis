@@ -93,7 +93,7 @@ export const classes: Class[] = [
     id: 3,
     className: "Aerial Yoga Teens",
     icon: "/icons/aerial-yoga-teen.png",
-    image: "/classes/class-aerial-yoga-kids.webp",
+    image: "/classes/class-aerial-yoga-teens.webp",
     shortDescription: "Οι έφηβοι (Ηλικίες από 9 και άνω) καλλιεργούν την αυτοπεποίθησή τους και ανακαλύπτουν τις δυνατότητες του σώματός τους μέσα από τη ροή και την αιώρηση.",
     description: `
         <p>Η Aerial Yoga Teens είναι σχεδιασμένη για να προσφέρει στους εφήβους έναν χώρο ελευθερίας, έκφρασης και πρόκλησης. Σε μια ηλικία μεγάλων αλλαγών, η αιώρηση γίνεται το μέσο για να χτίσουν ένα δυνατό σώμα και έναν ήρεμο νου.</p>
@@ -268,8 +268,8 @@ export const classes: Class[] = [
   {
     id: 6,
     className: "Aerial Straps",
-    icon: "/icons/class-aerial-straps.png",
-    image: "/classes/aerial-straps.webp",
+    icon: "/icons/aerial-straps.png",
+    image: "/classes/class-aerial-straps.webp",
     shortDescription: "Οι εναέριοι ιμάντες ανήκουν κι αυτοί στην κατηγορία του τσίρκου και τα ακροβατικά εκτελούνται έχοντας τα χέρια ασφαλισμένα σε αυτούς.",
     description: `
         <p>Το Aerial Straps είναι ένα ακροβατικό εναέριο μάθημα με βασικό εξοπλισμό δύο μακριές ιμάντες (straps), που κρέμονται από την οροφή. Η πρακτική αυτή απαιτεί και καλλιεργεί έντονη μυϊκή δύναμη, σταθερότητα στον κορμό και τεχνική ακρίβεια, καθώς οι ασκούμενοι εκτελούν κινήσεις περιστροφής, αιώρησης, αναστροφών και στατικών θέσεων με απόλυτο έλεγχο και χάρη.</p>
@@ -353,8 +353,8 @@ export const classes: Class[] = [
   {
     id: 7,
     className: "Flying Pole",
-    icon: "/icons/class-flying-pole.png",
-    image: "/classes/flying-pole.webp",
+    icon: "/icons/flying-pole.png",
+    image: "/classes/class-flying-pole.webp",
     shortDescription: "Χρησιμοποιείται στύλος ο οποίος δεν έχει βάση στο έδαφος παρά μόνο κρέμεται από το ταβάνι δίνοντας σου ακόμα μεγαλύτερη αίσθηση πως πετάς.",
     description: `
         <p>Tο Flying Pole είναι μια εντυπωσιακή και σχετικά νέα μορφή ακροβατικής τέχνης που συνδυάζει στοιχεία από το pole dance, τα εναέρια ακροβατικά και τον σύγχρονο χορό. Ουσιαστικά πρόκειται για έναν κατακόρυφο στύλο (παρόμοιο με αυτόν του pole dance), ο οποίος όμως δεν είναι σταθερός στο έδαφος — είναι κρεμασμένος από το ταβάνι και αιωρείται ελεύθερα στον αέρα.</p>
@@ -439,7 +439,7 @@ export const classes: Class[] = [
     id: 9,
     className: "Vinyasa Flow Yoga",
     icon: "/icons/vinyasa-yoga.png",
-    image: "/classes/class-vinyasa-yoga.webp",
+    image: "/classes/class-vinyasa-f-yoga.webp",
     shortDescription: "Είναι ένα πιο δυναμικό είδος yoga. Αποτελείται από ασκήσεις(asanas) που εκτελούνται με συνεχόμενη ροή σε συνδυασμό με την αναπνοή.",
     description: `
         <p>H Vinyasa Flow Yoga είναι ένα πιο δυναμικό είδος Yoga, με προκαθορισμένη διαδοχή απο τις στάσεις(asanas), με μικρή διάρκεια παραμονής σε κάθε μια στάση, εκτελούμενες με συνεχόμενη ροή σε συνδυασμό με την αναπνοή.</p>

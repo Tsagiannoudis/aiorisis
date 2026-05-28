@@ -20,7 +20,7 @@ useEffect(() => {
 
   return (
     <>
-      <section className="relative z-10 text-gray-900 pt-10 md:pt-1 pb-4 md:pb-8">
+      <section className="relative z-10 text-gray-900 pt-18 md:pt-12 pb-4 md:pb-8">
         <div className="container mx-auto px-4 max-w-7xl overflow-hidden">
           <div className="font-[family-name:var(--font-ubuntu-sans)] opacity-60">
             <h1

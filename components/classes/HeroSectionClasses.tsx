@@ -14,7 +14,7 @@ const HeroSectionContact = () => {
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-black/35">
         <Image
-          src="/teams.webp"
+          src="/clas.webp"
           alt="Events - Αιώρησις"
           fill
           className="object-cover scale-110 animate-subtle-zoom transition-transform duration-1000"
@@ -26,24 +26,21 @@ const HeroSectionContact = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div
-          className="max-w-2xl text-white"
-          data-aos="fade-right"
-          data-aos-delay="200"
-        >
-          <div className="inline-block px-4 py-1 rounded-full bg-[#B9007C]/20 backdrop-blur-sm text-[#ef92ce] text-xs font-bold tracking-[0.2em] uppercase mb-4">
-            classes
+        <div className="max-w-3xl" data-aos="fade-up" data-aos-delay="200">
+          <div className="flex items-center gap-3 mb-6">
+            <span className="inline-block px-4 py-1 rounded-full bg-[#B9007C]/20 backdrop-blur-sm text-[#ef92ce] text-xs font-bold tracking-[0.2em] uppercase mb-4">
+              Experience Aiorisis
+            </span>
           </div>
-          <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
-            Τα
-          </p>
-          <h1 className="text-5xl md:text-7xl font-black tracking-tighter drop-shadow-2xl mb-2">
-            μαθήματα
+          
+          <h1 className="text-6xl md:text-9xl font-black text-white tracking-tighter leading-[0.85] mb-8">
+            Τα Μαθήματά Μας
           </h1>
-          <div className="space-y-2" data-aos="fade-up" data-aos-delay="400">
-            <p className="text-2xl md:text-3xl font-light leading-tight mb-8">μας</p>
-          </div>
-          <div className="w-12 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50"></div>
+          <div className="w-12 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mb-6"></div>
+
+          <p className="text-lg md:text-xl text-white/90 font-light max-w-xl leading-relaxed border-l border-white/20 pl-6">
+            Ανακαλύψτε την τέχνη της εναέριας κίνησης και της γιόγκα μέσα από εξειδικευμένα προγράμματα για κάθε επίπεδο.
+          </p>
         </div>
       </div>
     </section>
