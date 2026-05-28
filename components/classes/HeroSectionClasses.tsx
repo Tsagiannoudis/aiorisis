@@ -10,7 +10,7 @@ const HeroSectionContact = () => {
   }, []);
 
   return (
-    <section className="relative h-[40vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
+    <section className="relative min-h-[450px] h-[55vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-black/35">
         <Image
@@ -38,7 +38,7 @@ const HeroSectionContact = () => {
           </h1>
           <div className="w-12 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mb-6"></div>
 
-          <p className="text-lg md:text-xl text-white/90 font-light max-w-xl leading-relaxed border-l border-white/20 pl-6">
+          <p className="text-lg md:text-xl text-black/90 font-light max-w-xl leading-relaxed border-l border-white/20 pl-6">
             Ανακαλύψτε την τέχνη της εναέριας κίνησης και της γιόγκα μέσα από εξειδικευμένα προγράμματα για κάθε επίπεδο.
           </p>
         </div>

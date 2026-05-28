@@ -43,7 +43,7 @@ const HeroSectionRetreats = () => {
             <p className="text-2xl md:text-4xl font-light leading-tight">
               Ένα νέο ξεκίνημα
             </p>
-            <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
+            <p className="text-sm md:text-sm text-black/80 font-medium tracking-wide">
               Άφησε πίσω την ένταση και ανακάλυψε ξανά τη ροή σου.
             </p>
 

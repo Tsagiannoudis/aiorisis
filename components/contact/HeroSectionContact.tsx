@@ -10,7 +10,7 @@ const HeroSectionContact = () => {
   }, []);
 
   return (
-    <section className="relative h-[50vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
+    <section className="relative min-h-[450px] h-[55vh] md:h-[75vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-black/35">
         <Image
@@ -44,7 +44,7 @@ const HeroSectionContact = () => {
             <p className="text-2xl md:text-4xl font-light leading-tight">
               Είμαστε εδώ για εσάς
             </p>
-            <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
+            <p className="text-sm md:text-sm text-black/80 font-medium tracking-wide">
               Επικοινωνήστε μαζί μας για οποιαδήποτε πληροφορία ή απορία σχετικά με τα μαθήματα και τις δράσεις μας.
             </p>
           </div>
