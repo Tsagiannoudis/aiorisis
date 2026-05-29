@@ -15,7 +15,7 @@ export const classes: Class[] = [
     id: 1,
     slug: "aerial-yoga",
     className: "Aerial Yoga",
-    icon: "/icons/aerial-yoga.png",
+    icon: "/icons/aerial-yoga-c.png",
     image: "/classes/class-aerial-yoga.webp", // Αφήστε το κενό ή βάλτε ένα σωστό path π.χ. "/classes/aerial-yoga.webp"
     shortDescription: "Η Aerial Yoga είναι μία μοναδική πρακτική που συνδυάζει παραδοσιακές στάσεις της Yoga και ακροβατικές στάσεις εμπνευσμένες από τις εναέριες τέχνες.",
     description: `
@@ -61,7 +61,7 @@ export const classes: Class[] = [
     id: 2,
     slug: "aerial-yoga-kids",
     className: "Aerial Yoga Kids",
-    icon: "/icons/aerial-yoga-kid.png",
+    icon: "/icons/aerial-yoga-kid-c.png",
     image: "/classes/class-aerial-yoga-kids.webp",
     shortDescription: "Τα παιδιά (Ηλικίες από 5 και άνω) διασκεδάζουν μέσω της αιώρας ενώ ταυτόχρονα βελτιώνεται η φυσική τους κατάσταση, η σωματική τους δύναμη, η ευλυγισία, η ισορροπία, ο κινητικός συντονισμός και ψυχοσωματική τους ανάπτυξη.",
     description: `
@@ -102,7 +102,7 @@ export const classes: Class[] = [
     id: 3,
     slug: "aerial-yoga-teens",
     className: "Aerial Yoga Teens",
-    icon: "/icons/aerial-yoga-teen.png",
+    icon: "/icons/aerial-yoga-teen-c.png",
     image: "/classes/class-aerial-yoga-teens.webp",
     shortDescription: "Οι έφηβοι (Ηλικίες από 9 και άνω) καλλιεργούν την αυτοπεποίθησή τους και ανακαλύπτουν τις δυνατότητες του σώματός τους μέσα από τη ροή και την αιώρηση.",
     description: `
@@ -137,7 +137,7 @@ export const classes: Class[] = [
     id: 4,
     slug: "aerial-silks",
     className: "Aerial Silks",
-    icon: "/icons/aerial-silks.png",
+    icon: "/icons/aerial-silks-c.png",
     image: "/classes/class-aerial-silks.webp",
     shortDescription: "Είναι ένα μάθημα εμπνευσμένο κατευθείαν από το τσίρκο. Ασκήσεις ενδυνάμωσης και ευλυγισίας πάνω σε πανί, οι οποίες βοηθούν στην εκτέλεση μιας σειράς κινήσεων με χάρη και αρμονία.",
     description: `
@@ -195,7 +195,7 @@ export const classes: Class[] = [
     id: 5,
     slug: "aerial-rope",
     className: "Aerial Rope",
-    icon: "/icons/aerial-rope.png",
+    icon: "/icons/aerial-rope-c.png",
     image: "/classes/class-aerial-rope.webp",
     shortDescription: "Το εναέριο σχοινί είναι μια από τις πλέον εντυπωσιακές τέχνες του τσίρκο. Είναι ειδικά κατασκευασμένο για ακροβατική χρήση συνδυάζοντας ανεβάσματα, κόλπα κ πτώσεις , έχοντας πολλά κοινά με τα εναέρια πανιά , τεχνικά όμως διαφέρει, λόγω της σταθερότητας του.",
     description: `
@@ -266,7 +266,7 @@ export const classes: Class[] = [
     id: 6,
     slug: "aerial-straps",
     className: "Aerial Straps",
-    icon: "/icons/aerial-straps.png",
+    icon: "/icons/aerial-straps-c.png",
     image: "/classes/class-aerial-straps.webp",
     shortDescription: "Οι εναέριοι ιμάντες ανήκουν κι αυτοί στην κατηγορία του τσίρκου και τα ακροβατικά εκτελούνται έχοντας τα χέρια ασφαλισμένα σε αυτούς.",
     description: `
@@ -337,7 +337,7 @@ export const classes: Class[] = [
     id: 7,
     slug: "flying-pole",
     className: "Flying Pole",
-    icon: "/icons/flying-pole.png",
+    icon: "/icons/flying-pole-c.png",
     image: "/classes/class-flying-pole.webp",
     shortDescription: "Χρησιμοποιείται στύλος ο οποίος δεν έχει βάση στο έδαφος παρά μόνο κρέμεται από το ταβάνι δίνοντας σου ακόμα μεγαλύτερη αίσθηση πως πετάς.",
     description: `
@@ -367,7 +367,7 @@ export const classes: Class[] = [
     id: 8,
     slug: "aerial-hoop",
     className: "Aerial Hoop",
-    icon: "/icons/aerial-hoop.png",
+    icon: "/icons/aerial-hoop-c.png",
     image: "/classes/class-aerial-hoop.webp",
     shortDescription: "To aerial hoop(εναέριο στεφάνι) είναι ένα μάθημα εμπευσμένο από την κουλτούρα του τσίρκου.",
     description: `
@@ -401,7 +401,7 @@ export const classes: Class[] = [
     id: 9,
     slug: "vinyasa-flow-yoga",
     className: "Vinyasa Flow Yoga",
-    icon: "/icons/vinyasa-yoga.png",
+    icon: "/icons/vinyasa-yoga-c.png",
     image: "/classes/class-vinyasa-f-yoga.webp",
     shortDescription: "Είναι ένα πιο δυναμικό είδος yoga. Αποτελείται από ασκήσεις(asanas) που εκτελούνται με συνεχόμενη ροή σε συνδυασμό με την αναπνοή.",
     description: `
@@ -435,7 +435,7 @@ export const classes: Class[] = [
     id: 10,
     slug: "flexibility",
     className: "Flexibility",
-    icon: "/icons/flexibility.png",
+    icon: "/icons/flexibility-c.png",
     image: "/classes/class-flexibility.webp",
     shortDescription: "Τα Flexibility εστιάζει στη βελτίωση του εύρους κίνησης, της ευλυγισίας και της κινητικότητας μέσω στατικών/δυναμικών διατάσεων και τεχνικών contortioning. Στοχεύει στην πρόληψη τραυματισμών, τη σωστή στάση σώματος και την ενδυνάμωση",
     description: `
