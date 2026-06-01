@@ -60,7 +60,7 @@ export const schedule: ScheduleEntry[] = [
     start: '09:00',
     end: '10:00',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -68,7 +68,7 @@ export const schedule: ScheduleEntry[] = [
     start: '10:15',
     end: '11:15',
     className: 'Vinyasa Flow Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -76,7 +76,7 @@ export const schedule: ScheduleEntry[] = [
     start: '11:30',
     end: '12:30',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -109,7 +109,7 @@ export const schedule: ScheduleEntry[] = [
     start: '09:00',
     end: '10:00',
     className: 'Vinyasa Flow Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -117,7 +117,7 @@ export const schedule: ScheduleEntry[] = [
     start: '10:15',
     end: '11:15',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -125,7 +125,7 @@ export const schedule: ScheduleEntry[] = [
     start: '11:30',
     end: '12:30',
     className: 'Vinyasa Flow Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -133,7 +133,7 @@ export const schedule: ScheduleEntry[] = [
     start: '15:30',
     end: '17:00',
     className: 'Aerial Hoop',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -141,7 +141,7 @@ export const schedule: ScheduleEntry[] = [
     start: '17:00',
     end: '18:30',
     className: 'Aerial Hoop',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -174,7 +174,7 @@ export const schedule: ScheduleEntry[] = [
     start: '09:00',
     end: '10:00',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -182,7 +182,7 @@ export const schedule: ScheduleEntry[] = [
     start: '10:15',
     end: '11:15',
     className: 'Vinyasa Flow Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -190,7 +190,7 @@ export const schedule: ScheduleEntry[] = [
     start: '11:30',
     end: '12:30',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
     {
@@ -231,7 +231,7 @@ export const schedule: ScheduleEntry[] = [
     start: '09:00',
     end: '10:00',
     className: 'Vinyasa Flow Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -239,7 +239,7 @@ export const schedule: ScheduleEntry[] = [
     start: '10:15',
     end: '11:15',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -247,7 +247,7 @@ export const schedule: ScheduleEntry[] = [
     start: '11:30',
     end: '12:30',
     className: 'Vinyasa Flow Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -255,7 +255,7 @@ export const schedule: ScheduleEntry[] = [
     start: '17:00',
     end: '18:30',
     className: 'Flying Pole',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -288,7 +288,7 @@ export const schedule: ScheduleEntry[] = [
     start: '09:00',
     end: '10:00',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -296,7 +296,7 @@ export const schedule: ScheduleEntry[] = [
     start: '10:15',
     end: '11:15',
     className: 'Vinyasa Flow Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -304,7 +304,7 @@ export const schedule: ScheduleEntry[] = [
     start: '11:30',
     end: '12:30',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -312,7 +312,7 @@ export const schedule: ScheduleEntry[] = [
     start: '16:45',
     end: '17:45',
     className: 'Aerial Yoga Kids',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -353,7 +353,7 @@ export const schedule: ScheduleEntry[] = [
     start: '12:15',
     end: '13:15',
     className: 'Flexibility',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
   {
@@ -369,7 +369,7 @@ export const schedule: ScheduleEntry[] = [
     start: '15:00',
     end: '16:30',
     className: 'Flying Pole',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Α',
   },
     // Αίθουσα Β Δευτέρα
@@ -386,7 +386,7 @@ export const schedule: ScheduleEntry[] = [
     start: '16:45',
     end: '17:45',
     className: 'Aerial Yoga Teens',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
   {
@@ -410,7 +410,7 @@ export const schedule: ScheduleEntry[] = [
     start: '20:20',
     end: '21:20',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
     {
@@ -427,7 +427,7 @@ export const schedule: ScheduleEntry[] = [
     start: '15:40',
     end: '16:40',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
   {
@@ -435,7 +435,7 @@ export const schedule: ScheduleEntry[] = [
     start: '16:45',
     end: '17:45',
     className: 'Aerial Yoga Teens',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
   {
@@ -476,7 +476,7 @@ export const schedule: ScheduleEntry[] = [
     start: '15:40',
     end: '16:40',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
   {
@@ -484,7 +484,7 @@ export const schedule: ScheduleEntry[] = [
     start: '16:45',
     end: '17:45',
     className: 'Aerial Yoga Kids',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
   {
@@ -525,7 +525,7 @@ export const schedule: ScheduleEntry[] = [
     start: '15:40',
     end: '16:40',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
   {
@@ -533,7 +533,7 @@ export const schedule: ScheduleEntry[] = [
     start: '16:45',
     end: '17:45',
     className: 'Aerial Yoga Teens',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
   {
@@ -574,7 +574,7 @@ export const schedule: ScheduleEntry[] = [
     start: '15:40',
     end: '16:40',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
   {
@@ -598,7 +598,7 @@ export const schedule: ScheduleEntry[] = [
     start: '19:00',
     end: '20:15',
     className: 'Vinyasa Flow Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
   {
@@ -606,7 +606,7 @@ export const schedule: ScheduleEntry[] = [
     start: '20:20',
     end: '21:20',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
     {
@@ -614,7 +614,7 @@ export const schedule: ScheduleEntry[] = [
     start: '21:30',
     end: '22:30',
     className: 'Aerial Yoga',
-    level: 'Level 1',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
     // Αίθουσα Β Σάββατο
@@ -623,7 +623,7 @@ export const schedule: ScheduleEntry[] = [
     start: '10:00',
     end: '11:00',
     className: 'Vinyasa Flow Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
   {
@@ -631,7 +631,7 @@ export const schedule: ScheduleEntry[] = [
     start: '11:10',
     end: '12:10',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
   {
@@ -639,7 +639,7 @@ export const schedule: ScheduleEntry[] = [
     start: '12:20',
     end: '13:20',
     className: 'Aerial Yoga',
-    level: 'All Level',
+    level: 'All Levels',
     classRoom: 'Αίθουσα Β',
   },
 ];
