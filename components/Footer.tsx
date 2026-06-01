@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { FaFacebook, FaInstagram } from "react-icons/fa6";
 
 const Footer = () => {
   return (
@@ -70,9 +71,33 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-14 border-t border-black/10 pt-6">
-          <p className="text-center text-xs text-neutral-500">
-            Αιώρησις © {new Date().getFullYear()}. All rights reserved. Powered by{" "}
+        {/* All rights reserved + social media */}
+        <div className="flex flex-col md:flex-row mt-12 border-t justify-between items-center gap-6 border-black/10 pt-8">
+          <p className=" flex text-lg text-neutral-500">
+            Aκολουθήστε μας στα κοινωνικά δίκτυα:
+            <Link
+              href="https://www.facebook.com/aiorisis/"
+              target="_blank"
+              className="text-2xl pl-2 pr-2 text-neutral-700 transition hover:text-[#B9007C]"
+              aria-label="Facebook"
+            >
+              <FaFacebook />
+            </Link>
+            <Link
+              href="https://www.instagram.com/aiorisis/"
+              target="_blank"
+              className="text-2xl text-neutral-700 transition hover:text-[#B9007C]"
+              aria-label="Instagram"
+            >
+              <FaInstagram />
+            </Link>
+          </p>
+
+          <p> | </p>
+
+          <p className="text-lg text-neutral-500 text-center md:text-left">
+            Αιώρησις © {new Date().getFullYear()}. All rights reserved. Powered
+            by{" "}
             <Link
               href="https://www.tsagiannoudis.gr/"
               target="_blank"

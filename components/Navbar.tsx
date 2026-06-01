@@ -37,7 +37,7 @@ const Navbar = () => {
               <li className="nav-item">
                   <Link
                 href={link.href}
-                className={`px-2 py-1 text-[14px] font-medium transition-all duration-200 ${
+                className={`px-2 py-1 text-lg font-medium transition-all duration-200 ${
                   pathname === link.href
                     ? "text-[#B9007C] border-b-2 border-[#B9007C]"
                     : "text-gray-700 hover:text-[#B9007C] border-b-2 border-transparent"
