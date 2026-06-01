@@ -11,22 +11,22 @@ const Navbar = () => {
     const pathname = usePathname();
 
   return (
-    <header className=" text-black sticky top-0 h-25 z-50 bg-[#F6F1EB] rounded-b-4xl">
-      <nav className="container mx-auto px-4 py-1 flex items-center max-w-7xl">
+    <header className="text-black sticky top-0 h-24 z-50 bg-[#F6F1EB] rounded-b-4xl shadow-sm">
+      <nav className="container mx-auto px-4 h-full flex items-center justify-between max-w-7xl">
         <div className="flex items-center space-x-4">
-          <Link href="/" className="nav-logo mt-4">
+          <Link href="/" className="nav-logo relative mt-4 z-10">
             <Image
               src="/logos/aiorisis_logo_social_media_big.png"
               alt="Logo"
               width={75}
               height={90}
-              className="w-auto h-auto border-white border-7 bg-white rounded-full max-w-[140px] md:max-w-[220px] lg:max-w-[280px]"
+              className="w-auto h-auto border-white border-[6px] bg-white rounded-full max-w-[150px] md:max-w-[150px] lg:max-w-[150px] shadow-sm translate-y-2"
             />
           </Link>
         </div>
 
         {/* Desktop menu */}
-        <ul className="hidden lg:flex items-center space-x-1 xl:space-x-1 text-xl text-[#B9007C] font-bold ml-18">
+        <ul className="hidden lg:flex items-center space-x-1 xl:space-x-1 text-xl text-[#B9007C] font-bold ml-8">
           {NavLinksMainData.map((link, index) => (
             <Fragment key={link.href}>
               {index > 0 && (
@@ -93,7 +93,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden fixed top-[98px] left-0 right-0 bg-white border-t rounded-b-2xl overflow-hidden animate-in slide-in-from-top duration-300 shadow-lg">
+        <div className="lg:hidden fixed top-24 left-0 right-0 bg-white border-t rounded-b-2xl overflow-hidden animate-in slide-in-from-top duration-300 shadow-lg">
           <ul className="flex flex-col p-4 space-y-2">
             {NavLinksMainData.map((link) => (
               <li key={link.href}>
