@@ -93,7 +93,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="lg:hidden bg-white border-t rounded-b-2xl -mt-16 pt-10 overflow-hidden animate-in slide-in-from-top duration-300">
+        <div className="lg:hidden fixed top-[98px] left-0 right-0 bg-white border-t rounded-b-2xl overflow-hidden animate-in slide-in-from-top duration-300 shadow-lg">
           <ul className="flex flex-col p-4 space-y-2">
             {NavLinksMainData.map((link) => (
               <li key={link.href}>

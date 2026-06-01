@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const HeroSectionContact = () => {
+const HeroSectionOurTeam = () => {
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -15,7 +15,7 @@ const HeroSectionContact = () => {
       <div className="absolute inset-0 z-0 bg-black/35">
         <Image
           src="/teams.webp"
-          alt="Events - Αιώρησις"
+          alt="Our Team - Αιώρησις"
           fill
           className="object-cover scale-110 animate-subtle-zoom transition-transform duration-1000"
           priority
@@ -43,9 +43,6 @@ const HeroSectionContact = () => {
             <p className="text-2xl md:text-3xl font-light leading-tight">
               γνωρίστε την ομάδα μας
             </p>
-            <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
-                
-            </p>
           </div>
         </div>
       </div>
@@ -54,4 +51,4 @@ const HeroSectionContact = () => {
 };
 
 
-export default HeroSectionContact;
+export default HeroSectionOurTeam;

@@ -126,13 +126,13 @@ const EventOfEvents= () => {
                     {event.includes && event.includes.length > 0 && (
                       <div>
                         <h4 className="mb-3 text-sm font-bold text-neutral-900">
-                          Περιλαμβάνει
+                          Περιγραφή
                         </h4>
 
                         <ul className="space-y-2 text-sm text-neutral-600">
                           {event.includes.slice(0, 4).map((item) => (
                             <li key={item} className="flex items-start gap-2">
-                              <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#B9007C]" />
+                              <span className="w-1.5 text-[#B9007C]"> - </span>
                               <span>{item}</span>
                             </li>
                           ))}
