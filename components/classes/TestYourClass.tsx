@@ -17,7 +17,7 @@ const TestYourClass = () => {
           />
 
           {/* Content */}
-          <div className="relative z-10 flex flex-col items-start text-left max-w-md ml-20 h-[300px]">
+          <div className="relative z-10 flex flex-col items-start text-left max-w-md md:ml-20 h-auto md:h-[300px]">
             <h2 className="text-3xl md:text-4xl font-black text-white mb-10 leading-tight">
               Κάνε κράτηση με το μάθημα που σου ταιριάζει!
             </h2>
