@@ -18,7 +18,7 @@ const QuoteClass = () => {
 
         <div className="relative z-10" data-aos="fade-up">
           <blockquote className="text-3xl md:text-5xl lg:text-6xl font-extralight text-gray-800 leading-[1.1] tracking-tight italic">
-            &ldquo;Δεν <span className="font-black text-[#B9007C] not-italic">αιωρούμαστε </span> μόνο στο σώμα. <span className="font-black text-[#B9007C] not-italic">Αιωρούμαστε </span> και στο συναίσθημα.&rdquo;
+            &ldquo;Δεν <span className="font-black text-[#B9007C] not-italic">αιωρούμαστε </span> μόνο με το σώμα. <span className="font-black text-[#B9007C] not-italic">Αιωρούμαστε </span> και στο συναίσθημα.&rdquo;
           </blockquote>
           
           {/* Decorative Divider */}
