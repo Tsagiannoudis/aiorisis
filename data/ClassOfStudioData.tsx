@@ -137,7 +137,7 @@ export const classes: Class[] = [
     id: 4,
     slug: "aerial-silks",
     className: "Aerial Silks",
-    icon: "/icons/aerial-silks.webp",
+    icon: "/icons/aerial-silkss.webp",
     image: "/classes/class-aerial-silks.webp",
     shortDescription: "Είναι ένα μάθημα εμπνευσμένο κατευθείαν από το τσίρκο. Ασκήσεις ενδυνάμωσης και ευλυγισίας πάνω σε πανί, οι οποίες βοηθούν στην εκτέλεση μιας σειράς κινήσεων με χάρη και αρμονία.",
     description: `
