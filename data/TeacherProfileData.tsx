@@ -149,7 +149,7 @@ export const teachers: Teacher[] = [
     firstName: "Μαριαλίνα",
     lastName: "Παπαδοπούλου",
     fullName: "Μαριαλίνα Παπαδοπούλου",
-    experience: 6,
+    experience: 9,
     categoryType: "Instructor",
     specialties: [7],
     shortDescription: "",
@@ -182,14 +182,14 @@ export const teachers: Teacher[] = [
     firstName: "Ναταλία",
     lastName: "Μιχαήλ",
     fullName: "Ναταλία Μιχαήλ",
-    experience: 4,
+    experience: 9,
     categoryType: "Instructor",
     specialties: [8],
     shortDescription: "",
     fullDescription: `
     <div class="space-y-6">
       <p class="text-lg font-medium text-neutral-800 leading-relaxed">Με αφετηρία το μπαλέτο από την ηλικία των 3 ετών, η Ναταλία εξελίχθηκε στον σύγχρονο και εναέριο χορό.</p>
-      <p class="text-neutral-600 leading-relaxed">Διδάσκει τα τελευταία 7 χρόνια, συνδυάζοντας την πειθαρχία του κλασικού χορού με την ελευθερία του Aerial Hoop.</p>
+      <p class="text-neutral-600 leading-relaxed">Διδάσκει τα τελευταία 8 χρόνια, συνδυάζοντας την πειθαρχία του κλασικού χορού με την ελευθερία του Aerial Hoop.</p>
       <p class="text-[#B9007C] font-bold uppercase tracking-wider text-sm">Τίτλοι Σπουδών I.S.T.D.:</p>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none !pl-0">
         <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· DDE (Diploma in Dance Education)</li>

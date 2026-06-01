@@ -102,9 +102,9 @@ const EventOfRetreats = () => {
                     </p>
                   </div>
 
-                  <p className="mt-6 line-clamp-3 text-sm leading-7 text-neutral-600 md:text-base">
+                  <Link href={`/retreats/${retreat.slug}`} className="mt-6 line-clamp-3 text-sm leading-7 text-neutral-600 md:text-base">
                     {retreat.description}
-                  </p>
+                  </Link>
 
                   <div className="mt-8 grid gap-6 md:grid-cols-2">
                     {retreat.instructors &&

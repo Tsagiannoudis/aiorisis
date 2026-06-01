@@ -3,7 +3,6 @@ import Image from "next/image";
 import Link from "next/link";
 import ShareAction from "@/components/extraComponents/ShareAction";
 
-
 const isUpcoming = (dateString: string): boolean => {
   const today = new Date();
   today.setHours(0, 0, 0, 0);
@@ -14,10 +13,8 @@ const isUpcoming = (dateString: string): boolean => {
   return eventDate >= today;
 };
 
-const EventOfEvents= () => {
-  const upcomingEvents = events.filter((event) =>
-    isUpcoming(event.startDate)
-  );
+const EventOfEvents = () => {
+  const upcomingEvents = events.filter((event) => isUpcoming(event.startDate));
 
   return (
     <section className="bg-[#F6F1EB] px-4 py-20 text-black md:px-8 lg:px-16">
@@ -33,8 +30,8 @@ const EventOfEvents= () => {
 
           <p className="mx-auto mt-5 max-w-3xl text-sm leading-7 text-neutral-600 md:text-base">
             Ανακάλυψε εμπειρίες σύνδεσης, χαλάρωσης και αναζωογόνησης,
-            σχεδιασμένες για να σε φέρουν πιο κοντά στο σώμα, την αναπνοή και
-            τη φύση.
+            σχεδιασμένες για να σε φέρουν πιο κοντά στο σώμα, την αναπνοή και τη
+            φύση.
           </p>
         </div>
 
@@ -48,13 +45,17 @@ const EventOfEvents= () => {
             </p>
           </div>
         ) : (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1"> {/* Αλλαγή σε grid για να εμφανίζονται τα events δίπλα-δίπλα */}
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
+            {" "}
+            {/* Αλλαγή σε grid για να εμφανίζονται τα events δίπλα-δίπλα */}
             {upcomingEvents.map((event, index) => (
               <article
                 key={event.id}
                 className="group overflow-hidden rounded-[2rem] border border-black/5 bg-white shadow-sm transition-all duration-500 hover:-translate-y-1 hover:shadow-2xl" /* Αφαίρεση lg:grid lg:grid-cols-2 από την κάρτα του event */
               >
-                <div className="relative h-[270px] overflow-hidden sm:h-[360px]"> {/* Αφαίρεση lg:h-full, χρήση σταθερού ύψους */}
+                <div className="relative h-[270px] overflow-hidden sm:h-[360px]">
+                  {" "}
+                  {/* Αφαίρεση lg:h-full, χρήση σταθερού ύψους */}
                   <Image
                     src={event.image || "/placeholder.webp"}
                     alt={event.title}
@@ -63,9 +64,7 @@ const EventOfEvents= () => {
                     priority={index === 0}
                     className="object-fit object-center transition-transform duration-700 group-hover:scale-105"
                   />
-
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
-
                   {/* <div className="absolute bottom-5 left-5 rounded-2xl bg-white/85 px-5 py-4 text-sm shadow-lg backdrop-blur-md">
                     <p className="font-semibold text-neutral-900">
                       {retreat.date}
@@ -97,31 +96,33 @@ const EventOfEvents= () => {
                     </p>
                   </div>
 
-                  <p className="mt-6 line-clamp-3 text-sm leading-7 text-neutral-600 md:text-base">
+                  <Link
+                    href={`/events/${event.slug}`}
+                    className="mt-6 line-clamp-3 text-sm leading-7 text-neutral-600 md:text-base"
+                  >
                     {event.description}
-                  </p>
+                  </Link>
 
                   <div className="mt-8 grid gap-6 md:grid-cols-2">
-                    {event.instructors &&
-                      event.instructors.length > 0 && (
-                        <div>
-                          <h4 className="mb-3 text-sm font-bold text-neutral-900">
-                            Εκπαιδευτές
-                          </h4>
+                    {event.instructors && event.instructors.length > 0 && (
+                      <div>
+                        <h4 className="mb-3 text-sm font-bold text-neutral-900">
+                          Εκπαιδευτές
+                        </h4>
 
-                          <ul className="space-y-2 text-sm text-neutral-600">
-                            {event.instructors.map((instructor) => (
-                              <li
-                                key={instructor}
-                                className="flex items-start gap-2"
-                              >
-                                <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#B9007C]" />
-                                <span>{instructor}</span>
-                              </li>
-                            ))}
-                          </ul>
-                        </div>
-                      )}
+                        <ul className="space-y-2 text-sm text-neutral-600">
+                          {event.instructors.map((instructor) => (
+                            <li
+                              key={instructor}
+                              className="flex items-start gap-2"
+                            >
+                              <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#B9007C]" />
+                              <span>{instructor}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
 
                     {event.includes && event.includes.length > 0 && (
                       <div>
@@ -150,13 +151,10 @@ const EventOfEvents= () => {
                     <div className="space-y-2 text-sm leading-6 text-neutral-600">
                       {event.pricing?.earlyBird &&
                         event.pricing?.earlyBird.endDate !== "N/A" && (
-                          <div>
-   
-                          </div>
+                          <div></div>
                         )}
 
-
-                       {/* Normal Price tab */}
+                      {/* Normal Price tab */}
                       {/* <div>
 
                           )}
@@ -171,11 +169,11 @@ const EventOfEvents= () => {
                     >
                       Δείτε περισσότερα
                     </Link>
-                    <ShareAction 
-                        title={event.title}
-                        text={`Δες το event: ${event.title} στο Αιώρησις Studio!`}
-                        path={`/events/${event.slug}`}
-                      />
+                    <ShareAction
+                      title={event.title}
+                      text={`Δες το event: ${event.title} στο Αιώρησις Studio!`}
+                      path={`/events/${event.slug}`}
+                    />
                   </div>
                 </div>
               </article>

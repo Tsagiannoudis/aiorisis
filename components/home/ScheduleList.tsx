@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import { schedule, getClassByName, days, classRooms } from '@/data/ScheduleData';
+import Link from 'next/link';
 
 export default function Schedule() {
   const [activeRoom, setActiveRoom] = useState<typeof classRooms[number]>(classRooms[0]);
@@ -65,7 +66,12 @@ export default function Schedule() {
                               >
                                 <td className="px-4 py-4 md:px-6 font-bold text-gray-900 whitespace-nowrap">{entry.start} - {entry.end}</td>
                                 <td className="px-4 py-4 md:px-6">
-                                  <span className="font-semibold text-gray-900">{classData?.className || entry.className}</span>
+                                  <Link
+                                    href={`/classes/${entry.className.replace(/\s+/g, '-').toLowerCase()}`}
+                                    className="font-semibold text-gray-900 hover:text-[#B9007C] transition-all duration-200 hover:underline underline-offset-4 decoration-[#B9007C]/30"
+                                  >
+                                    {classData?.className || entry.className}
+                                  </Link>
                                 </td>
                                 <td className="px-4 py-4 md:px-6 text-sm text-gray-600">{entry.level}</td>
                               </tr>
