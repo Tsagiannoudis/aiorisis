@@ -14,7 +14,7 @@ const Navbar = () => {
     <header className="text-black sticky top-0 h-24 z-50 bg-[#F6F1EB] rounded-b-4xl shadow-sm">
       <nav className="container mx-auto px-4 h-full flex items-center justify-between max-w-7xl">
         <div className="flex items-center space-x-4">
-          <Link href="/" className="nav-logo relative mt-4 z-10">
+          <Link href="/" className="nav-logo relative mt-12 z-10">
             <Image
               src="/logos/aiorisis_logo_social_media_big.png"
               alt="Logo"
