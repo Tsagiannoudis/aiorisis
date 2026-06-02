@@ -12,10 +12,15 @@ export async function sendEmailAction(formData: FormData) {
     const phone = formData.get('phone') as string;
     const subject = formData.get('subject') as string;
     const message = formData.get('message') as string;
+    const privacyConsent = formData.get('privacy');
 
     // Βασικό validation
     if (!fullname || !email || !message) {
       return { success: false, error: 'Παρακαλώ συμπληρώστε τα υποχρεωτικά πεδία (Όνομα, Email, Μήνυμα).' };
+    }
+
+    if (privacyConsent !== 'on') {
+      return { success: false, error: 'Πρέπει να αποδεχτείτε την Πολιτική Απορρήτου για να συνεχίσετε.' };
     }
 
     const { data, error } = await resend.emails.send({

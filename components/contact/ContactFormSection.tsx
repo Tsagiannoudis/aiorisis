@@ -227,6 +227,19 @@ const ContactFormSection = () => {
                 ></textarea>
               </div>
               
+              <div className="md:col-span-2 flex items-start gap-3 mb-2">
+                <input
+                  id="privacy"
+                  name="privacy"
+                  type="checkbox"
+                  required
+                  className="mt-1 w-4 h-4 text-[#B9007C] border-gray-300 rounded focus:ring-[#B9007C] cursor-pointer"
+                />
+                <label htmlFor="privacy" className="text-sm text-gray-600 cursor-pointer">
+                  Έχω διαβάσει και αποδέχομαι την <Link href="/privacy-policy" className="text-[#B9007C] underline hover:text-[#9a0068]">Πολιτική Απορρήτου</Link> και συναινώ στην επεξεργασία των δεδομένων μου για την επικοινωνία.
+                </label>
+              </div>
+
               <div className="md:col-span-2 mt-2">
                 <button
                   disabled={isPending}

@@ -4,6 +4,7 @@ import "./globals.css";
 import ScrollToTopButton from "@/components/extraComponents/ScrollToTopButton";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import CookieConsent from "@/components/extraComponents/CookieConsent";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -43,6 +44,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
+        <CookieConsent />
               <ScrollToTopButton />
         <Footer />
       </body>
