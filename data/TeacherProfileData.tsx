@@ -56,7 +56,7 @@ export const teachers: Teacher[] = [
     fullDescription: `
     <div class="space-y-6">
     <p class="text-lg font-medium text-neutral-800 leading-relaxed">Από πολύ μικρή ηλικία ξεκίνησε να ασχολείται με τον αθλητισμό, χτίζοντας μια γερή βάση σωματικής επίγνωσης.</p>
-    <p class="text-neutral-600">Το 2015 έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks), και η αγάπη της γι’ αυτές την οδήγησε να αφιερωθεί επαγγελματικά και να διδάσκει από το 2020.</p>
+    <p class="text-neutral-600">Το 2012 έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks), και η αγάπη της γι’ αυτές την οδήγησε να αφιερωθεί επαγγελματικά και να διδάσκει από το 2020.</p>
     <p class="text-[#B9007C] font-bold uppercase tracking-wider text-sm">Πιστοποιήσεις Yoga Alliance:</p>
     <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none !pl-0">
       <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Aerial Yoga (150 ώρες)</li>
