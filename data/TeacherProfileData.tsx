@@ -184,7 +184,7 @@ export const teachers: Teacher[] = [
     fullName: "Ναταλία Μιχαήλ",
     experience: 10,
     categoryType: "Instructor",
-    specialties: [8],
+    specialties: [8, 10],
     shortDescription: "",
     fullDescription: `
     <div class="space-y-6">
