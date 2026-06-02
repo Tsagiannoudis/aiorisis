@@ -15,17 +15,21 @@ const ContactFormSection = () => {
     setIsPending(true);
     setStatus({ type: "", text: "" });
 
-    const formData = new FormData(e.currentTarget);
-    const result = await sendEmailAction(formData);
+    try {
+      const formData = new FormData(e.currentTarget);
+      const result = await sendEmailAction(formData);
 
-    if (result.success) {
-      setStatus({ type: "success", text: "Επιτυχής υποβολή του μηνύματος! ✅" });
-      (e.target as HTMLFormElement).reset(); 
-    } else {
-      setStatus({ type: "error", text: `Σφάλμα: ${result.error} ❌` });
+      if (result.success) {
+        setStatus({ type: "success", text: "Επιτυχής υποβολή του μηνύματος! ✅" });
+        (e.target as HTMLFormElement).reset(); 
+      } else {
+        setStatus({ type: "error", text: `Σφάλμα: ${result.error} ❌` });
+      }
+    } catch (err) {
+      setStatus({ type: "error", text: "Παρουσιάστηκε ένα απρόσμενο σφάλμα επικοινωνίας. ❌" });
+    } finally {
+      setIsPending(false);
     }
-
-    setIsPending(false);
   };
 
   return (
@@ -158,6 +162,7 @@ const ContactFormSection = () => {
                 <input
                   id="fullname"
                   name="fullname"
+                  required
                   type="text"
                   placeholder="Ιωάννης Παπαδόπουλος"
                   className="px-4 py-4 bg-gray-50 rounded-xl border-transparent focus:bg-white focus:border-[#B9007C] focus:ring-0 transition-all border-2"
@@ -173,6 +178,7 @@ const ContactFormSection = () => {
                 <input
                   id="email"
                   name="email"
+                  required
                   type="email"
                   placeholder="example@mail.com"
                   className="px-4 py-4 bg-gray-50 rounded-xl border-transparent focus:bg-white focus:border-[#B9007C] focus:ring-0 transition-all border-2"
@@ -188,6 +194,7 @@ const ContactFormSection = () => {
                 <input
                   id="phone"
                   name="phone"
+                  required
                   type="tel"
                   placeholder="69XXXXXXXX"
                   className="px-4 py-4 bg-gray-50 rounded-xl border-transparent focus:bg-white focus:border-[#B9007C] focus:ring-0 transition-all border-2"
@@ -221,6 +228,7 @@ const ContactFormSection = () => {
                 <textarea
                   id="message"
                   name="message"
+                  required
                   rows={4}
                   placeholder="Πώς μπορούμε να σας βοηθήσουμε;"
                   className="px-4 py-4 bg-gray-50 rounded-xl border-transparent focus:bg-white focus:border-[#B9007C] focus:ring-0 transition-all border-2 resize-none"

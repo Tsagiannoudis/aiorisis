@@ -24,7 +24,7 @@ export async function sendEmailAction(formData: FormData) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Aiorisis Web <noreply@send.aiorisis.gr>', 
+      from: 'Aiorisis Web <onboarding@resend.dev>', // Αλλάξτε το σε verified domain όταν είστε έτοιμοι
       to: 'info@aiorisis.gr', 
       replyTo: email, 
       subject: `Νέα επικοινωνία: ${subject}`,
