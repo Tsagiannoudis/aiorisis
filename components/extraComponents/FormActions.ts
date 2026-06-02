@@ -24,7 +24,7 @@ export async function sendEmailAction(formData: FormData) {
     }
 
     const { data, error } = await resend.emails.send({
-      from: 'Aiorisis Web <onboarding@resend.dev>', 
+      from: 'Aiorisis Web <noreply@send.aiorisis.gr>', 
       to: 'info@aiorisis.gr', 
       replyTo: email, 
       subject: `Νέα επικοινωνία: ${subject}`,
