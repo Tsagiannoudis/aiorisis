@@ -1,6 +1,6 @@
 "use client";
 import { useState } from "react";
-import { sendEmailAction } from "@/components/extraComponents/FormActions";
+import { sendEmailAction } from "@/components/extraComponents/api/FormActions";
 import Link from "next/link";
 
 const ContactFormSection = () => {
@@ -26,6 +26,7 @@ const ContactFormSection = () => {
         setStatus({ type: "error", text: `Σφάλμα: ${result.error} ❌` });
       }
     } catch (err) {
+      console.error("Client-side submission error:", err);
       setStatus({ type: "error", text: "Παρουσιάστηκε ένα απρόσμενο σφάλμα επικοινωνίας. ❌" });
     } finally {
       setIsPending(false);
