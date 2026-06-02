@@ -2,10 +2,16 @@
 
 import { Resend } from 'resend';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
-
 export async function sendEmailAction(formData: FormData) {
   try {
+    const apiKey = process.env.RESEND_API_KEY;
+    if (!apiKey) {
+      console.error("Σφάλμα: Το RESEND_API_KEY λείπει από τις περιβαλλοντικές μεταβλητές.");
+      return { success: false, error: 'Σφάλμα διαμόρφωσης διακομιστή (Missing API Key).' };
+    }
+
+    const resend = new Resend(apiKey);
+
     // Λήψη των δεδομένων από το formData
     const fullname = formData.get('fullname') as string;
     const email = formData.get('email') as string;
@@ -45,6 +51,7 @@ export async function sendEmailAction(formData: FormData) {
 
     return { success: true, data };
   } catch (err) {
-    return { success: false, error: 'Κάτι πήγε στραβά.' };
+    console.error("Server Action Error:", err);
+    return { success: false, error: 'Αποτυχία αποστολής email.' };
   }
 }
