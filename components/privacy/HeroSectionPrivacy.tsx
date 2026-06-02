@@ -10,7 +10,7 @@ const HeroSectionPrivacy = () => {
   }, []);
 
   return (
-    <section className="relative min-h-[450px] h-[55vh] md:h-[55vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
+    <section className="relative min-h-[450px] h-[55vh] md:h-[65vh] w-full flex items-center overflow-hidden bg-[#F6F1EB]">
       {/* Background Image */}
       <div className="absolute inset-0 z-0 bg-black/35">
         <Image
@@ -25,7 +25,7 @@ const HeroSectionPrivacy = () => {
       </div>
 
       {/* Content */}
-      <div className="container mx-auto px-4 pt-4 relative z-10">
+      <div className="container mx-auto px-4 pt-14 relative z-10">
         <div 
           className="max-w-2xl text-white"
           data-aos="fade-right"
