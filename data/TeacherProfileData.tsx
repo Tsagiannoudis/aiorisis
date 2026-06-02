@@ -49,10 +49,10 @@ export const teachers: Teacher[] = [
     firstName: "Εύη",
     lastName: "Πριόνα",
     fullName: "Εύη Πριόνα",
-    experience: 13,
+    experience: 14,
     categoryType: "Owner",
     specialties: [1, 2, 3, 4, 9],
-    shortDescription: "Ασχολείται με τον αθλητισμό από πολύ μικρή ηλικία.\n Έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks) το 2015 και η αγάπη της γι'αυτές την οδήγησε να ασχοληθεί επαγγελματικά και να διδάσκει από το 2020. \nΕίναι πιστοποιημένη δασκάλα της Aerial Yoga 150hrs, Aerial Yin Yoga 50hrs, Yoga 500 hrs και Prenatal/Postnatal Yoga 50hrs από την Yoga Alliance.",
+    shortDescription: "Ασχολείται με τον αθλητισμό από πολύ μικρή ηλικία.\n Έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks) το 2012 και η αγάπη της γι'αυτές την οδήγησε να ασχοληθεί επαγγελματικά και να διδάσκει από το 2020. \nΕίναι πιστοποιημένη δασκάλα της Aerial Yoga 150hrs, Aerial Yin Yoga 50hrs, Yoga 500 hrs και Prenatal/Postnatal Yoga 50hrs από την Yoga Alliance.",
     fullDescription: `
     <div class="space-y-6">
     <p class="text-lg font-medium text-neutral-800 leading-relaxed">Από πολύ μικρή ηλικία ξεκίνησε να ασχολείται με τον αθλητισμό, χτίζοντας μια γερή βάση σωματικής επίγνωσης.</p>
@@ -83,7 +83,7 @@ export const teachers: Teacher[] = [
     firstName: "Ραφαέλα",
     lastName: "Χατζηκώστα",
     fullName: "Ραφαέλα Χατζηκώστα",
-    experience: 8,
+    experience: 9,
     categoryType: "Instructor",
     specialties: [1, 2, 3, 9],
     shortDescription: "",
@@ -116,7 +116,7 @@ export const teachers: Teacher[] = [
     firstName: "Νατάσα",
     lastName: "Πετρίδου",
     fullName: "Νατάσα Πετρίδου",
-    experience: 7,
+    experience: 13,
     categoryType: "Instructor",
     specialties: [1, 2, 3, 9],
     shortDescription: "",
@@ -149,7 +149,7 @@ export const teachers: Teacher[] = [
     firstName: "Μαριαλίνα",
     lastName: "Παπαδοπούλου",
     fullName: "Μαριαλίνα Παπαδοπούλου",
-    experience: 9,
+    experience: 13,
     categoryType: "Instructor",
     specialties: [7],
     shortDescription: "",
@@ -182,14 +182,14 @@ export const teachers: Teacher[] = [
     firstName: "Ναταλία",
     lastName: "Μιχαήλ",
     fullName: "Ναταλία Μιχαήλ",
-    experience: 9,
+    experience: 10,
     categoryType: "Instructor",
     specialties: [8],
     shortDescription: "",
     fullDescription: `
     <div class="space-y-6">
       <p class="text-lg font-medium text-neutral-800 leading-relaxed">Με αφετηρία το μπαλέτο από την ηλικία των 3 ετών, η Ναταλία εξελίχθηκε στον σύγχρονο και εναέριο χορό.</p>
-      <p class="text-neutral-600 leading-relaxed">Διδάσκει τα τελευταία 8 χρόνια, συνδυάζοντας την πειθαρχία του κλασικού χορού με την ελευθερία του Aerial Hoop.</p>
+      <p class="text-neutral-600 leading-relaxed">Διδάσκει τα τελευταία 9 χρόνια, συνδυάζοντας την πειθαρχία του κλασικού χορού με την ελευθερία του Aerial Hoop.</p>
       <p class="text-[#B9007C] font-bold uppercase tracking-wider text-sm">Τίτλοι Σπουδών I.S.T.D.:</p>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none !pl-0">
         <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· DDE (Diploma in Dance Education)</li>
@@ -215,7 +215,7 @@ export const teachers: Teacher[] = [
     firstName: "Στέλλα",
     lastName: "Τζίρτη",
     fullName: "Στέλλα Τζίρτη",
-    experience: 12,
+    experience: 15,
     categoryType: "Instructor",
     specialties: [4, 5, 6],
     shortDescription: "",
