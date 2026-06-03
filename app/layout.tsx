@@ -4,6 +4,7 @@ import "./globals.css";
 import ScrollToTopButton from "@/components/extraComponents/ScrollToTopButton";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import GoogleAnalytics from "@/components/extraComponents/api/GoogleAnalytics";
 import CookieConsent from "@/components/extraComponents/CookieConsent";
 
 const geistSans = Geist({
@@ -42,6 +43,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} ${ebGaramond.variable} ${ubuntuSans.variable} h-full antialiased`}
     >
       <body className="min-h-full flex flex-col">
+        <GoogleAnalytics />
         <Navbar />
         {children}
         <CookieConsent />
