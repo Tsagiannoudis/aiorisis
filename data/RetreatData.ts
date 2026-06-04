@@ -237,7 +237,7 @@ export const RetreatData: Retreat[] = [
       "Χρόνο δίπλα στη θάλασσα, χώρο για ξεκούραση και απλότητα",
       "Δυνατότητα παρακολούθησης των 4 ημερών του retreat",
     ],
-    googleFormLink: "https://forms.gle/...",
+    googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSeeF-2j9AZuFfv0IrB2KTOyYsYboiSKmHZU9nNCrG5GOmBxiw/viewform",
     partners: [
       {
         name: "OMONYMA",
