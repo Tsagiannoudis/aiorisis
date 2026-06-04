@@ -12,10 +12,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const event = events.find((e) => e.slug === slug);
   if (!event) return { title: "Event Not Found" };
+
+  const baseUrl = "https://www.aiorisis.gr";
   
   return {
     title: `${event.title} | Αιώρησις`,
     description: event.description.substring(0, 155) + "...",
+    openGraph: {
+      title: event.title,
+      description: event.description.substring(0, 155) + "...",
+      url: `${baseUrl}/events/${event.slug}`,
+      siteName: "Αιώρησις",
+      images: event.image ? [
+        {
+          url: `${baseUrl}${event.image}`,
+          width: 1200,
+          height: 630,
+          alt: event.title,
+        },
+      ] : [],
+      locale: "el_GR",
+      type: "article",
+    },
   };
 }
 

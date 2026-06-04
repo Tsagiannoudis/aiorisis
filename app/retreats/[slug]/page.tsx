@@ -12,10 +12,28 @@ export async function generateMetadata({ params }: PageProps): Promise<Metadata>
   const { slug } = await params;
   const retreat = RetreatData.find((r) => r.slug === slug);
   if (!retreat) return { title: "Retreat Not Found" };
+
+  const baseUrl = "https://www.aiorisis.gr"; // Βεβαιώσου ότι αυτό είναι το σωστό domain σου
   
   return {
     title: `${retreat.title} | Αιώρησις`,
     description: retreat.description.substring(0, 155) + "...",
+    openGraph: {
+      title: retreat.title,
+      description: retreat.description.substring(0, 155) + "...",
+      url: `${baseUrl}/retreats/${retreat.slug}`,
+      siteName: "Αιώρησις",
+      images: [
+        {
+          url: `${baseUrl}${retreat.imageHorizontal}`,
+          width: 1200,
+          height: 630,
+          alt: retreat.title,
+        },
+      ],
+      locale: "el_GR",
+      type: "website",
+    },
   };
 }
 

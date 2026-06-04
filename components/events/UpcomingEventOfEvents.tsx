@@ -55,14 +55,13 @@ const EventOfEvents = () => {
               >
                 <div className="relative h-[270px] overflow-hidden sm:h-[360px]">
                   {" "}
-                  {/* Αφαίρεση lg:h-full, χρήση σταθερού ύψους */}
                   <Image
                     src={event.image || "/placeholder.webp"}
                     alt={event.title}
                     fill
                     sizes="(max-width: 1024px) 100vw, 50vw"
                     priority={index === 0}
-                    className="object-fit object-center transition-transform duration-700 group-hover:scale-105"
+                    className="object-cover object-center transition-transform duration-700 group-hover:scale-105"
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 via-black/10 to-transparent" />
                   {/* <div className="absolute bottom-5 left-5 rounded-2xl bg-white/85 px-5 py-4 text-sm shadow-lg backdrop-blur-md">
