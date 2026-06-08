@@ -36,7 +36,7 @@ const EventOfRetreats = () => {
                 <p className="text-center text-xl text-gray-600">Δεν υπάρχουν παλαιότερα retreats αυτή τη στιγμή. Επιστρέψτε σύντομα!</p>
             ) : (
                 <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {outComing.map((retreat) => (
+          {outComing.reverse().map((retreat) => (
             <article
               key={retreat.id}
               className="group overflow-hidden rounded-[2rem] bg-white shadow-sm transition-all duration-500 hover:-translate-y-2 hover:shadow-xl"
