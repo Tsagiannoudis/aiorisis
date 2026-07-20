@@ -38,7 +38,7 @@ const InfoPopup = () => {
   }
 
   return (
-    <div className="fixed inset-0 bg-black bg-opacity-60 z-[100] flex items-center justify-center p-4 backdrop-blur-sm">
+    <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 backdrop-blur-sm">
       <div
         className="relative bg-white rounded-3xl shadow-2xl w-full max-w-lg mx-auto overflow-hidden transform transition-all duration-300 ease-out scale-95 opacity-0 animate-fade-in-scale"
         role="dialog"
