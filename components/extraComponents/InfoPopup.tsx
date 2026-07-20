@@ -1,31 +1,40 @@
 'use client';
 
 import { useState, useEffect } from 'react';
-import { HiXMark } from 'react-icons/hi2';
+import { HiXMark, HiOutlineMegaphone } from 'react-icons/hi2';
 import Image from 'next/image';
 import Link from 'next/link';
 
 const InfoPopup = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [secondsLeft, setSecondsLeft] = useState(20);
 
   useEffect(() => {
-    // Εμφανίζουμε το popup μετά από μια μικρή καθυστέρηση (π.χ. 2 δευτερόλεπτα) σε κάθε φόρτωση.
+    // Εμφανίζουμε το popup
     const showTimer = setTimeout(() => {
       setIsVisible(true);
     }, 1500);
 
-    // Καθαρίζουμε το timer αν το component αφαιρεθεί πριν την εμφάνιση.
+    // Καθαρίζουμε το timer αν το component αφαιρεθεί πριν την εμφάνιση
     return () => clearTimeout(showTimer);
   }, []);
 
   useEffect(() => {
     if (isVisible) {
-      // Ορίζουμε ένα timer για αυτόματο κλείσιμο μετά από 20 δευτερόλεπτα
+      // Ορίζουμε ένα timer για αυτόματο κλείσιμο
       const autoCloseTimer = setTimeout(() => {
         handleClose();
-      }, 20000); // 20 δευτερόλεπτα
+      }, 20000);
 
-      return () => clearTimeout(autoCloseTimer);
+      // Timer για την αντίστροφη μέτρηση
+      const countdownTimer = setInterval(() => {
+        setSecondsLeft((prevSeconds) => (prevSeconds > 0 ? prevSeconds - 1 : 0));
+      }, 1000);
+
+      return () => {
+        clearTimeout(autoCloseTimer);
+        clearInterval(countdownTimer);
+      };
     }
   }, [isVisible]);
 
@@ -89,6 +98,15 @@ const InfoPopup = () => {
           >
             Δείτε Περισσότερα
           </Link> */}
+          <div className="mt-6 border-t border-gray-200 pt-4">
+            <p className="text-sm text-gray-500">
+              Το παράθυρο θα κλείσει αυτόματα σε{" "}
+              <span className="font-semibold text-gray-900">
+                {secondsLeft}
+              </span>{" "}
+              δευτερόλεπτα.
+            </p>
+          </div>
         </div>
       </div>
       <style jsx>{`
