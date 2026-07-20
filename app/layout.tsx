@@ -6,6 +6,7 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import GoogleAnalytics from "@/components/extraComponents/api/GoogleAnalytics";
 import CookieConsent from "@/components/extraComponents/CookieConsent";
+import InfoPopup from "@/components/extraComponents/InfoPopup";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -45,6 +46,7 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <GoogleAnalytics />
         <Navbar />
+        <InfoPopup />
         {children}
         <CookieConsent />
               <ScrollToTopButton />
