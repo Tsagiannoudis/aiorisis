@@ -242,4 +242,38 @@ export const teachers: Teacher[] = [
       linkedin: "",
     },
   },
+  {
+    id: 7,
+    slug: "eleni-tsiakiri",
+    firstName: "Έλενη",
+    lastName: "Τσιακίρη",
+    fullName: "Έλενη Τσιακίρη",
+    experience: 6,
+    categoryType: "Instructor",
+    specialties: [1, 2, 3, 9],
+    shortDescription: "",
+    fullDescription: `
+    <div class="space-y-6">
+      <p class="text-lg font-medium text-neutral-800 leading-relaxed">Εχω μεγαλώσει μέσα από τη κίνηση. Με πολυ αγάπη και σεβασμό στο σώμα, μου αρέσει μέσα από διαφορετικές τεχνικές να ανακαλύπτω που μπορεί να φτάσει το σώμα και πως μπορούν όλα τα είδη να συνδυαστούν.</p>
+      <p class="text-neutral-600 leading-relaxed">Μέσα από το χορό μαθαίνω τη σύνδεση της κάθε κίνησης με την επόμενη και ανακαλύπτω καινούργιους τρόπους να τα συνδεω. Η γιόγκα είναι ένα είδος που με βοηθάει να ακούω το σώμα μου και να νιώθω την κάθε κίνηση. Μου αρέσουν οι ροές στα μαθήματα γιογκας και η βασική μου προτεραιότητα είναι να συνδέσουμε το νου μας με το σώμα μας αφήνοντας όλες τις σκέψεις έξω από την αίθουσα.</p>
+      <p class="text-[#B9007C] font-bold uppercase tracking-wider text-sm">Κύρια Ειδίκευση:</p>
+      <ul class="grid grid-cols-1 sm:grid-cols-2 gap-3 list-none !pl-0">
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Aerial Yoga</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Aerial Yoga Kids</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Aerial Yoga Teens</li>
+        <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Vinyasa Flow Yoga</li>
+      </ul>
+    </div>
+    `,
+    image: "/teacherProfiles/eleni-tsiakiri01.webp",
+    mailAddress: "",
+    phoneNumber: 0,
+    socialAccounts: {
+      facebook: "",
+      instagram: "",
+      twitter: "",
+      youtube: "",
+      linkedin: "",
+    },
+  },
 ];

@@ -21,9 +21,9 @@ const OurClasses = () => {
           </p>
 
           <h2 className="text-4xl md:text-6xl font-black text-gray-900 leading-tight mb-6">
-            Δύναμη στο σώμα.
+            Κάθε μάθημα κρύβει
             <br />
-            Ελευθερία στην κίνηση.
+            μια νέα δυνατότητα.
           </h2>
 
           <p className="text-gray-600 text-base md:text-lg font-light leading-relaxed max-w-2xl">
