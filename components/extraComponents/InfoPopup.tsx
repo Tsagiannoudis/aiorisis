@@ -86,7 +86,10 @@ const InfoPopup = () => {
            Νεό πρόγραμμα!
           </h2>
           <p className="text-gray-600 font-light leading-relaxed mb-2">
-            Το πρόγραμμα της νέας σεζόν θα αναρτηθεί στις <strong>10/08/2026</strong>.
+            Το πρόγραμμα της νέας σεζόν έχει αναρτηθεί από τις <strong>10/08/2026</strong>.
+          </p>
+          <p className="text-gray-600 font-light leading-relaxed mb-2">
+            Η σχολή μας θα ανοίξει στις <strong>01/09/2026</strong>.
           </p>
           <p className="text-gray-700 font-light leading-relaxed mb-6">
             Ανυπομονούμε να σας υποδεχτούμε ξανά!<br /> Καλές διακοπές!🌞⛱
