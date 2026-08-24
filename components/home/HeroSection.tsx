@@ -48,7 +48,7 @@ useEffect(() => {
           <div className="md:w-3/5 w-full text-right md:text-right md:pr-8 mb-10 md:mb-0">
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 md:mb-6 leading-tight opacity-60">
               <span className="font-semibold italic text-[#B9007C]">Yoga</span> on the ground.<br />
-              Movement in the <span className="font-semibold italic text-[#B9007C]">air</span>.
+              Movement in the <span className="font-semibold italic text-[#B9007C]">Air</span>.
             </h2>
             {/* <p className="text-base sm:text-lg md:text-xl lg:text-2xl font-light text-gray-500 leading-relaxed">
               τον χρόνο και τον τόπο να{" "}
