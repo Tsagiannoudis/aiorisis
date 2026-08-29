@@ -70,8 +70,8 @@ export const teachers: Teacher[] = [
     mailAddress: "info@aiorisis.gr",
     phoneNumber: 6948577225,
     socialAccounts: {
-      facebook: "",
-      instagram: "",
+      facebook: "https://www.facebook.com/evi.priona",
+      instagram: "https://www.instagram.com/evi_priona/",
       twitter: "",
       youtube: "",
       linkedin: "",
@@ -103,14 +103,14 @@ export const teachers: Teacher[] = [
     mailAddress: "",
     phoneNumber: 0,
     socialAccounts: {
-      facebook: "",
-      instagram: "",
+      facebook: "https://www.facebook.com/raff.chatz",
+      instagram: "https://www.instagram.com/thecosmicyogi__/",
       twitter: "",
       youtube: "",
       linkedin: "",
     },
   },
-    {
+  {
     id: 3,
     slug: "natasa-petridou",
     firstName: "Νατάσα",
@@ -136,14 +136,14 @@ export const teachers: Teacher[] = [
     mailAddress: "",
     phoneNumber: 0,
     socialAccounts: {
-      facebook: "",
-      instagram: "",
+      facebook: "https://www.facebook.com/luna.yorkie.18",
+      instagram: "https://www.instagram.com/natasha_ptr/",
       twitter: "",
       youtube: "",
       linkedin: "",
     },
   },
-    {
+  {
     id: 4,
     slug: "marialina-papadopoulou",
     firstName: "Μαριαλίνα",
@@ -169,14 +169,14 @@ export const teachers: Teacher[] = [
     mailAddress: "",
     phoneNumber: 0,
     socialAccounts: {
-      facebook: "",
-      instagram: "",
+      facebook: "https://www.facebook.com/marialina.papadopoulou",
+      instagram: "https://www.instagram.com/marialina_papadopoyloy/",
       twitter: "",
       youtube: "",
       linkedin: "",
     },
   },
-    {
+  {
     id: 5,
     slug: "natalia-michail",
     firstName: "Ναταλία",
@@ -202,14 +202,14 @@ export const teachers: Teacher[] = [
     mailAddress: "",
     phoneNumber: 0,
     socialAccounts: {
-      facebook: "",
-      instagram: "",
+      facebook: "https://www.facebook.com/natalitsa.mica",
+      instagram: "https://www.instagram.com/natalia_mic/",
       twitter: "",
       youtube: "",
       linkedin: "",
     },
   },
-    {
+  {
     id: 6,
     slug: "stella-tzirta",
     firstName: "Στέλλα",
@@ -235,8 +235,8 @@ export const teachers: Teacher[] = [
     mailAddress: "",
     phoneNumber: 0,
     socialAccounts: {
-      facebook: "",
-      instagram: "",
+      facebook: "https://www.facebook.com/stella.tzirti",
+      instagram: "https://www.instagram.com/stella_tzirti/",
       twitter: "",
       youtube: "",
       linkedin: "",
@@ -269,8 +269,8 @@ export const teachers: Teacher[] = [
     mailAddress: "",
     phoneNumber: 0,
     socialAccounts: {
-      facebook: "",
-      instagram: "",
+      facebook: "https://www.facebook.com/eleni.tsiakiri.37",
+      instagram: "https://www.instagram.com/elenitsiakiri/",
       twitter: "",
       youtube: "",
       linkedin: "",

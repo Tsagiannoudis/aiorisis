@@ -2,6 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { Metadata } from "next";
+import { FaFacebook, FaInstagram, FaYoutube, FaLinkedin } from "react-icons/fa";
 import { teachers } from "@/data/TeacherProfileData";
 import { classes } from "@/data/ClassOfStudioData";
 
@@ -87,6 +88,54 @@ export default async function TeacherDetailPage({ params }: PageProps) {
                       </p>
                     </div>
                   )}
+
+                  <div className="flex flex-wrap items-center gap-6 mt-10 mb-6">
+                    {teacher.socialAccounts.facebook && (
+                      <Link
+                        href={teacher.socialAccounts.facebook}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm font-bold text-[#B9007C] hover:text-[#9d0069] transition-colors"
+                      >
+                        <FaFacebook className="w-5 h-5" />
+                        <span>Facebook</span>
+                      </Link>
+                    )}
+                    {teacher.socialAccounts.instagram && (
+                      <Link
+                        href={teacher.socialAccounts.instagram}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm font-bold text-[#B9007C] hover:text-[#9d0069] transition-colors"
+                      >
+                        <FaInstagram className="w-5 h-5" />
+                        <span>Instagram</span>
+                      </Link>
+                    )}
+                    {teacher.socialAccounts.youtube && (
+                      <Link
+                        href={teacher.socialAccounts.youtube}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm font-bold text-[#B9007C] hover:text-[#9d0069] transition-colors"
+                      >
+                        <FaYoutube className="w-5 h-5" />
+                        <span>YouTube</span>
+                      </Link>
+                    )}
+                    {teacher.socialAccounts.linkedin && (
+                      <Link
+                        href={teacher.socialAccounts.linkedin}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="inline-flex items-center gap-2 text-sm font-bold text-[#B9007C] hover:text-[#9d0069] transition-colors"
+                      >
+                        <FaLinkedin className="w-5 h-5" />
+                        <span>LinkedIn</span>
+                      </Link>
+                    )}
+                  </div>
+
                 </div>
               </div>
             </aside>
@@ -142,12 +191,12 @@ export default async function TeacherDetailPage({ params }: PageProps) {
 
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
                   {teacherClasses.map((cls) => (
-                    <Link 
+                    <Link
                       href={`/classes/${cls.slug}`}
                       key={cls.id}
                       className="rounded-2xl bg-white/10 px-5 py-4 text-sm font-semibold"
                     >
-                    · {cls.className}
+                      · {cls.className}
                     </Link>
                   ))}
                 </div>
