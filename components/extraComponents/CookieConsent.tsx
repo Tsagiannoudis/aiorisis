@@ -1,13 +1,17 @@
-'use client';
+"use client";
 
-import { useState, useEffect } from 'react';
-import Link from 'next/link';
+import { useEffect, useState } from "react";
+import { useTranslations } from "next-intl";
+
+import { Link } from "@/i18n/navigation";
 
 const CookieConsent = () => {
   const [isVisible, setIsVisible] = useState(false);
 
+  const t = useTranslations("CookieConsent");
+
   useEffect(() => {
-    const consent = localStorage.getItem('cookie-consent');
+    const consent = localStorage.getItem("cookie-consent");
 
     if (!consent) {
       setIsVisible(true);
@@ -16,7 +20,7 @@ const CookieConsent = () => {
 
   const acceptCookies = () => {
     localStorage.setItem(
-      'cookie-consent',
+      "cookie-consent",
       JSON.stringify({
         necessary: true,
         analytics: true,
@@ -29,7 +33,7 @@ const CookieConsent = () => {
 
   const rejectCookies = () => {
     localStorage.setItem(
-      'cookie-consent',
+      "cookie-consent",
       JSON.stringify({
         necessary: true,
         analytics: false,
@@ -44,27 +48,31 @@ const CookieConsent = () => {
   return (
     <div className="fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 p-4 shadow-lg z-[100] flex flex-col md:flex-row items-center justify-between gap-4">
       <div className="text-sm text-gray-600 max-w-4xl">
-        Χρησιμοποιούμε απαραίτητα cookies για τη λειτουργία του ιστότοπου και,
-        με τη συγκατάθεσή σας, cookies ανάλυσης για να βελτιώνουμε την εμπειρία σας.
-        Διαβάστε την{' '}
-        <Link href="/privacy-policy" className="text-[#B9007C] underline">
-          Πολιτική Απορρήτου
-        </Link>.
+        {t("text")}{" "}
+        <Link
+          href="/privacy-policy"
+          className="text-[#B9007C] underline"
+        >
+          {t("privacyPolicy")}
+        </Link>
+        .
       </div>
 
       <div className="flex gap-3">
         <button
+          type="button"
           onClick={rejectCookies}
           className="border border-gray-300 text-gray-700 px-6 py-2 rounded-full text-sm font-bold hover:bg-gray-100 transition"
         >
-          Απόρριψη
+          {t("reject")}
         </button>
 
         <button
+          type="button"
           onClick={acceptCookies}
           className="bg-[#B9007C] text-white px-6 py-2 rounded-full text-sm font-bold hover:bg-[#950064] transition"
         >
-          Αποδοχή
+          {t("accept")}
         </button>
       </div>
     </div>

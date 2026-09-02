@@ -335,5 +335,47 @@
         "holidayWish": "Have a wonderful holiday!",
         "autoCloseBefore": "This window will close automatically in",
         "seconds": "seconds."
+    },
+    "CookieConsent": {
+        "text": "We use necessary cookies for the operation of the website and, with your consent, analytics cookies to help us improve your experience. Read our",
+        "privacyPolicy": "Privacy Policy",
+        "reject": "Reject",
+        "acc,ept": "Accept"
+    },
+    "HeroSectionPrivacy": {
+        "imageAlt": "Privacy Policy - Aiorisis",
+        "eyebrow": "Privacy Policy",
+        "title": "Privacy Policy",
+        "subtitle": "We respect your privacy",
+        "description": "and we are committed to protecting the personal data you entrust to us.",
+        "lastUpdated": "Last updated",
+        "date": "June 2, 2026"
+    },
+    "PrivacyPage": {
+        "contents": "Contents",
+        "who": {
+            "title": "Who we are",
+            "text": "Aiorisis is an Aerial Arts and Yoga studio based in Thessaloniki, at 42 Artemidos Street."
+        },
+        "data": {
+            "title": "What data we collect",
+            "text": "We collect only the personal data that is strictly necessary, such as your name, email address and phone number, which you voluntarily provide through our contact forms or when registering for classes."
+        },
+        "processing": {
+            "title": "Purposes of processing",
+            "text": "We use your personal data exclusively to communicate with you, provide information about our classes and activities, and improve our services."
+        },
+        "rights": {
+            "title": "Your rights",
+            "text": "Under the General Data Protection Regulation (GDPR), you have the right to access, correct, restrict, transfer and request the deletion of your personal data."
+        },
+        "contact": {
+            "title": "Contact",
+            "text": "For any matter related to your personal data, you can contact us at"
+        },
+        "cookies": {
+            "title": "Cookies",
+            "text": "We use cookies to improve your experience on our website and to analyze website traffic. You can manage your preferences at any time."
+        }
     }
 }
