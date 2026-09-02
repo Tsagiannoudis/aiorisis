@@ -61,7 +61,7 @@ const OurTeamOfAiorisis = async () => {
               <div className="relative mb-6 overflow-hidden rounded-full border-4 border-white shadow-xl transition-transform duration-500 group-hover:scale-105 group-hover:shadow-[#B9007C]/20">
                 <Image
                   src={teacher.image}
-                  alt={teacher.fullName}
+                  alt={tData(teacher.fullName)}
                   width={220}
                   height={220}
                   className="object-cover aspect-square"
@@ -71,7 +71,7 @@ const OurTeamOfAiorisis = async () => {
               {/* Teacher Info */}
               <div className="text-center">
                 <h3 className="text-xl font-bold text-gray-900 mb-1">
-                  {teacher.fullName[locale]}
+                  {tData(teacher.fullName)}
                 </h3>
 
                 <p className="text-[#B9007C] text-sm font-semibold tracking-widest">

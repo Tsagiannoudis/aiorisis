@@ -155,7 +155,10 @@ export const teachers: Teacher[] = [
     experience: 13,
     categoryType: { el: "Δασκάλα", en: "Instructor" },
     specialties: [1, 2, 3, 9],
-    shortDescription: "",
+    shortDescription: {
+      el: "",
+      en: ""
+    },
     fullDescription: {
       el: `
     <div class="space-y-6">
@@ -202,7 +205,10 @@ export const teachers: Teacher[] = [
     experience: 13,
     categoryType: { el: "Δασκάλα", en: "Instructor" },
     specialties: [7],
-    shortDescription: "",
+    shortDescription: {
+      el: "",
+      en: ""
+    },
     fullDescription: {
       el: `
     <div class="space-y-6">
@@ -249,7 +255,10 @@ export const teachers: Teacher[] = [
     experience: 10,
     categoryType: { el: "Δασκάλα", en: "Instructor" },
     specialties: [8, 10],
-    shortDescription: "",
+    shortDescription: {
+      el: "",
+      en: ""
+    },
     fullDescription: {
       el: `
     <div class="space-y-6">
@@ -296,7 +305,10 @@ export const teachers: Teacher[] = [
     experience: 15,
     categoryType: { el: "Δασκάλα", en: "Instructor" },
     specialties: [4, 5, 6],
-    shortDescription: "",
+    shortDescription: {
+      el: "",
+      en: ""
+    },
     fullDescription: {
       el: `
     <div class="space-y-6">
