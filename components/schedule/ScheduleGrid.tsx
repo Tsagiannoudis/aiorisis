@@ -1,10 +1,13 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
-import { useState } from 'react';
+import { useState } from "react";
+import { useLocale, useTranslations } from "next-intl";
+
+import { Link } from "@/i18n/navigation";
+
 import {
   schedule,
-  getClassByName,
+  getClassById,
   days,
   classRooms,
   scheduleStartHour,
@@ -12,41 +15,73 @@ import {
   getGridRowStart,
   getGridRowSpan,
   totalRows,
-} from '@/data/ScheduleData';
+} from "@/data/ScheduleData";
+
+import {
+  createTranslator,
+  type Locale,
+} from "@/components/extraComponents/LocaleSwitchTranslate";
 
 export default function ScheduleGrid() {
-  const [activeRoom, setActiveRoom] = useState<typeof classRooms[number]>(classRooms[0]);
-  const visibleDays = days.filter((day) => day !== 'Κυριακή');
+  const [activeRoom, setActiveRoom] =
+    useState<(typeof classRooms)[number]>(classRooms[0]);
+
+  const locale = useLocale() as Locale;
+
+  const t = useTranslations("ScheduleGrid");
+
+  const getLevelLabel = (level: string) => {
+    const key = `levels.${level}`;
+
+    if (t.has(key)) {
+      return t(key);
+    }
+
+    return level;
+  };
+
+  const tData = createTranslator(locale);
+
+  const visibleDays = days.filter((day) => day !== "sunday");
 
   return (
     <section className="bg-[#F6F1EB] py-24">
       <div className="container mx-auto px-4 max-w-7xl">
+        {/* Title */}
         <h2 className="text-4xl md:text-6xl font-bold text-center text-gray-900 mb-16 tracking-tight">
-          Ώρες Μαθημάτων
+          {t("title")}
         </h2>
 
         {/* Room Switcher Tabs */}
-        <div className="flex justify-center gap-4 mb-12">
+        <div className="flex flex-wrap justify-center gap-4 mb-12">
           {classRooms.map((room) => (
             <button
               key={room}
+              type="button"
               onClick={() => setActiveRoom(room)}
-              className={`px-8 py-3 rounded-full text-lg font-bold transition-all duration-300 border ${
-                activeRoom === room
-                  ? 'bg-[#B9007C] text-white border-[#B9007C] scale-105 shadow-lg shadow-[#B9007C]/20'
-                  : 'bg-white text-gray-600 border-gray-200 hover:bg-gray-50'
-              }`}
+              className={`px-8 py-3 rounded-full text-lg font-bold transition-all duration-300 border ${activeRoom === room
+                ? "bg-[#B9007C] text-white border-[#B9007C] scale-105 shadow-lg shadow-[#B9007C]/20"
+                : "bg-white text-gray-600 border-gray-200 hover:bg-gray-50"
+                }`}
             >
-              {room}
+              {t(`rooms.${room}`)}
             </button>
           ))}
         </div>
 
         {/* Active Grid Content */}
-        <div key={activeRoom} className="animate-in fade-in duration-500">
+        <div
+          key={activeRoom}
+          className="animate-in fade-in duration-500"
+        >
           {(() => {
-            const roomEntries = schedule.filter((entry) => entry.classRoom === activeRoom);
-            if (!roomEntries.length) return null;
+            const roomEntries = schedule.filter(
+              (entry) => entry.classRoom === activeRoom
+            );
+
+            if (!roomEntries.length) {
+              return null;
+            }
 
             return (
               <div className="overflow-x-auto rounded-3xl border border-gray-200 bg-white shadow-xl p-4 md:p-8">
@@ -57,8 +92,10 @@ export default function ScheduleGrid() {
                     gridTemplateRows: `42px repeat(${totalRows}, 18px)`,
                   }}
                 >
+                  {/* Top-left empty cell */}
                   <div className="bg-gray-50/50 border-b border-r border-gray-100" />
 
+                  {/* Days */}
                   {visibleDays.map((day, index) => (
                     <div
                       key={day}
@@ -68,14 +105,19 @@ export default function ScheduleGrid() {
                         gridRow: 1,
                       }}
                     >
-                      {day}
+                      {t(`days.${day}`)}
                     </div>
                   ))}
 
+                  {/* Hours */}
                   {Array.from({
-                    length: scheduleEndHour - scheduleStartHour + 1,
+                    length:
+                      scheduleEndHour -
+                      scheduleStartHour +
+                      1,
                   }).map((_, index) => {
-                    const hour = scheduleStartHour + index;
+                    const hour =
+                      scheduleStartHour + index;
 
                     return (
                       <div
@@ -86,49 +128,73 @@ export default function ScheduleGrid() {
                           gridRow: index * 4 + 2,
                         }}
                       >
-                        {String(hour).padStart(2, '0')}:00
+                        {String(hour).padStart(2, "0")}:00
                       </div>
                     );
                   })}
 
-                  {Array.from({ length: totalRows }).map((_, rowIndex) => (
+                  {/* Grid Lines */}
+                  {Array.from({
+                    length: totalRows,
+                  }).map((_, rowIndex) => (
                     <div
                       key={`line-${rowIndex}`}
-                      className={`border-b  border-gray-50`}
+                      className="border-b border-gray-50"
                       style={{
-                        gridColumn: `2 / -1`,
+                        gridColumn: "2 / -1",
                         gridRow: rowIndex + 2,
                       }}
                     />
                   ))}
 
+                  {/* Schedule Entries */}
                   {visibleDays.map((day, dayIndex) =>
                     roomEntries
                       .filter((entry) => entry.day === day)
                       .map((entry) => {
-                        const classData = getClassByName(entry.className);
+                        const classData = getClassById(
+                          entry.classId
+                        );
+
+                        if (!classData) {
+                          return null;
+                        }
+
+                        const displayName = entry.displayName
+                          ? tData(entry.displayName)
+                          : tData(classData.className);
 
                         return (
-                          <Link href={`/classes/${entry.className.replace(/\s+/g, '-').toLowerCase()}`}
-                            key={`${activeRoom}-${entry.day}-${entry.start}-${entry.className}`}
+                          <Link
+                            href={`/classes/${classData.slug}`}
+                            key={`${activeRoom}-${entry.day}-${entry.start}-${entry.classId}`}
                             className="z-10 m-[2px] p-2 text-center flex flex-col items-center justify-center overflow-hidden rounded-lg shadow-sm transition-all duration-300 hover:scale-[1.02] hover:z-20 hover:shadow-md border border-white/20"
                             style={{
                               gridColumn: dayIndex + 2,
-                              gridRowStart: getGridRowStart(entry.start),
+                              gridRowStart: getGridRowStart(
+                                entry.start
+                              ),
                               gridRowEnd: `span ${getGridRowSpan(
                                 entry.start,
                                 entry.end
                               )}`,
-                              backgroundColor: classData?.color ? `${classData.color}dd` : '#e5e7eb',
+                              backgroundColor:
+                                classData.color
+                                  ? `${classData.color}dd`
+                                  : "#e5e7eb",
                             }}
                           >
+                            {/* Class Name */}
                             <h4 className="text-[11px] md:text-[13px] font-bold text-gray-900 leading-tight">
-                              {classData?.className || entry.className}
+                              {displayName}
                             </h4>
 
+                            {/* Level */}
                             <p className="text-[9px] md:text-[10px] font-medium text-gray-800/70 leading-tight mt-0.5">
-                              {entry.level}
+                              {getLevelLabel(entry.level)}
                             </p>
+
+                            {/* Time */}
                             <p className="text-[9px] md:text-[10px] font-bold text-gray-900 mt-1 opacity-60">
                               {entry.start} - {entry.end}
                             </p>

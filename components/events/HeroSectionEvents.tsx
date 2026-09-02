@@ -3,8 +3,10 @@ import Image from "next/image";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslations } from "next-intl";
 
 const HeroSectionEvents = () => {
+  const t = useTranslations("HeroSectionEvents");
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -26,25 +28,25 @@ const HeroSectionEvents = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div 
+        <div
           className="max-w-2xl text-white"
           data-aos="fade-right"
           data-aos-delay="200"
         >
           <div className="inline-block px-4 py-1 rounded-full bg-[#B9007C]/20 backdrop-blur-sm text-[#ef92ce] text-xs font-bold tracking-[0.2em] uppercase mb-4">
-            Workshops & performances
+            {t("subtitle")}
           </div>
           <h1 className="text-5xl md:text-8xl font-black tracking-tighter drop-shadow-2xl mb-2">
-            Events
+            {t("title")}
           </h1>
           <div className="w-24 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mb-6 md:mb-8"></div>
 
           <div className="space-y-2" data-aos="fade-up" data-aos-delay="400">
             <p className="text-2xl md:text-3xl font-light leading-tight">
-              Ανακάλυψε μοναδικές εμπειρίες
+              {t("description1")}
             </p>
             <p className="text-sm md:text-sm text-wihte/80 font-medium tracking-wide">
-                σύνδεσης, έκφρασης και δημιουργικότητας.
+              {t("description2")}
             </p>
 
           </div>

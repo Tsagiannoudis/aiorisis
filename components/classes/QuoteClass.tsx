@@ -2,8 +2,10 @@
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslations } from "next-intl";
 
 const QuoteClass = () => {
+  const t = useTranslations("QuoteClass");
   useEffect(() => {
     AOS.init({ duration: 1000, once: true });
   }, []);
@@ -18,9 +20,9 @@ const QuoteClass = () => {
 
         <div className="relative z-10" data-aos="fade-up">
           <blockquote className="text-3xl md:text-5xl lg:text-6xl font-extralight text-gray-800 leading-[1.1] tracking-tight italic">
-            &ldquo;<span className="font-black text-[#B9007C] not-italic">Δύναμη </span>  στο σώμα. <br/> <span className="font-black text-[#B9007C] not-italic">Ελευθερία  </span> στην κίνηση.&rdquo;
+            &ldquo;<span className="font-black text-[#B9007C] not-italic">{t("power")} </span>  {t("in")} {t("body")} <br /> <span className="font-black text-[#B9007C] not-italic">{t("freedom")}  </span> {t("in")} {t("movement")}.&rdquo;
           </blockquote>
-          
+
           {/* Decorative Divider */}
           <div className="mt-12 flex justify-center items-center gap-4">
             <div className="w-12 h-px bg-[#B9007C]/30"></div>

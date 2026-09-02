@@ -1,20 +1,22 @@
 import Image from "next/image";
 import Link from "next/link";
 import { FaFacebook, FaInstagram } from "react-icons/fa6";
+import { useTranslations } from "next-intl";
 
 const Footer = () => {
+  const t = useTranslations("Footer");
   return (
     <footer className="bg-white text-neutral-800">
       <div className="mx-auto max-w-7xl px-4 py-14 md:px-8">
         <div className="grid grid-cols-1 gap-12 md:grid-cols-3 md:items-center">
           <div className="text-center md:text-left">
             <h4 className="mb-5 text-xs font-bold uppercase tracking-[0.25em] text-[#B9007C]">
-              Πληροφορίες
+              {t("info")}
             </h4>
 
             <div className="space-y-2 text-sm leading-7 text-neutral-600">
-              <p>Αρτέμιδος 42</p>
-              <p>Θεσσαλονίκη, 54644</p>
+              <p>{t("address")}</p>
+              <p>{t("city")}</p>
 
               <Link
                 href="tel:6948577225"
@@ -29,7 +31,7 @@ const Footer = () => {
                   target="_blank"
                   className="inline-flex items-center text-xs font-bold uppercase tracking-[0.2em] text-neutral-900 transition hover:text-[#B9007C]"
                 >
-                  Άνοιγμα Χάρτη →
+                  {t("map")}
                 </Link>
               </div>
             </div>
@@ -51,20 +53,22 @@ const Footer = () => {
 
           <div className="text-center md:text-right">
             <h4 className="mb-5 text-xs font-bold uppercase tracking-[0.25em] text-[#B9007C]">
-              Ώρες Λειτουργίας
+              {t("hours")}
             </h4>
 
             <div className="space-y-5 text-sm leading-7 text-neutral-600">
               <div>
                 <p className="font-semibold text-neutral-900">
-                  Δευτέρα έως Παρασκευή
+                  {t("weekdays")}
                 </p>
                 <p>10:15 – 13:00</p>
                 <p>17:00 – 23:00</p>
               </div>
 
               <div>
-                <p className="font-semibold text-neutral-900">Σάββατο</p>
+                <p className="font-semibold text-neutral-900">
+                  {t("weekend")}
+                </p>
                 <p>10:30 – 14:30</p>
               </div>
             </div>
@@ -74,7 +78,7 @@ const Footer = () => {
         {/* All rights reserved + social media */}
         <div className="flex flex-col md:flex-row mt-12 border-t justify-between items-center gap-6 border-black/10 pt-8">
           <p className=" flex text-lg text-neutral-500">
-            Aκολουθήστε μας στα κοινωνικά δίκτυα:
+            {t("Social.title")}
             <Link
               href="https://www.facebook.com/aiorisis/"
               target="_blank"
@@ -96,8 +100,7 @@ const Footer = () => {
           <p> | </p>
 
           <p className="text-lg text-neutral-500 text-center md:text-left">
-            Αιώρησις © {new Date().getFullYear()}. All rights reserved. Powered
-            by{" "}
+            {t("allRightsReserved", { year: new Date().getFullYear() })}{" "}
             <Link
               href="https://www.tsagiannoudis.gr/"
               target="_blank"

@@ -3,8 +3,10 @@ import Image from "next/image";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import { useTranslations } from "next-intl";
 
 const HeroSectionContact = () => {
+  const t = useTranslations("HeroSectionContact");
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
@@ -15,7 +17,7 @@ const HeroSectionContact = () => {
       <div className="absolute inset-0 z-0 bg-black/35">
         <Image
           src="/contactphoto.webp"
-          alt="Επικοινωνία - Αιώρησις"
+          alt={t("imageAlt")}
           fill
           className="object-cover scale-100 animate-subtle-zoom transition-transform duration-1000"
           priority
@@ -27,25 +29,25 @@ const HeroSectionContact = () => {
 
       {/* Content */}
       <div className="container mx-auto px-4 relative z-10">
-        <div 
+        <div
           className="max-w-2xl text-white"
           data-aos="fade-right"
           data-aos-delay="200"
         >
           <div className="inline-block px-4 py-1 rounded-full bg-[#B9007C]/20 backdrop-blur-sm text-[#ef92ce] text-xs font-bold tracking-[0.2em] uppercase mb-4">
-            contact
+            {t("eyebrow")}
           </div>
           <h1 className="text-5xl md:text-7xl font-black tracking-tighter drop-shadow-2xl mb-2">
-            Επικοινωνήστε μαζί μας
+            {t("title")}
           </h1>
           <div className="w-24 h-1.5 bg-[#B9007C] rounded-full shadow-lg shadow-[#B9007C]/50 mt-4 mb-6"></div>
 
           <div className="space-y-2" data-aos="fade-up" data-aos-delay="400">
             <p className="text-2xl md:text-4xl font-light leading-tight">
-              Είμαστε εδώ για εσάς
+              {t("subtitle")}
             </p>
             <p className="text-sm md:text-sm text-white/80 font-medium tracking-wide">
-              Επικοινωνήστε μαζί μας για οποιαδήποτε πληροφορία ή απορία σχετικά με τα μαθήματα και τις δράσεις μας.
+              {t("description1")}
             </p>
           </div>
         </div>

@@ -1,666 +1,726 @@
-import { classes } from './ClassOfStudioData';
+import type { LocalizedText } from "@/components/extraComponents/LocaleSwitchTranslate";
+import { classes } from "./ClassOfStudioData";
+
+/* =========================================================
+   GRID CONFIG
+========================================================= */
 
 export const scheduleStartHour = 9;
 export const scheduleEndHour = 23;
 export const minutesPerRow = 15;
 
 export function timeToMinutes(time: string) {
-  const [hours, minutes] = time.split(':').map(Number);
+  const [hours, minutes] = time.split(":").map(Number);
+
   return hours * 60 + minutes;
 }
 
 export function getGridRowStart(time: string) {
   return (
     Math.floor(
-      (timeToMinutes(time) - scheduleStartHour * 60) / minutesPerRow
+      (timeToMinutes(time) - scheduleStartHour * 60) /
+      minutesPerRow
     ) + 2
   );
 }
 
-export function getGridRowSpan(start: string, end: string) {
+export function getGridRowSpan(
+  start: string,
+  end: string
+) {
   return Math.max(
     1,
-    Math.ceil((timeToMinutes(end) - timeToMinutes(start)) / minutesPerRow)
+    Math.ceil(
+      (timeToMinutes(end) - timeToMinutes(start)) /
+      minutesPerRow
+    )
   );
 }
 
 export const totalRows =
-  ((scheduleEndHour - scheduleStartHour) * 60) / minutesPerRow;
+  ((scheduleEndHour - scheduleStartHour) * 60) /
+  minutesPerRow;
+
+/* =========================================================
+   DAYS
+========================================================= */
 
 export const days = [
-  'Δευτέρα',
-  'Τρίτη',
-  'Τετάρτη',
-  'Πέμπτη',
-  'Παρασκευή',
-  'Σάββατο',
-  'Κυριακή',
+  "monday",
+  "tuesday",
+  "wednesday",
+  "thursday",
+  "friday",
+  "saturday",
+  "sunday",
 ] as const;
 
-type Day = typeof days[number];
+export type Day = (typeof days)[number];
+
+/* =========================================================
+   ROOMS
+========================================================= */
 
 export const classRooms = [
-  'Αίθουσα Α',
-  'Αίθουσα Β',
+  "room-a",
+  "room-b",
 ] as const;
+
+export type ClassRoom =
+  (typeof classRooms)[number];
+
+/* =========================================================
+   LEVELS
+========================================================= */
+
+export const levels = [
+  "all-levels",
+  "level-1",
+  "level-2",
+  "level-3",
+  "level-1-2",
+  "level-2-3",
+  "level-1-dot-2",
+  "advanced",
+] as const;
+
+export type Level = (typeof levels)[number];
+
+/* =========================================================
+   CLASS IDS
+
+   1  - Aerial Yoga
+   2  - Aerial Yoga Kids
+   3  - Aerial Yoga Teens
+   4  - Aerial Silks
+   5  - Aerial Rope
+   6  - Aerial Straps
+   7  - Flying Pole
+   8  - Aerial Hoop
+   9  - Vinyasa Flow Yoga
+   10 - Flexibility
+========================================================= */
 
 export interface ScheduleEntry {
   day: Day;
   start: string;
   end: string;
-  className: string;
-  level: string;
-  classRoom: string;
+
+  /*
+   * Συνδέεται με το ClassOfStudioData.
+   */
+  classId: number;
+
+  /*
+   * Χρησιμοποιείται μόνο όταν θέλουμε διαφορετικό
+   * όνομα από αυτό του ClassOfStudioData.
+   *
+   * Παράδειγμα:
+   * Aerial Silks / Rope
+   */
+  displayName?: LocalizedText;
+
+  level: Level;
+
+  classRoom: ClassRoom;
 }
 
-export const schedule: ScheduleEntry[] = [
-    // Αίθουσα 1 Δευτέρα
-  // {
-  //   day: 'Δευτέρα',
-  //   start: '09:00',
-  //   end: '10:00',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Α',
-  // },
-  {
-    day: 'Δευτέρα',
-    start: '10:15',
-    end: '11:15',
-    className: 'Aerial Yoga',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  // {
-  //   day: 'Δευτέρα',
-  //   start: '11:30',
-  //   end: '12:30',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Α',
-  // },
-  {
-    day: 'Δευτέρα',
-    start: '17:00',
-    end: '18:30',
-    className: 'Aerial Silks',
-    level: 'Level 1',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Δευτέρα',
-    start: '18:30',
-    end: '20:00',
-    className: 'Aerial Silks',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Α',
-  },
- {
-    day: 'Δευτέρα',
-    start: '20:00',
-    end: '21:30',
-    className: 'Aerial Silks',
-    level: 'Advanced',
-    classRoom: 'Αίθουσα Α',
-  },
- {
-    day: 'Δευτέρα',
-    start: '21:30',
-    end: '23:00',
-    className: 'Aerial Silks',
-    level: 'Level 2,3',
-    classRoom: 'Αίθουσα Α',
-  },
-  // Αίθουσα Α Τρίτη
-  {
-    day: 'Τρίτη',
-    start: '09:00',
-    end: '10:00',
-    className: 'Vinyasa Flow Yoga',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Τρίτη',
-    start: '10:15',
-    end: '11:15',
-    className: 'Aerial Yoga',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  // {
-  //   day: 'Τρίτη',
-  //   start: '11:30',
-  //   end: '12:30',
-  //   className: 'Vinyasa Flow Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Α',
-  // },
-  {
-    day: 'Τρίτη',
-    start: '15:30',
-    end: '17:00',
-    className: 'Aerial Hoop',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Τρίτη',
-    start: '17:00',
-    end: '18:30',
-    className: 'Aerial Hoop',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Τρίτη',
-    start: '18:30',
-    end: '20:00',
-    className: 'Aerial Straps',
-    level: 'Advanced',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Τρίτη',
-    start: '20:00',
-    end: '21:30',
-    className: 'Aerial Straps',
-    level: 'Level 2,3',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Τρίτη',
-    start: '21:30',
-    end: '23:00',
-    className: 'Aerial Silks',
-    level: 'Level 1,2',
-    classRoom: 'Αίθουσα Α',
-  },
-  // Αίθουσα Α Τετάρτη
-  // {
-  //   day: 'Τετάρτη',
-  //   start: '09:00',
-  //   end: '10:00',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Α',
-  // },
-  {
-    day: 'Τετάρτη',
-    start: '10:15',
-    end: '11:15',
-    className: 'Aerial Yoga',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  // {
-  //   day: 'Τετάρτη',
-  //   start: '11:30',
-  //   end: '12:30',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Α',
-  // },
-    {
-    day: 'Τετάρτη',
-    start: '17:00',
-    end: '18:30',
-    className: 'Aerial Silks',
-    level: 'Level 1.2',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Τετάρτη',
-    start: '18:30',
-    end: '19:45',
-    className: 'Vinyasa Flow Yoga',
-    level: 'Level 2,3',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Τετάρτη',
-    start: '20:00',
-    end: '21:30',
-    className: 'Aerial Silks',
-    level: 'Level 2,3',
-    classRoom: 'Αίθουσα Α',
-  },
-      {
-    day: 'Τετάρτη',
-    start: '21:30',
-    end: '22:30',
-    className: 'Aerial Yoga',
-    level: 'Level 3',
-    classRoom: 'Αίθουσα Α',
-  },
-  // Αίθουσα Α Πέμπτη
-   {
-    day: 'Πέμπτη',
-    start: '09:00',
-    end: '10:00',
-    className: 'Vinyasa Flow Yoga',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Πέμπτη',
-    start: '10:15',
-    end: '11:15',
-    className: 'Aerial Yoga',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  // {
-  //   day: 'Πέμπτη',
-  //   start: '11:30',
-  //   end: '12:30',
-  //   className: 'Vinyasa Flow Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Α',
-  // },
-  {
-    day: 'Πέμπτη',
-    start: '17:00',
-    end: '18:30',
-    className: 'Flying Pole',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Πέμπτη',
-    start: '18:30',
-    end: '20:00',
-    className: 'Aerial Rope',
-    level: 'Advanced',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Πέμπτη',
-    start: '20:00',
-    end: '21:30',
-    className: 'Aerial Silks/Rope',
-    level: 'Level 2,3',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Πέμπτη',
-    start: '21:30',
-    end: '23:00',
-    className: 'Aerial Silks',
-    level: 'Level 1,2',
-    classRoom: 'Αίθουσα Α',
-  },
-    // Αίθουσα Α Παρασκευή
-  // {
-  //   day: 'Παρασκευή',
-  //   start: '09:00',
-  //   end: '10:00',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Α',
-  // },
-  {
-    day: 'Παρασκευή',
-    start: '10:15',
-    end: '11:15',
-    className: 'Aerial Yoga',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  // {
-  //   day: 'Παρασκευή',
-  //   start: '11:30',
-  //   end: '12:30',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Α',
-  // },
-  {
-    day: 'Παρασκευή',
-    start: '15:40',
-    end: '16:40',
-    className: 'Aerial Yoga',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Παρασκευή',
-    start: '16:45',
-    end: '17:45',
-    className: 'Aerial Yoga Kids',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Παρασκευή',
-    start: '18:00',
-    end: '19:30',
-    className: 'Flying Pole',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Παρασκευή',
-    start: '19:30',
-    end: '21:00',
-    className: 'Aerial Silks',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Παρασκευή',
-    start: '21:15',
-    end: '22:45',
-    className: 'Aerial Hoop',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Α',
-  },
-  // Αίθουσα Α Σάββατο
-   {
-    day: 'Σάββατο',
-    start: '10:45',
-    end: '12:15',
-    className: 'Aerial Hoop',
-    level: 'Level 1',
-    classRoom: 'Αίθουσα Α',
-  },
-   {
-    day: 'Σάββατο',
-    start: '12:15',
-    end: '13:15',
-    className: 'Flexibility',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Σάββατο',
-    start: '13:15',
-    end: '14:45',
-    className: 'Aerial Hoop',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Α',
-  },
-  {
-    day: 'Σάββατο',
-    start: '15:00',
-    end: '16:30',
-    className: 'Flying Pole',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Α',
-  },
-    // Αίθουσα Β Δευτέρα
-    //
-    //
-   {
-    day: 'Δευτέρα',
-    start: '15:40',
-    end: '16:40',
-    className: 'Aerial Yoga',
-    level: 'Level 1',
-    classRoom: 'Αίθουσα Β',
-  },
-  {
-    day: 'Δευτέρα',
-    start: '16:45',
-    end: '17:45',
-    className: 'Aerial Yoga Teens',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Β',
-  },
-  {
-    day: 'Δευτέρα',
-    start: '17:50',
-    end: '18:50',
-    className: 'Aerial Yoga',
-    level: 'Level 1',
-    classRoom: 'Αίθουσα Β',
-  },
- {
-    day: 'Δευτέρα',
-    start: '19:00',
-    end: '20:15',
-    className: 'Vinyasa Flow Yoga',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Β',
-  },
-  {
-    day: 'Δευτέρα',
-    start: '20:20',
-    end: '21:20',
-    className: 'Aerial Yoga',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Β',
-  },
-    {
-    day: 'Δευτέρα',
-    start: '21:30',
-    end: '22:30',
-    className: 'Aerial Yoga',
-    level: 'Level 2,3',
-    classRoom: 'Αίθουσα Β',
-  },
-    // Αίθουσα Β Τρίτη
-  //  {
-  //   day: 'Τρίτη',
-  //   start: '15:40',
-  //   end: '16:40',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Β',
-  // },
-  {
-    day: 'Τρίτη',
-    start: '16:45',
-    end: '17:45',
-    className: 'Aerial Yoga Teens',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Β',
-  },
-  {
-    day: 'Τρίτη',
-    start: '17:50',
-    end: '18:50',
-    className: 'Aerial Yoga',
-    level: 'Level 1',
-    classRoom: 'Αίθουσα Β',
-  },
- {
-    day: 'Τρίτη',
-    start: '19:00',
-    end: '20:15',
-    className: 'Vinyasa Flow Yoga',
-    level: 'Level 1,2',
-    classRoom: 'Αίθουσα Β',
-  },
-  {
-    day: 'Τρίτη',
-    start: '20:20',
-    end: '21:20',
-    className: 'Aerial Yoga',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Β',
-  },
-    {
-    day: 'Τρίτη',
-    start: '21:30',
-    end: '22:30',
-    className: 'Aerial Yoga',
-    level: 'Level 1',
-    classRoom: 'Αίθουσα Β',
-  },
-    // Αίθουσα Β Τετάρτη
-  //  {
-  //   day: 'Τετάρτη',
-  //   start: '15:40',
-  //   end: '16:40',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Β',
-  // },
-  {
-    day: 'Τετάρτη',
-    start: '16:45',
-    end: '17:45',
-    className: 'Aerial Yoga Kids',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Β',
-  },
-  {
-    day: 'Τετάρτη',
-    start: '17:50',
-    end: '18:50',
-    className: 'Aerial Yoga',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Β',
-  },
- {
-    day: 'Τετάρτη',
-    start: '19:00',
-    end: '20:00',
-    className: 'Aerial Yoga',
-    level: 'Level 1',
-    classRoom: 'Αίθουσα Β',
-  },
-  {
-    day: 'Τετάρτη',
-    start: '20:20',
-    end: '21:20',
-    className: 'Aerial Yoga',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Β',
-  },
-    {
-    day: 'Τετάρτη',
-    start: '21:30',
-    end: '22:30',
-    className: 'Aerial Yoga',
-    level: 'Level 1',
-    classRoom: 'Αίθουσα Β',
-  },
-    // Αίθουσα Β Πέμπτη
-  //  {
-  //   day: 'Πέμπτη',
-  //   start: '15:40',
-  //   end: '16:40',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Β',
-  // },
-  {
-    day: 'Πέμπτη',
-    start: '16:45',
-    end: '17:45',
-    className: 'Aerial Yoga Teens',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Β',
-  },
-  {
-    day: 'Πέμπτη',
-    start: '17:50',
-    end: '18:50',
-    className: 'Aerial Yoga',
-    level: 'Level 1',
-    classRoom: 'Αίθουσα Β',
-  },
- {
-    day: 'Πέμπτη',
-    start: '19:00',
-    end: '20:15',
-    className: 'Vinyasa Flow Yoga',
-    level: 'Level 1,2',
-    classRoom: 'Αίθουσα Β',
-  },
-  {
-    day: 'Πέμπτη',
-    start: '20:20',
-    end: '21:20',
-    className: 'Aerial Yoga',
-    level: 'Level 1',
-    classRoom: 'Αίθουσα Β',
-  },
-    {
-    day: 'Πέμπτη',
-    start: '21:30',
-    end: '22:30',
-    className: 'Aerial Yoga',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Β',
-  },
-    // Αίθουσα Β Παρασκευή
-  //  {
-  //   day: 'Παρασκευή',
-  //   start: '15:40',
-  //   end: '16:40',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Β',
-  // },
-  // {
-  //   day: 'Παρασκευή',
-  //   start: '16:45',
-  //   end: '17:45',
-  //   className: 'Aerial Yoga Teens',
-  //   level: 'Level 1',
-  //   classRoom: 'Αίθουσα Β',
-  // },
-  {
-    day: 'Παρασκευή',
-    start: '18:00',
-    end: '19:15',
-    className: 'Vinyasa Flow Yoga',
-    level: 'All Levels',
-    classRoom: 'Αίθουσα Β',
-  },
- {
-    day: 'Παρασκευή',
-    start: '19:20',
-    end: '20:20',
-    className: 'Aerial Yoga',
-    level: 'Level 2',
-    classRoom: 'Αίθουσα Β',
-  },
-  {
-    day: 'Παρασκευή',
-    start: '20:30',
-    end: '21:30',
-    className: 'Aerial Yoga',
-    level: 'Level 1',
-    classRoom: 'Αίθουσα Β',
-  },
-  // {
-  //   day: 'Παρασκευή',
-  //   start: '21:30',
-  //   end: '22:30',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Β',
-  // },
-    // Αίθουσα Β Σάββατο
-  //  {
-  //   day: 'Σάββατο',
-  //   start: '10:00',
-  //   end: '11:00',
-  //   className: 'Vinyasa Flow Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Β',
-  // },
-  // {
-  //   day: 'Σάββατο',
-  //   start: '11:10',
-  //   end: '12:10',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Β',
-  // },
-  // {
-  //   day: 'Σάββατο',
-  //   start: '12:20',
-  //   end: '13:20',
-  //   className: 'Aerial Yoga',
-  //   level: 'All Levels',
-  //   classRoom: 'Αίθουσα Β',
-  // },
-];
+/* =========================================================
+   HELPERS
+========================================================= */
 
-export const getClassByName = (className: string) =>
-  classes.find((c) => c.className === className);
+export const getClassById = (classId: number) =>
+  classes.find(
+    (classData) => classData.id === classId
+  );
+
+/*
+ * Μπορείς να το χρησιμοποιήσεις στα components:
+ *
+ * const classData = getScheduleClass(entry);
+ */
+export const getScheduleClass = (
+  entry: ScheduleEntry
+) => getClassById(entry.classId);
+
+/* =========================================================
+   SCHEDULE
+========================================================= */
+
+export const schedule: ScheduleEntry[] = [
+  /* =======================================================
+     ROOM A — MONDAY
+  ======================================================= */
+
+  {
+    day: "monday",
+    start: "10:15",
+    end: "11:15",
+    classId: 1,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "monday",
+    start: "17:00",
+    end: "18:30",
+    classId: 4,
+    level: "level-1",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "monday",
+    start: "18:30",
+    end: "20:00",
+    classId: 4,
+    level: "level-2",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "monday",
+    start: "20:00",
+    end: "21:30",
+    classId: 4,
+    level: "advanced",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "monday",
+    start: "21:30",
+    end: "23:00",
+    classId: 4,
+    level: "level-2-3",
+    classRoom: "room-a",
+  },
+
+  /* =======================================================
+     ROOM A — TUESDAY
+  ======================================================= */
+
+  {
+    day: "tuesday",
+    start: "09:00",
+    end: "10:00",
+    classId: 9,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "tuesday",
+    start: "10:15",
+    end: "11:15",
+    classId: 1,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "tuesday",
+    start: "15:30",
+    end: "17:00",
+    classId: 8,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "tuesday",
+    start: "17:00",
+    end: "18:30",
+    classId: 8,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "tuesday",
+    start: "18:30",
+    end: "20:00",
+    classId: 6,
+    level: "advanced",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "tuesday",
+    start: "20:00",
+    end: "21:30",
+    classId: 6,
+    level: "level-2-3",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "tuesday",
+    start: "21:30",
+    end: "23:00",
+    classId: 4,
+    level: "level-1-2",
+    classRoom: "room-a",
+  },
+
+  /* =======================================================
+     ROOM A — WEDNESDAY
+  ======================================================= */
+
+  {
+    day: "wednesday",
+    start: "10:15",
+    end: "11:15",
+    classId: 1,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "wednesday",
+    start: "17:00",
+    end: "18:30",
+    classId: 4,
+
+    /*
+     * Στο αρχικό data είχες "Level 1.2".
+     * Το κρατάω ως ξεχωριστό key για να μην
+     * αλλάξουμε σιωπηλά τα δεδομένα.
+     */
+    level: "level-1-dot-2",
+
+    classRoom: "room-a",
+  },
+
+  {
+    day: "wednesday",
+    start: "18:30",
+    end: "19:45",
+    classId: 9,
+    level: "level-2-3",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "wednesday",
+    start: "20:00",
+    end: "21:30",
+    classId: 4,
+    level: "level-2-3",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "wednesday",
+    start: "21:30",
+    end: "22:30",
+    classId: 1,
+    level: "level-3",
+    classRoom: "room-a",
+  },
+
+  /* =======================================================
+     ROOM A — THURSDAY
+  ======================================================= */
+
+  {
+    day: "thursday",
+    start: "09:00",
+    end: "10:00",
+    classId: 9,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "thursday",
+    start: "10:15",
+    end: "11:15",
+    classId: 1,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "thursday",
+    start: "17:00",
+    end: "18:30",
+    classId: 7,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "thursday",
+    start: "18:30",
+    end: "20:00",
+    classId: 5,
+    level: "advanced",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "thursday",
+    start: "20:00",
+    end: "21:30",
+
+    /*
+     * Επειδή δεν υπάρχει ξεχωριστό class
+     * "Aerial Silks/Rope", συνδέουμε το
+     * πρόγραμμα με το Aerial Silks.
+     */
+    classId: 4,
+
+    displayName: {
+      el: "Aerial Silks/Rope",
+      en: "Aerial Silks/Rope",
+    },
+
+    level: "level-2-3",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "thursday",
+    start: "21:30",
+    end: "23:00",
+    classId: 4,
+    level: "level-1-2",
+    classRoom: "room-a",
+  },
+
+  /* =======================================================
+     ROOM A — FRIDAY
+  ======================================================= */
+
+  {
+    day: "friday",
+    start: "10:15",
+    end: "11:15",
+    classId: 1,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "friday",
+    start: "15:40",
+    end: "16:40",
+    classId: 1,
+    level: "level-2",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "friday",
+    start: "16:45",
+    end: "17:45",
+    classId: 2,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "friday",
+    start: "18:00",
+    end: "19:30",
+    classId: 7,
+    level: "level-2",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "friday",
+    start: "19:30",
+    end: "21:00",
+    classId: 4,
+    level: "level-2",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "friday",
+    start: "21:15",
+    end: "22:45",
+    classId: 8,
+    level: "level-2",
+    classRoom: "room-a",
+  },
+
+  /* =======================================================
+     ROOM A — SATURDAY
+  ======================================================= */
+
+  {
+    day: "saturday",
+    start: "10:45",
+    end: "12:15",
+    classId: 8,
+    level: "level-1",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "saturday",
+    start: "12:15",
+    end: "13:15",
+    classId: 10,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "saturday",
+    start: "13:15",
+    end: "14:45",
+    classId: 8,
+    level: "level-2",
+    classRoom: "room-a",
+  },
+
+  {
+    day: "saturday",
+    start: "15:00",
+    end: "16:30",
+    classId: 7,
+    level: "all-levels",
+    classRoom: "room-a",
+  },
+
+  /* =======================================================
+     ROOM B — MONDAY
+  ======================================================= */
+
+  {
+    day: "monday",
+    start: "15:40",
+    end: "16:40",
+    classId: 1,
+    level: "level-1",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "monday",
+    start: "16:45",
+    end: "17:45",
+    classId: 3,
+    level: "all-levels",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "monday",
+    start: "17:50",
+    end: "18:50",
+    classId: 1,
+    level: "level-1",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "monday",
+    start: "19:00",
+    end: "20:15",
+    classId: 9,
+    level: "all-levels",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "monday",
+    start: "20:20",
+    end: "21:20",
+    classId: 1,
+    level: "level-2",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "monday",
+    start: "21:30",
+    end: "22:30",
+    classId: 1,
+    level: "level-2-3",
+    classRoom: "room-b",
+  },
+
+  /* =======================================================
+     ROOM B — TUESDAY
+  ======================================================= */
+
+  {
+    day: "tuesday",
+    start: "16:45",
+    end: "17:45",
+    classId: 3,
+    level: "all-levels",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "tuesday",
+    start: "17:50",
+    end: "18:50",
+    classId: 1,
+    level: "level-1",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "tuesday",
+    start: "19:00",
+    end: "20:15",
+    classId: 9,
+    level: "level-1-2",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "tuesday",
+    start: "20:20",
+    end: "21:20",
+    classId: 1,
+    level: "level-2",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "tuesday",
+    start: "21:30",
+    end: "22:30",
+    classId: 1,
+    level: "level-1",
+    classRoom: "room-b",
+  },
+
+  /* =======================================================
+     ROOM B — WEDNESDAY
+  ======================================================= */
+
+  {
+    day: "wednesday",
+    start: "16:45",
+    end: "17:45",
+    classId: 2,
+    level: "all-levels",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "wednesday",
+    start: "17:50",
+    end: "18:50",
+    classId: 1,
+    level: "level-2",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "wednesday",
+    start: "19:00",
+    end: "20:00",
+    classId: 1,
+    level: "level-1",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "wednesday",
+    start: "20:20",
+    end: "21:20",
+    classId: 1,
+    level: "level-2",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "wednesday",
+    start: "21:30",
+    end: "22:30",
+    classId: 1,
+    level: "level-1",
+    classRoom: "room-b",
+  },
+
+  /* =======================================================
+     ROOM B — THURSDAY
+  ======================================================= */
+
+  {
+    day: "thursday",
+    start: "16:45",
+    end: "17:45",
+    classId: 3,
+    level: "all-levels",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "thursday",
+    start: "17:50",
+    end: "18:50",
+    classId: 1,
+    level: "level-1",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "thursday",
+    start: "19:00",
+    end: "20:15",
+    classId: 9,
+    level: "level-1-2",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "thursday",
+    start: "20:20",
+    end: "21:20",
+    classId: 1,
+    level: "level-1",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "thursday",
+    start: "21:30",
+    end: "22:30",
+    classId: 1,
+    level: "level-2",
+    classRoom: "room-b",
+  },
+
+  /* =======================================================
+     ROOM B — FRIDAY
+  ======================================================= */
+
+  {
+    day: "friday",
+    start: "18:00",
+    end: "19:15",
+    classId: 9,
+    level: "all-levels",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "friday",
+    start: "19:20",
+    end: "20:20",
+    classId: 1,
+    level: "level-2",
+    classRoom: "room-b",
+  },
+
+  {
+    day: "friday",
+    start: "20:30",
+    end: "21:30",
+    classId: 1,
+    level: "level-1",
+    classRoom: "room-b",
+  },
+];

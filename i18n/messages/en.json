@@ -1,0 +1,339 @@
+{
+    "Navbar": {
+        "home": "Home",
+        "classes": "Classes",
+        "schedule": "Schedule",
+        "team": "Our Team",
+        "events": "Events",
+        "retreats": "Retreats",
+        "contact": "Contact",
+        "booking": "Book a Class"
+    },
+    "Footer": {
+        "info": "Information",
+        "address": "Artemidos 42",
+        "city": "Thessaloniki, 54644",
+        "phone": "6948577225",
+        "map": "Open Map",
+        "hours": "Operating Hours",
+        "weekdays": "Monday to Friday",
+        "weekend": "Saturday",
+        "Social": {
+            "title": "Follow us on social media:"
+        },
+        "allRightsReserved": "Aiorisis © {year}. All rights reserved."
+    },
+    "ClassesOfStudio": {
+        "title": "Our Classes",
+        "description": "Discover a variety of aerial and ground practices, designed to offer empowerment, well-being, and absolute freedom of movement.",
+        "learnMore": "Learn more"
+    },
+    "OurTeamOfAiorisis": {
+        "title": "Our Team",
+        "description": "The team of Aiorisis consists of experienced and passionate instructors, dedicated to helping you explore the potential of your body and discover the joy of movement in the air."
+    },
+    "TeacherDetail": {
+        "profile": "Profile",
+        "journeyTitle": "Journey",
+        "journeySubtitle": "and Approach.",
+        "biography": "Biography",
+        "classes": "Classes",
+        "classesTitle": "Classes Taught",
+        "yearsExperience": "years of experience",
+        "bookSpot": "Book a Class",
+        "backToTeam": "Back to Team"
+    },
+    "ClassDetail": {
+        "details": "Class Details",
+        "booking": "Booking",
+        "bookingText": "Ready to start your aerial journey? Book your spot for the next class!",
+        "bookSpot": "Book a Spot",
+        "instructors": "Instructors",
+        "allClasses": "All Classes"
+    },
+    "HeroSection": {
+        "ground": "on the ground.",
+        "movement": "Movement in the",
+        "air": "air"
+    },
+    "ExperienceOfAiorisis": {
+        "title": "The Experience of Aiorisis",
+        "intro": "In our studio, we have created a space that combines safety, quality, and aesthetics, to offer you the best possible experience.",
+        "safetyTitle": "Safety & Quality",
+        "safetyText1": "With a height of 6 meters, our space is ideal for you to perform even the most demanding aerial exercises with absolute comfort.",
+        "safetyText2": "Our equipment is certified and new, ensuring the highest quality and safety during your practice. Whether it's aerial yoga, aerial silks, aerial hoop, rope, straps, or flying pole.",
+        "careTitle": "Care & Guidance",
+        "careText": "We emphasize cleanliness and care, offering a calm environment. Our classes are small, allowing our instructors to provide personalized guidance according to your needs.",
+        "inviteText": "We invite you to explore the possibilities offered by our studio and discover the joy and freedom that our aerial practices offer. Whether you are a beginner or advanced, we are here to support you every step of your journey.",
+        "team": "The Aiorisis Team"
+    },
+    "BookYourSpot": {
+        "title": "Book your spot now!",
+        "text": "Secure your participation in our classes. Limited availability!",
+        "button": "Book a spot"
+    },
+    "Schedule": {
+        "title": "Class Schedule",
+        "hour": "Time",
+        "class": "Class",
+        "level": "Level",
+        "bigRoom": "Big Room",
+        "smallRoom": "Small Room",
+        "days": {
+            "monday": "Monday",
+            "tuesday": "Tuesday",
+            "wednesday": "Wednesday",
+            "thursday": "Thursday",
+            "friday": "Friday",
+            "saturday": "Saturday",
+            "sunday": "Sunday"
+        },
+        "levelsExplanation": {
+            "beginner": "Beginner",
+            "intermediate": "Intermediate",
+            "advanced": "Advanced",
+            "allLevels": "All Levels"
+        }
+    },
+    "ScheduleGrid": {
+        "title": "Weekly Schedule",
+        "rooms": {
+            "room-a": "Room A",
+            "room-b": "Room B"
+        },
+        "days": {
+            "monday": "Monday",
+            "tuesday": "Tuesday",
+            "wednesday": "Wednesday",
+            "thursday": "Thursday",
+            "friday": "Friday",
+            "saturday": "Saturday",
+            "sunday": "Sunday"
+        },
+        "levels": {
+            "all-levels": "All Levels",
+            "level-1": "Level 1",
+            "level-2": "Level 2",
+            "level-3": "Level 3",
+            "level-1-2": "Level 1,2",
+            "level-2-3": "Level 2,3",
+            "advanced": "Advanced"
+        }
+    },
+    "ScheduleList": {
+        "title": "Class Schedule",
+        "hour": "Time",
+        "class": "Class",
+        "level": "Level",
+        "rooms": {
+            "room-a": "Room A",
+            "room-b": "Room B"
+        },
+        "days": {
+            "monday": "Monday",
+            "tuesday": "Tuesday",
+            "wednesday": "Wednesday",
+            "thursday": "Thursday",
+            "friday": "Friday",
+            "saturday": "Saturday",
+            "sunday": "Sunday"
+        },
+        "levels": {
+            "all-levels": "All Levels",
+            "level-1": "Level 1",
+            "level-2": "Level 2",
+            "level-3": "Level 3",
+            "level-1-2": "Level 1,2",
+            "level-2-3": "Level 2,3",
+            "advanced": "Advanced"
+        }
+    },
+    "HeroSectionClasses": {
+        "tagline": "Experience Aiorisis",
+        "title": "Classes",
+        "description1": "Find the practice that suits you",
+        "description2": "From yoga on the ground to aerial practices, discover the class that matches your level, your goals and the way you want to move."
+    },
+    "OurClasses": {
+        "tagline": "Our classes",
+        "title": "Every class reveals",
+        "titleSpan": "a new possibility.",
+        "description": "Discover classes designed for every level, with a focus on safety, technique and personal progress.",
+        "duration": "Duration",
+        "learnMore": "Learn more"
+    },
+    "QuoteClass": {
+        "power": "Power",
+        "freedom": "Freedom",
+        "in": "in",
+        "body": "body",
+        "movement": "movement"
+    },
+    "TestYourClass": {
+        "title": "Book your class now!",
+        "booking": "Book a Class"
+    },
+    "HeroSectionSchedule": {
+        "tagline": "Schedule",
+        "title": "Schedule",
+        "description1": "Discover the available hours and find the class that fits your schedule.",
+        "description2": "Whether you're a beginner or advanced, we're here to support you every step of your journey."
+    },
+    "HeroSectionOurTeam": {
+        "categoryType": "Our Team",
+        "title": "The Aiorisis Team",
+        "description": "meet our team"
+    },
+    "OurPhilosophy": {
+        "categoryType": "Our Philosophy",
+        "title": "Movement. Expression. Connection.",
+        "description": "The people behind Aiorisis, dedicated to guiding you safely and passionately into the world of movement.",
+        "quote": "I cultivate the",
+        "quoteSpan": "balance",
+        "quoteText1": "between",
+        "quoteText2": "teamwork",
+        "quoteText3": "and individuality"
+    },
+    "OurTeam": {
+        "title": "The Aiorisis Team",
+        "description1": "Meet the people who create the atmosphere of Aiorisis.",
+        "description2": "Discover a team with passion, experience, and dedication to the art of aerial sports.",
+        "seeMore": "See more"
+    },
+    "HeroSectionEvents": {
+        "subtitle": "Workshops & performances",
+        "title": "Events",
+        "description1": "Discover unique experiences",
+        "description2": "of connection, expression and creativity."
+    },
+    "EventOfEvents": {
+        "subtitle": "All Events",
+        "title": "Our Events",
+        "description1": "Discover unique experiences of connection, relaxation and rejuvenation,",
+        "description2": "designed to bring you closer to your body, breath and nature.",
+        "learnMore": "Learn more",
+        "noPastEvents": "There are no past events at this time. Check back soon!"
+    },
+    "UpcomingEventOfEvents": {
+        "subtitle": "Upcoming Events",
+        "title": "What’s coming next",
+        "description1": "Discover our upcoming workshops, performances and special events.",
+        "description2": "Find the one that inspires you and save your spot.",
+        "noUpcomingEvents": "There are no upcoming events at the moment.",
+        "noUpcomingEventsDescription": "Check back soon for new dates and events.",
+        "featuredEventSubtitle": "Featured Event",
+        "instructors": "Instructors",
+        "featuredEventIncludes": "What’s included",
+        "featuredEventCost": "Cost",
+        "learnMore": "Learn more"
+    },
+    "EventDetail": {
+        "eventDetails": "Event Details",
+        "includes": "What's included",
+        "instructors": "Instructors",
+        "participation": "Participation",
+        "bookSpot": "Book your spot",
+        "contactUs": "Contact us",
+        "backToEvents": "Back to Events"
+    },
+    "HeroSectionRetreats": {
+        "imageAlt": "Retreat - Aiorisis",
+        "eyebrow": "Breathe • Flow • Reconnect",
+        "title": "Retreats",
+        "headline": "A fresh beginning",
+        "description": "Leave the tension behind and rediscover your flow."
+    },
+    "EventOfRetreats": {
+        "subtitle": "Past Retreats",
+        "title": "Experiences we have shared",
+        "description1": "A look back at some of the retreats we have already experienced together.",
+        "description2": "Yoga, aerial practices, nature, movement and time to reconnect.",
+        "noPastRetreats": "There are no past retreats yet.",
+        "learnMore": "Learn more"
+    },
+    "UpcomingEventOfRetreats": {
+        "subtitle": "Upcoming Retreats",
+        "title": "Our next escape",
+        "description1": "Discover the upcoming Aiorisis retreats.",
+        "description2": "Yoga, movement, nature and time to reconnect with yourself.",
+        "noUpcomingRetreats": "There are no upcoming retreats at the moment.",
+        "noUpcomingRetreatsDescription": "Check back soon for new dates.",
+        "featuredRetreatSubtitle": "Upcoming Retreat",
+        "instructors": "Instructors",
+        "featuredRetreatIncludes": "What's included",
+        "featuredRetreatCost": "Retreat cost",
+        "earlyBird": "Early Bird",
+        "regularPrice": "Regular price",
+        "until": "Until",
+        "deposit": "Deposit",
+        "singleRoom": "Single room",
+        "doubleRoom": "Double room",
+        "tripleRoom": "Triple room",
+        "quadRoom": "Quad room",
+        "learnMore": "Learn more"
+    },
+    "RetreatDetail": {
+        "retreatExperience": "Retreat Experience",
+        "includes": "What's included",
+        "partners": "Partners",
+        "instructors": "Instructors",
+        "participation": "Participation",
+        "earlyBirdUntil": "Early Bird until",
+        "regularPrices": "Regular Prices",
+        "singleRoom": "Single room",
+        "doubleRoom": "Double room",
+        "tripleRoom": "Triple room",
+        "quadRoom": "Quad room",
+        "deposit": "Deposit",
+        "bookSpot": "Book your spot",
+        "contactUs": "Contact us",
+        "backToRetreats": "Back to Retreats"
+    },
+    "HeroSectionContact": {
+        "imageAlt": "Contact - Aiorisis",
+        "eyebrow": "Contact",
+        "title": "Contact Us",
+        "subtitle": "We are here for you",
+        "description1": "Contact us for any information or questions about our classes and activities"
+    },
+    "ContactForm": {
+        "title": "Get in touch",
+        "description1": "We’re here to answer your questions and help you find what suits you best.",
+        "location": "Location",
+        "locationAddress": "Thessaloniki",
+        "phone": "Phone",
+        "email": "Email",
+        "slogan": "Movement is freedom. Come and let's float together.",
+        "fullNameForm": "Full name",
+        "fullNamePlaceholder": "Your full name",
+        "emailForm": "Email",
+        "emailPlaceholder": "Your email",
+        "phoneForm": "Phone",
+        "phonePlaceholder": "Your phone number",
+        "subjectForm": "Subject",
+        "classesForm": "Classes",
+        "retreatForm": "Retreat",
+        "eventForm": "Event",
+        "otherForm": "Other",
+        "messageForm": "Message",
+        "messagePlaceholder": "Write your message...",
+        "privacyPolicy": "I agree to the privacy policy.",
+        "sending": "Sending...",
+        "sendMessage": "Send Message",
+        "successMessage": "Your message was sent successfully! ✅",
+        "errorMessage": "An error occurred:",
+        "unexpectedError": "An unexpected communication error occurred. ❌"
+    },
+    "InfoPopup": {
+        "close": "Close",
+        "logoAlt": "Aiorisis Logo",
+        "announcement": "Announcement",
+        "title": "New schedule!",
+        "schedulePublished": "The new season schedule is now available!",
+        "openingDateBefore": "Our studio will reopen on",
+        "welcomeBack": "We can't wait to welcome you back!",
+        "holidayWish": "Have a wonderful holiday!",
+        "autoCloseBefore": "This window will close automatically in",
+        "seconds": "seconds."
+    }
+}

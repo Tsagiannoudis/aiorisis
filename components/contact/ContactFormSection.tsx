@@ -1,56 +1,94 @@
 "use client";
+
 import { useState } from "react";
-import { sendEmailAction } from "@/components/extraComponents/api/FormActions";
+import { useTranslations } from "next-intl";
 import Link from "next/link";
 
+import { sendEmailAction } from "@/components/extraComponents/api/FormActions";
+
 const ContactFormSection = () => {
+  const t = useTranslations("ContactForm");
+
   const [isPending, setIsPending] = useState(false);
-  const [status, setStatus] = useState<{ type: "success" | "error" | ""; text: string }>({
+
+  const [status, setStatus] = useState<{
+    type: "success" | "error" | "";
+    text: string;
+  }>({
     type: "",
     text: "",
   });
 
-  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
+  const handleSubmit = async (
+    e: React.FormEvent<HTMLFormElement>
+  ) => {
     e.preventDefault();
+
     setIsPending(true);
-    setStatus({ type: "", text: "" });
+
+    setStatus({
+      type: "",
+      text: "",
+    });
 
     try {
       const formData = new FormData(e.currentTarget);
+
       const result = await sendEmailAction(formData);
 
       if (result.success) {
-        setStatus({ type: "success", text: "Επιτυχής υποβολή του μηνύματος! ✅" });
-        (e.target as HTMLFormElement).reset(); 
+        setStatus({
+          type: "success",
+          text: t("successMessage"),
+        });
+
+        e.currentTarget.reset();
       } else {
-        setStatus({ type: "error", text: `Σφάλμα: ${result.error} ❌` });
+        setStatus({
+          type: "error",
+          text: `${t("errorMessage")} ${result.error ?? ""}`,
+        });
       }
     } catch (err) {
-      console.error("Client-side submission error:", err);
-      setStatus({ type: "error", text: "Παρουσιάστηκε ένα απρόσμενο σφάλμα επικοινωνίας. ❌" });
+      console.error(
+        "Client-side submission error:",
+        err
+      );
+
+      setStatus({
+        type: "error",
+        text: t("unexpectedError"),
+      });
     } finally {
       setIsPending(false);
     }
   };
 
   return (
-    <section className="py-20 bg-white">
-      <div className="container mx-auto px-4 max-w-6xl">
-        <div className="bg-white rounded-[2rem] shadow-2xl overflow-hidden flex flex-col lg:flex-row border border-gray-100">
-          {/* Sidebar Info - Dark/Brand Background */}
-          <div className="lg:w-2/5 bg-gray-50 p-8 md:p-12 text-black flex flex-col justify-between">
+    <section className="bg-white py-20">
+      <div className="container mx-auto max-w-6xl px-4">
+        <div className="flex flex-col overflow-hidden rounded-[2rem] border border-gray-100 bg-white shadow-2xl lg:flex-row">
+          {/* =================================================
+              SIDEBAR
+          ================================================= */}
+
+          <div className="flex flex-col justify-between bg-gray-50 p-8 text-black md:p-12 lg:w-2/5">
             <div>
-              <h2 className="text-3xl font-bold mb-6">Πείτε μας ένα γεια!</h2>
+              <h2 className="mb-6 text-3xl font-bold">
+                {t("title")}
+              </h2>
+
               <p className="mb-12 text-lg">
-                Είμαστε εδώ για να λύσουμε κάθε σας απορία σχετικά με τα
-                μαθήματα και τα events μας.
+                {t("description1")}
               </p>
 
               <div className="space-y-10">
+                {/* Location */}
+
                 <div className="flex items-center gap-6">
-                  <div className="w-12 h-12 bg-[#B9007C] text-white rounded-full flex items-center justify-center flex-shrink-0 backdrop-blur-sm">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#B9007C] text-white backdrop-blur-sm">
                     <svg
-                      className="w-6 h-6"
+                      className="h-6 w-6"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -61,6 +99,7 @@ const ContactFormSection = () => {
                         strokeWidth={2}
                         d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
                       />
+
                       <path
                         strokeLinecap="round"
                         strokeLinejoin="round"
@@ -69,22 +108,29 @@ const ContactFormSection = () => {
                       />
                     </svg>
                   </div>
+
                   <Link
                     href="https://goo.gl/maps/JcsmcnZoeBJNC8Ha8"
                     target="_blank"
-                    className="hover:text-[#B9007C] transition-colors"
+                    rel="noopener noreferrer"
+                    className="transition-colors hover:text-[#B9007C]"
                   >
-                    <h3 className="font-bold text-sm  tracking-wider opacity-70">
-                      Τοποθεσία
+                    <h3 className="text-sm font-bold tracking-wider opacity-70">
+                      {t("location")}
                     </h3>
-                    <p className="text-lg">Αρτέμιδος 42, Θεσσαλονίκη</p>
+
+                    <p className="text-lg">
+                      {t("locationAddress")}
+                    </p>
                   </Link>
                 </div>
 
+                {/* Phone */}
+
                 <div className="flex items-center gap-6">
-                  <div className="w-12 h-12 bg-[#B9007C] text-white rounded-full flex items-center justify-center flex-shrink-0 backdrop-blur-sm">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#B9007C] text-white backdrop-blur-sm">
                     <svg
-                      className="w-6 h-6"
+                      className="h-6 w-6"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -97,24 +143,27 @@ const ContactFormSection = () => {
                       />
                     </svg>
                   </div>
-                  <div>
-                    <Link
-                      href="tel:6948577225"
-                      target="_blank"
-                      className="hover:text-[#B9007C] transition-colors"
-                    >
-                      <h3 className="font-bold text-sm  tracking-wider opacity-70">
-                        Τηλέφωνο
-                      </h3>
-                      <p className="text-lg">6948577225</p>
-                    </Link>
-                  </div>
+
+                  <Link
+                    href="tel:+306948577225"
+                    className="transition-colors hover:text-[#B9007C]"
+                  >
+                    <h3 className="text-sm font-bold tracking-wider opacity-70">
+                      {t("phone")}
+                    </h3>
+
+                    <p className="text-lg">
+                      6948577225
+                    </p>
+                  </Link>
                 </div>
 
+                {/* Email */}
+
                 <div className="flex items-center gap-6">
-                  <div className="w-12 h-12 bg-[#B9007C] text-white rounded-full flex items-center justify-center flex-shrink-0 backdrop-blur-sm">
+                  <div className="flex h-12 w-12 shrink-0 items-center justify-center rounded-full bg-[#B9007C] text-white backdrop-blur-sm">
                     <svg
-                      className="w-6 h-6"
+                      className="h-6 w-6"
                       fill="none"
                       stroke="currentColor"
                       viewBox="0 0 24 24"
@@ -123,146 +172,208 @@ const ContactFormSection = () => {
                         strokeLinecap="round"
                         strokeLinejoin="round"
                         strokeWidth={2}
-                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 002 2v10a2 2 0 002 2z"
                       />
                     </svg>
                   </div>
-                  <div>
-                    <Link
-                      href="mailto:info@aiorisis.gr"
-                      target="_blank"
-                      className="hover:text-[#B9007C] transition-colors"
-                    >
-                      <h3 className="font-bold text-sm  tracking-wider opacity-70">
-                        Email
-                      </h3>
-                      <p className="text-lg">info@aiorisis.gr</p>
-                    </Link>
-                  </div>
+
+                  <Link
+                    href="mailto:info@aiorisis.gr"
+                    className="transition-colors hover:text-[#B9007C]"
+                  >
+                    <h3 className="text-sm font-bold tracking-wider opacity-70">
+                      {t("email")}
+                    </h3>
+
+                    <p className="text-lg">
+                      info@aiorisis.gr
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
 
-            <div className="pt-12 border-t border-white/20">
-              <p className="text-sm opacity-80 leading-relaxed italic">
-                "Η κίνηση είναι ελευθερία. Ελάτε να αιωρηθούμε μαζί."
+            <div className="border-t border-white/20 pt-12">
+              <p className="text-sm italic leading-relaxed opacity-80">
+                {t("slogan")}
               </p>
             </div>
           </div>
 
-          {/* Form Column - Clean White */}
-          <div className="lg:w-3/5 p-8 md:p-12">
-            <form onSubmit={handleSubmit} className="grid grid-cols-1 md:grid-cols-2 gap-8 text-black">
+          {/* =================================================
+              FORM
+          ================================================= */}
+
+          <div className="p-8 md:p-12 lg:w-3/5">
+            <form
+              onSubmit={handleSubmit}
+              className="grid grid-cols-1 gap-8 text-black md:grid-cols-2"
+            >
+              {/* Full name */}
+
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="fullname"
-                  className="text-xs font-bold tracking-widest text-gray-400 ml-1"
+                  className="ml-1 text-xs font-bold tracking-widest text-gray-400"
                 >
-                  Ονοματεπώνυμο
+                  {t("fullNameForm")}
                 </label>
+
                 <input
                   id="fullname"
                   name="fullname"
                   required
                   type="text"
-                  placeholder="Ιωάννης Παπαδόπουλος"
-                  className="px-4 py-4 bg-gray-50 rounded-xl border-transparent focus:bg-white focus:border-[#B9007C] focus:ring-0 transition-all border-2"
+                  placeholder={t(
+                    "fullNamePlaceholder"
+                  )}
+                  className="rounded-xl border-2 border-transparent bg-gray-50 px-4 py-4 transition-all focus:border-[#B9007C] focus:bg-white focus:ring-0"
                 />
               </div>
+
+              {/* Email */}
+
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="email"
-                  className="text-xs font-bold tracking-widest text-gray-400 ml-1"
+                  className="ml-1 text-xs font-bold tracking-widest text-gray-400"
                 >
-                  Email
+                  {t("emailForm")}
                 </label>
+
                 <input
                   id="email"
                   name="email"
                   required
                   type="email"
-                  placeholder="example@mail.com"
-                  className="px-4 py-4 bg-gray-50 rounded-xl border-transparent focus:bg-white focus:border-[#B9007C] focus:ring-0 transition-all border-2"
+                  placeholder={t(
+                    "emailPlaceholder"
+                  )}
+                  className="rounded-xl border-2 border-transparent bg-gray-50 px-4 py-4 transition-all focus:border-[#B9007C] focus:bg-white focus:ring-0"
                 />
               </div>
+
+              {/* Phone */}
+
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="phone"
-                  className="text-xs font-bold tracking-widest text-gray-400 ml-1"
+                  className="ml-1 text-xs font-bold tracking-widest text-gray-400"
                 >
-                  Τηλέφωνο
+                  {t("phoneForm")}
                 </label>
+
                 <input
                   id="phone"
                   name="phone"
                   required
                   type="tel"
-                  placeholder="69XXXXXXXX"
-                  className="px-4 py-4 bg-gray-50 rounded-xl border-transparent focus:bg-white focus:border-[#B9007C] focus:ring-0 transition-all border-2"
+                  placeholder={t(
+                    "phonePlaceholder"
+                  )}
+                  className="rounded-xl border-2 border-transparent bg-gray-50 px-4 py-4 transition-all focus:border-[#B9007C] focus:bg-white focus:ring-0"
                 />
               </div>
+
+              {/* Subject */}
+
               <div className="flex flex-col gap-2">
                 <label
                   htmlFor="subject"
-                  className="text-xs font-bold tracking-widest text-gray-400 ml-1"
+                  className="ml-1 text-xs font-bold tracking-widest text-gray-400"
                 >
-                  Θέμα
+                  {t("subjectForm")}
                 </label>
+
                 <select
                   id="subject"
                   name="subject"
-                  className="px-4 py-4 bg-gray-50 rounded-xl border-transparent focus:bg-white focus:border-[#B9007C] focus:ring-0 transition-all border-2 cursor-pointer"
+                  className="cursor-pointer rounded-xl border-2 border-transparent bg-gray-50 px-4 py-4 transition-all focus:border-[#B9007C] focus:bg-white focus:ring-0"
                 >
-                  <option>Μαθήματα</option>
-                  <option>Retreat</option>
-                  <option>Event</option>
-                  <option>Άλλο</option>
+                  <option value="classes">
+                    {t("classesForm")}
+                  </option>
+
+                  <option value="retreat">
+                    {t("retreatForm")}
+                  </option>
+
+                  <option value="event">
+                    {t("eventForm")}
+                  </option>
+
+                  <option value="other">
+                    {t("otherForm")}
+                  </option>
                 </select>
               </div>
+
+              {/* Message */}
+
               <div className="flex flex-col gap-2 md:col-span-2">
                 <label
                   htmlFor="message"
-                  className="text-xs font-bold tracking-widest text-gray-400 ml-1"
+                  className="ml-1 text-xs font-bold tracking-widest text-gray-400"
                 >
-                  Το μήνυμά σας
+                  {t("messageForm")}
                 </label>
+
                 <textarea
                   id="message"
                   name="message"
                   required
                   rows={4}
-                  placeholder="Πώς μπορούμε να σας βοηθήσουμε;"
-                  className="px-4 py-4 bg-gray-50 rounded-xl border-transparent focus:bg-white focus:border-[#B9007C] focus:ring-0 transition-all border-2 resize-none"
-                ></textarea>
+                  placeholder={t(
+                    "messagePlaceholder"
+                  )}
+                  className="resize-none rounded-xl border-2 border-transparent bg-gray-50 px-4 py-4 transition-all focus:border-[#B9007C] focus:bg-white focus:ring-0"
+                />
               </div>
-              
-              <div className="md:col-span-2 flex items-start gap-3 mb-2">
+
+              {/* Privacy */}
+
+              <div className="mb-2 flex items-start gap-3 md:col-span-2">
                 <input
                   id="privacy"
                   name="privacy"
                   type="checkbox"
                   required
-                  className="mt-1 w-4 h-4 text-[#B9007C] border-gray-300 rounded focus:ring-[#B9007C] cursor-pointer"
+                  className="mt-1 h-4 w-4 cursor-pointer rounded border-gray-300 text-[#B9007C] focus:ring-[#B9007C]"
                 />
-                <label htmlFor="privacy" className="text-sm text-gray-600 cursor-pointer">
-                  Έχω διαβάσει και αποδέχομαι την <Link href="/privacy-policy" className="text-[#B9007C] underline hover:text-[#9a0068]">Πολιτική Απορρήτου</Link> και συναινώ στην επεξεργασία των δεδομένων μου για την επικοινωνία.
+
+                <label
+                  htmlFor="privacy"
+                  className="cursor-pointer text-sm text-gray-600"
+                >
+                  {t("privacyPolicy")}
                 </label>
               </div>
 
-              <div className="md:col-span-2 mt-2">
+              {/* Submit */}
+
+              <div className="mt-2 md:col-span-2">
                 <button
                   disabled={isPending}
                   type="submit"
-                  className={`w-full bg-[#B9007C] hover:bg-[#9a0068] text-white font-bold py-5 rounded-xl transition-all shadow-xl hover:shadow-[#B9007C]/20 active:scale-[0.98] ${
-                    isPending ? "opacity-50 cursor-not-allowed" : ""
-                  }`}
+                  className={`w-full rounded-xl bg-[#B9007C] py-5 font-bold text-white shadow-xl transition-all hover:bg-[#9a0068] hover:shadow-[#B9007C]/20 active:scale-[0.98] ${isPending
+                      ? "cursor-not-allowed opacity-50"
+                      : ""
+                    }`}
                 >
-                  {isPending ? "Αποστολή..." : "Αποστολή Μηνύματος"}
+                  {isPending
+                    ? t("sending")
+                    : t("sendMessage")}
                 </button>
-                
-                {/* Status Message */}
+
+                {/* Status */}
+
                 {status.text && (
-                  <p className={`mt-4 text-center font-medium ${status.type === "success" ? "text-green-600" : "text-red-600"}`}>
+                  <p
+                    className={`mt-4 text-center font-medium ${status.type === "success"
+                        ? "text-green-600"
+                        : "text-red-600"
+                      }`}
+                  >
                     {status.text}
                   </p>
                 )}

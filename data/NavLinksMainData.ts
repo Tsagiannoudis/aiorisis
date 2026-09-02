@@ -1,32 +1,32 @@
 const NavLinksMainData = [
     {
-        label: "Αρχική",
+        key: "home",
         href: "/",
     },
     {
-        label: "Μαθήματα",
+        key: "classes",
         href: "/classes",
     },
     {
-        label: "Πρόγραμμα",
+        key: "schedule",
         href: "/schedule",
     },
     {
-        label: "Η ομάδα μας",
+        key: "team",
         href: "/our-team",
     },
     {
-        label: "Events",
+        key: "events",
         href: "/events",
     },
     {
-        label: "Retreats",
+        key: "retreats",
         href: "/retreats",
     },
     {
-        label: "Επικοινωνία",
+        key: "contact",
         href: "/contact",
     },
-];
+] as const;
 
 export default NavLinksMainData;
