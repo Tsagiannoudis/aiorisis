@@ -2193,7 +2193,7 @@ You don’t need to have a stable handstand already to participate.`,
       en: ``,
 
     },
-    image: "/events/inversions-and-hanstands-drill-assists-progressions-october-2026.webp",
+    image: "/events/inversions-and-hanstands-drill-assists-and-progressions-october-2026.webp",
     googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSc4t-xDpD3v1kp8RmYJiSX6odEvPCAAyYzaDH0fdpTQj7QtcA/viewform?usp=header",
   },
 ];
