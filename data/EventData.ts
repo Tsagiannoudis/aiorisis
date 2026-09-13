@@ -2070,4 +2070,130 @@ export const events: Event[] = [
     image: "/events/ocean-of-emotions.webp",
     googleFormLink: "https://www.more.com/gr-el/tickets/music/aiorisis-ocean-of-emotions/",
   },
+  {
+    id: 22,
+    slug: "inversions-and-hanstands-drill-assists-progressions",
+    title: {
+
+      el: `Inversions and Handstands Drill Assists & Progressions`,
+
+      en: `Inversions and Handstands Drill Assists & Progressions`,
+
+    },
+    startDate: "2026-10-11",
+    date: {
+
+      el: `Κυριακή 11/10/2026`,
+
+      en: `Sunday 11/10/2026`,
+
+    },
+    time: {
+
+      el: `Ώρα: 18:00 - 20:30`,
+
+      en: `Time: 18:00 - 20:30`,
+
+    },
+    description: {
+
+      el: `Την Κυριακή 11 Οκτωβρίου, 18:00–20:30, ο @johnkarvelis επιστρέφει στο Aiorisis για ένα workshop αφιερωμένο στις αναστροφές και τις στηρίξεις στα χέρια.\n
+Το workshop διοργανώνεται από το @verticalproject_trainings σε συνεργασία με το Aiorisis.\n
+Ένα σταθερό κατακόρυφο δεν χτίζεται απλώς κάνοντας ξανά και ξανά προσπάθειες. Χρειάζεται να καταλάβουμε τι συμβαίνει στο σώμα, τι λείπει και ποιο είναι κάθε φορά το επόμενο βήμα.\n
+Σε αυτό το workshop θα δουλέψουμε ακριβώς πάνω σε αυτή τη διαδικασία: drills, assists και progressions που μας βοηθούν να εξελίξουμε σταδιακά την τεχνική μας στις αναστροφές θέσεις.\n
+Θα ξεκινήσουμε με μια δυναμική πρακτική που θα προετοιμάσει το σώμα για τη δουλειά που ακολουθεί και στη συνέχεια θα εστιάσουμε σε στοιχεία όπως η ευθυγράμμιση, η ενεργοποίηση, η ισορροπία και η θέση του σώματος στον χώρο.\n
+Με τη βοήθεια συγκεκριμένων drills θα απομονώσουμε διαφορετικά κομμάτια του κατακόρυφου, ενώ μέσα από partner assists θα έχουμε την ευκαιρία να δουλέψουμε θέσεις και κινήσεις με περισσότερη ακρίβεια και ασφάλεια. Στόχος δεν είναι απλώς να «ανέβουμε» σε ένα ένα κατακόρυφο, αλλά να καταλάβουμε καλύτερα πώς το χτίζουμε.\n
+Το workshop απευθύνεται σε ασκούμενους με κάποια εμπειρία στη Yoga, σε Yoga & Pilates teachers, χορευτές, performers, γυμναστές και γενικότερα σε όσους θέλουν να εξελίξουν την πρακτική τους στις αναστροφές.\n
+Δεν χρειάζεται να έχεις ήδη σταθερό κατακόρυφο για να συμμετάσχεις.`,
+
+      en: `On Sunday, October 11th, from 18:00–20:30, @johnkarvelis returns to Aiorisis for a workshop dedicated to inversions and handstands.\n
+The workshop is organized by @verticalproject_trainings in collaboration with Aiorisis.\n
+A stable handstand isn’t just built by trying again and again. It requires understanding what’s happening in the body, what’s missing, and what the next step should be.\n
+In this workshop, we’ll work on exactly that process: drills, assists, and progressions that help us gradually develop our technique in inversion poses.\n
+We’ll start with a dynamic practice to prepare the body for the work ahead, and then we’ll focus on elements like alignment, activation, balance, and body position in space.\n
+Using specific drills, we’ll isolate different aspects of the handstand, while partner assists will give us the opportunity to work on poses and movements with greater precision and safety. The goal isn’t just to “get into” a handstand, but to better understand how we build it.\n
+The workshop is addressed to practitioners with some Yoga experience, Yoga & Pilates teachers, dancers, performers, trainers, and anyone looking to develop their inversion practice.\n
+You don’t need to have a stable handstand already to participate.`,
+
+    },
+    includes: [
+
+      {
+
+        el: `Vinyasa preparation for inversions`,
+
+        en: `Vinyasa preparation for inversions`
+
+      },
+      {
+
+        el: `Handstand alignment & balance drills`,
+
+        en: `Handstand alignment & balance drills`
+
+      },
+      {
+
+        el: `Assisted inversions & partner work`,
+
+        en: `Assisted inversions & partner work`
+
+      },
+      {
+
+        el: `Progressions για διαφορετικά επίπεδα πρακτικής`,
+
+        en: `Progressions for different levels of practice`
+
+      },
+      {
+
+        el: `Shoulder & range of motion exercises`,
+
+        en: `Shoulder & range of motion exercises`
+
+      },
+      {
+
+        el: `Τεχνικές Thai Massage για αποφόρτιση ώμων και μέσης`,
+
+        en: `Thai Massage techniques for shoulder and back release`
+
+      },
+
+    ],
+    instructors: [
+
+      {
+
+        el: `Γιάννης Καρβέλης`,
+
+        en: `John Karvelis`
+
+      },
+
+    ],
+    instructorDetails: {
+
+      el: `Ο John Karvelis είναι Lead Teacher της Acroyoga.org International, με πολυετή εμπειρία στη Yoga, τα partner acrobatics και το Thai Massage.\n
+      Τα τελευταία 15+ χρόνια διδάσκει workshops και εκπαιδευτικά προγράμματα για δασκάλους σε πολλές χώρες της Ευρώπης, της Ασίας, της Μέσης Ανατολής και της Αμερικής. Μέσα από την AcroYoga International και το Vertical Trainings Project, αλλά και μέσα από τη διεθνή εκπαιδευτική του δραστηριότητα, έχει επικεντρωθεί στη δημιουργία μαθησιακών εμπειριών που συνδυάζουν τεχνική, κίνηση, συνεργασία και ουσιαστική κατανόηση του σώματος.\n
+      Στη διδασκαλία του, η τεχνική είναι μόνο ένα μέρος της διαδικασίας. Εξίσου σημαντικό είναι ο μαθητής να νιώθει ασφάλεια, να χτίζει εμπιστοσύνη στο σώμα του, να αποκτά αυτοπεποίθηση και να μπορεί να εξελίσσεται χωρίς πίεση και φόβο.\n
+      Η προσέγγισή του βασίζεται σταδιακά στα progressions, την ευθυγράμμιση, τις αναστροφές, τα handstands και το partner work, με στόχο όχι απλώς την εκτέλεση μιας άσκησης, αλλά την κατανόηση του πώς χτίζεται μια δεξιότητα βήμα-βήμα, με ασφάλεια, συνέπεια και χώρο για πραγματική εξέλιξη.`,
+
+      en: `John Karvelis is a Lead Teacher with Acroyoga.org International, bringing over 15 years of extensive experience in Yoga, partner acrobatics, and Thai Massage to his teaching.\n
+      He has conducted workshops and training programs for instructors in numerous countries across Europe, Asia, the Middle East, and the Americas. Through AcroYoga International and his own Vertical Trainings Project, John has dedicated himself to creating learning experiences that blend technique, movement, collaboration, and a deep understanding of the body.\n
+      In his teaching, technical proficiency is just one component of the journey. Equally important to him is that students feel secure, build confidence in their bodies, develop self-assurance, and progress without pressure or fear.\n
+      His approach emphasizes gradual progressions, alignment, inversions, handstands, and partner work, aiming not simply to execute an exercise but to foster an understanding of how skills are built step-by-step, with safety, consistency, and room for genuine growth.`,
+
+    },
+    location: {
+
+      el: ``,
+
+      en: ``,
+
+    },
+    image: "/events/inversions-and-hanstands-drill-assists-progressions-october-2026.webp",
+    googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSc4t-xDpD3v1kp8RmYJiSX6odEvPCAAyYzaDH0fdpTQj7QtcA/viewform?usp=header",
+  },
 ];
