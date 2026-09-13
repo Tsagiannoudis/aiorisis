@@ -70,10 +70,10 @@ export async function generateMetadata({
       url: eventUrl,
       siteName: "Aiorisis",
 
-      images: event.image
+      images: event.imagePage
         ? [
           {
-            url: `${baseUrl}${event.image}`,
+            url: `${baseUrl}${event.imagePage}`,
             width: 1200,
             height: 630,
             alt: title,
@@ -126,9 +126,9 @@ export default async function EventDetailPage({
       =================================================== */}
 
       <section className="relative h-[50vh] min-h-[450px] w-full lg:h-[70vh]">
-        {event.image && (
+        {event.imagePage && (
           <Image
-            src={event.image}
+            src={event.imagePage}
             alt={eventTitle}
             fill
             className="object-cover"

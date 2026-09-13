@@ -28,6 +28,7 @@ export interface Event {
   };
   location: LocalizedText;
   image?: string;
+  imagePage?: string;
   googleFormLink: string;
 }
 
@@ -118,6 +119,7 @@ export const events: Event[] = [
 
     },
     image: "/events/Aerial-Yoga-Duo-1-11-2022.webp",
+    imagePage: "/events/Aerial-Yoga-Duo-1-11-2022.webp",
     googleFormLink: "https://forms.gle/...",
   },
   {
@@ -198,6 +200,7 @@ export const events: Event[] = [
 
     },
     image: "/events/decoration-christmas-20-11-2022.webp",
+    imagePage: "/events/decoration-christmas-20-11-2022.webp",
     googleFormLink: "",
   },
   {
@@ -294,6 +297,7 @@ export const events: Event[] = [
 
     },
     image: "/events/get-into-handstands-18-01-2023.webp",
+    imagePage: "/events/get-into-handstands-18-01-2023.webp",
     googleFormLink: "",
   },
   {
@@ -405,6 +409,7 @@ export const events: Event[] = [
 
     },
     image: "/events/ACROYOGA_transitions_and_flows_john_karvelis_1_04_23.webp",
+    imagePage: "/events/ACROYOGA_transitions_and_flows_john_karvelis_1_04_23.webp",
     googleFormLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSfBSV3evL7_FqAEzZNoepymhHhl7Vbi6vi6GQwV8n1RScfdfA/viewform?usp=sf_link",
   },
@@ -518,6 +523,7 @@ export const events: Event[] = [
 
     },
     image: "/events/Silks-Rope-Workshops-07-05-2023.webp",
+    imagePage: "/events/Silks-Rope-Workshops-07-05-2023.webp",
     googleFormLink: "",
   },
   {
@@ -606,6 +612,7 @@ export const events: Event[] = [
 
     },
     image: "/events/Get-Into-Handstandsalignment-and-technique_10_6_23.webp",
+    imagePage: "/events/Get-Into-Handstandsalignment-and-technique_10_6_23.webp",
     googleFormLink: "",
   },
   {
@@ -694,6 +701,7 @@ export const events: Event[] = [
 
     },
     image: "/events/Backbends_on_arm_balances_11_06_23.webp",
+    imagePage: "/events/Backbends_on_arm_balances_11_06_23.webp",
     googleFormLink: "",
   },
   {
@@ -790,6 +798,7 @@ export const events: Event[] = [
 
     },
     image: "/events/creative-flow-workshop_21_10_23.webp",
+    imagePage: "/events/creative-flow-workshop_21_10_23.webp",
     googleFormLink: "",
   },
   {
@@ -870,6 +879,7 @@ export const events: Event[] = [
 
     },
     image: "/events/Christmas-Decoration-26_11_23.webp",
+    imagePage: "/events/Christmas-Decoration-26_11_23.webp",
     googleFormLink: "",
   },
   {
@@ -958,6 +968,7 @@ export const events: Event[] = [
 
     },
     image: "/events/christmas-circus-performance-2023.webp",
+    imagePage: "/events/christmas-circus-performance-2023.webp",
     googleFormLink: "",
   },
   {
@@ -1046,6 +1057,7 @@ export const events: Event[] = [
 
     },
     image: "/events/workshop-stella-tzirti-straps-beats.webp",
+    imagePage: "/events/workshop-stella-tzirti-straps-beats.webp",
     googleFormLink: "",
   },
   {
@@ -1141,6 +1153,7 @@ export const events: Event[] = [
 
     },
     image: "/events/arm-balances-workshop-theodoros-famelis-13-10-2024.webp",
+    imagePage: "/events/arm-balances-workshop-theodoros-famelis-13-10-2024.webp",
     googleFormLink: "",
   },
   {
@@ -1244,6 +1257,7 @@ export const events: Event[] = [
 
     },
     image: "/events/acroyoga-inversions-on-human-14-12-2024.webp",
+    imagePage: "/events/acroyoga-inversions-on-human-14-12-2024.webp",
     googleFormLink: "",
   },
   {
@@ -1347,6 +1361,7 @@ export const events: Event[] = [
 
     },
     image: "/events/echoes-of-cities-10-06-2025.webp",
+    imagePage: "/events/echoes-of-cities-10-06-2025.webp",
     googleFormLink: "",
   },
   {
@@ -1442,6 +1457,7 @@ export const events: Event[] = [
 
     },
     image: "/events/aerial-yoga-duo-workshop12-10-2025.webp",
+    imagePage: "/events/aerial-yoga-duo-workshop12-10-2025.webp",
     googleFormLink: "",
   },
   {
@@ -1537,6 +1553,7 @@ export const events: Event[] = [
 
     },
     image: "/events/assists-in-inversions-&-handstands.webp",
+    imagePage: "/events/assists-in-inversions-&-handstands.webp",
     googleFormLink: "",
   },
   {
@@ -1640,6 +1657,7 @@ export const events: Event[] = [
 
     },
     image: "/events/backbends-workshop-by-famelis.webp",
+    imagePage: "/events/backbends-workshop-by-famelis.webp",
     googleFormLink: "",
   },
   {
@@ -1735,6 +1753,7 @@ export const events: Event[] = [
 
     },
     image: "/events/upside-down-workshop-by-famelis.webp",
+    imagePage: "/events/upside-down-workshop-by-famelis.webp",
     googleFormLink: "",
   },
   {
@@ -1822,6 +1841,7 @@ export const events: Event[] = [
 
     },
     image: "/events/workshop-creative-flow-with-anthi-roro.webp",
+    imagePage: "/events/workshop-creative-flow-with-anthi-roro.webp",
     googleFormLink: "",
   },
   {
@@ -1925,6 +1945,7 @@ export const events: Event[] = [
 
     },
     image: "/events/flow-to-the-sound-masterclass-17-01-2026.webp",
+    imagePage: "/events/flow-to-the-sound-masterclass-17-01-2026.webp",
     googleFormLink: "",
   },
   {
@@ -2068,6 +2089,7 @@ export const events: Event[] = [
 
     },
     image: "/events/ocean-of-emotions.webp",
+    imagePage: "/events/ocean-of-emotions-page.webp",
     googleFormLink: "https://www.more.com/gr-el/tickets/music/aiorisis-ocean-of-emotions/",
   },
   {
@@ -2075,9 +2097,9 @@ export const events: Event[] = [
     slug: "inversions-and-hanstands-drill-assists-progressions",
     title: {
 
-      el: `Inversions and Handstands Drill Assists & Progressions`,
+      el: `Inversions and Handstands`,
 
-      en: `Inversions and Handstands Drill Assists & Progressions`,
+      en: `Inversions and Handstands`,
 
     },
     startDate: "2026-10-11",
@@ -2193,7 +2215,8 @@ You don’t need to have a stable handstand already to participate.`,
       en: ``,
 
     },
-    image: "/events/inversions-and-hanstands-drill-assists-and-progressions-october-2026.webp",
+    image: "/events/inversions-and-hanstands-drill-assists-progressions-october-2026-1.webp",
+    imagePage: "/events/inversions-and-hanstands-drill-assists-progressions-october-2026-2.webp",
     googleFormLink: "https://docs.google.com/forms/d/e/1FAIpQLSc4t-xDpD3v1kp8RmYJiSX6odEvPCAAyYzaDH0fdpTQj7QtcA/viewform?usp=header",
   },
 ];
