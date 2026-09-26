@@ -669,8 +669,8 @@ export const schedule: ScheduleEntry[] = [
   {
     day: "thursday",
     start: "19:00",
-    end: "20:15",
-    classId: 9,
+    end: "20:00",
+    classId: 1,
     level: "level-1-2",
     classRoom: "room-b",
   },
