@@ -1359,6 +1359,7 @@ export const events: Event[] = [
     imagePage: "/events/workshop-creative-flow-with-anthi-roro.webp",
     googleFormLink: "",
   },
+  //20
   {
     id: 20,
     slug: "flow-to-the-sound",
@@ -1435,6 +1436,7 @@ export const events: Event[] = [
     imagePage: "/events/flow-to-the-sound-masterclass-17-01-2026.webp",
     googleFormLink: "",
   },
+  //21
   {
     id: 21,
     slug: "ocean-of-emotions",
@@ -1540,6 +1542,7 @@ export const events: Event[] = [
     googleFormLink:
       "https://www.more.com/gr-el/tickets/music/aiorisis-ocean-of-emotions/",
   },
+  //22
   {
     id: 22,
     slug: "inversions-and-hanstands-drill-assists-progressions",
@@ -1637,6 +1640,7 @@ You don’t need to have a stable handstand already to participate.`,
     googleFormLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSc4t-xDpD3v1kp8RmYJiSX6odEvPCAAyYzaDH0fdpTQj7QtcA/viewform?usp=header",
   },
+  //23
   {
     id: 23,
     slug: "aerial-yoga-duo-2026",
@@ -1716,5 +1720,61 @@ It is designed for students with at least one year of Aerial Yoga experience, as
     imagePage: "/events/aerial-yoga-duo-2026-1.webp",
     googleFormLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSfRmhSrIMHN36Hh7BeW7cBBg931GrpKt3vxDC1f6CaAyPcodw/viewform?usp=publish-editor",
+  },
+  //24
+  {
+    id: 24,
+    slug: "rocket-yoga-and-arm-balances-2026",
+    title: {
+      el: `Rocket Yoga & Arm Balances`,
+
+      en: `Rocket Yoga & Arm Balances`,
+    },
+    startDate: "2026-11-29",
+    date: {
+      el: `Κυριακή 29/11/2026`,
+
+      en: `Sunday 29/11/2026`,
+    },
+    time: {
+      el: `Ώρα: 11:00 - 13:00`,
+
+      en: `Time: 11:00 - 13:00`,
+    },
+    description: {
+      el: `Η Rocket Yoga είναι μια δυναμική πρακτική εμπνευσμένη από την Ashtanga Yoga, που συνδυάζει κίνηση, αναπνοή και δύναμη. Μέσα από τη ροή, καλλιεργούμε σταθερότητα, επίγνωση και μια βαθύτερη σύνδεση με το σώμα.\n
+      Σε αυτό το workshop θα γνωρίσουμε τη Rocket Yoga και τα Arm Balances, δουλεύοντας τη δύναμη, την ισορροπία και την εμπιστοσύνη στο σώμα.\n`,
+
+      en: `Rocket Yoga is a dynamic practice inspired by Ashtanga Yoga, combining movement, breath, and strength. Through the flow, we cultivate stability, awareness, and a deeper connection with the body.\n
+      In this workshop, we will explore the fundamentals of Rocket Yoga and Arm Balances, working on strength, balance, and trust in the body.\n`,
+    },
+    includes: [
+      {
+        el: `Δυναμική πρακτική Yoga `,
+
+        en: `Dynamic practice Yoga `,
+      },
+    ],
+    instructors: [
+      {
+        el: `Κατιάνα Πριοβόλου`,
+
+        en: `Katiana Priovolou`,
+      },
+    ],
+    instructorDetails: {
+      el: ``,
+
+      en: ``,
+    },
+    location: {
+      el: ``,
+
+      en: ``,
+    },
+    image: "/events/rocket-yoga-and-arm-balances-2026.webp",
+    imagePage: "/events/rocket-yoga-and-arm-balances-2026-1.webp",
+    googleFormLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSfHDL8CISwjHEj-zs9_mn2pCX9NYqgNB8XWajlU_CKFUJFOPw/viewform?usp=publish-editor",
   },
 ];
