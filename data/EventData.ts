@@ -1780,7 +1780,7 @@ It is designed for students with at least one year of Aerial Yoga experience, as
   //25
   {
     id: 25,
-    slug: "aeria-contemporary-workshop",
+    slug: "aerial-contemporary-workshop",
     title: {
       el: `AERIAL CONTEMPORARY WORKSHOP`,
 
