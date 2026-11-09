@@ -1777,4 +1777,66 @@ It is designed for students with at least one year of Aerial Yoga experience, as
     googleFormLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSfHDL8CISwjHEj-zs9_mn2pCX9NYqgNB8XWajlU_CKFUJFOPw/viewform?usp=publish-editor",
   },
+  //25
+  {
+    id: 25,
+    slug: "aeria-contemporary-workshop",
+    title: {
+      el: `AERIAL CONTEMPORARY WORKSHOP`,
+
+      en: `AERIAL CONTEMPORARY WORKSHOP`,
+    },
+    startDate: "2026-12-05",
+    date: {
+      el: `Σάββατο 05/12/2026`,
+
+      en: `Saturday 05/12/2026`,
+    },
+    time: {
+      el: `Ώρα: 17:30 - 19:30`,
+
+      en: `Time: 17:30 - 19:30`,
+    },
+    description: {
+      el: `Ένα workshop που συνδυάζει την aerial yoga με τον σύγχρονο χορό, μέσα από μια ολοκληρωμένη χορογραφία.\n
+      Εξερευνούμε τη ροή της κίνησης, τις μεταβάσεις από το έδαφος στον αέρα και τη σύνδεση του σώματος με τη μουσική, δημιουργώντας μια χορευτική εμπειρία που ενώνει τη δύναμη, την έκφραση και την ελευθερία.\n
+      Μαθαίνουμε να κινούμαστε διαφορετικά, να εκφραζόμαστε μέσα από την κίνηση και να γινόμαστε ένα με το ύφασμα και τη μουσική.\n
+      Ελάτε να συναντηθούμε εκεί όπου ο σύγχρονος χορός συναντά την ελευθερία του αέρα.\n
+      Απευθύνεται σε μαθητές με τουλάχιστον 1 χρόνο εμπειρίας στην Aerial Yoga.`,
+
+      en: `A workshop that combines aerial yoga with contemporary dance through a complete choreography.\n
+      We explore the flow of movement, transitions from the ground to the air, and the connection between the body and music—creating a dance experience that unites strength, expression, and freedom.\n
+      We learn to move in new ways, to express ourselves through movement, and to become one with the fabric and the music.\n
+      Join us where contemporary dance meets the freedom of the air.\n
+      Designed for students with at least one year of experience in aerial yoga.`,
+    },
+    includes: [
+      {
+        el: `Σύγχρονος χορός με Aerial Yoga`,
+
+        en: `Contemporary Dance with Aerial Yoga`,
+      },
+    ],
+    instructors: [
+      {
+        el: `Μαρία Δημητρίου`,
+
+        en: `Maria Dimitriou`,
+      },
+    ],
+    instructorDetails: {
+      el: ``,
+
+      en: ``,
+    },
+    location: {
+      el: ``,
+
+      en: ``,
+    },
+    image: "/events/aeria-contemporary-workshop-2026-1.webp",
+    imagePage: "/events/aeria-contemporary-workshop-2026-1.webp",
+    googleFormLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeFJPpOyegRdvOUefdJX4DmuHVuIHIVj9vXIWGXcB0M4iauBQ/viewform?usp=dialog",
+  },
 ];
