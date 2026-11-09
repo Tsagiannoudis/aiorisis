@@ -1649,11 +1649,11 @@ You don’t need to have a stable handstand already to participate.`,
 
       en: `Aerial Yoga Duo Flow | Connect | Express`,
     },
-    startDate: "2026-11-18",
+    startDate: "2026-10-18",
     date: {
-      el: `Κυριακή 18/11/2026`,
+      el: `Κυριακή 18/10/2026`,
 
-      en: `Sunday 18/11/2026`,
+      en: `Sunday 18/10/2026`,
     },
     time: {
       el: `Ώρα: 12:00 - 14:30`,
