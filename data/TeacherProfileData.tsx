@@ -50,7 +50,7 @@ export const teachers: Teacher[] = [
     lastName: { el: "Πριόνα", en: "Priona" },
     fullName: { el: "Εύη Πριόνα", en: "Evi Priona" },
     experience: 14,
-    categoryType: { el: "Ιδιοκτήτρια", en: "Founder" },
+    categoryType: { el: "Iδρύτρια ", en: "Founder" },
     specialties: [1, 2, 3, 4, 9],
     shortDescription: {
       el: "Ασχολείται με τον αθλητισμό από πολύ μικρή ηλικία.\n Έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks) το 2012 και η αγάπη της γι'αυτές την οδήγησε να ασχοληθεί επαγγελματικά και να διδάσκει από το 2020. \nΕίναι πιστοποιημένη δασκάλα της Aerial Yoga 150hrs, Aerial Yin Yoga 50hrs, Yoga 500 hrs και Prenatal/Postnatal Yoga 50hrs από την Yoga Alliance.",
