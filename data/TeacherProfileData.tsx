@@ -1,7 +1,6 @@
 import { LocalizedText } from "@/components/extraComponents/LocaleSwitchTranslate";
 import { classes } from "./ClassOfStudioData";
 
-
 export interface Teacher {
   id: number;
   slug: string;
@@ -27,8 +26,8 @@ export interface Teacher {
 
 //Class function
 export const getSpecialtyNames = (teacherSpecialties: number[]) => {
-  return teacherSpecialties.map(id =>
-    classes.find(c => c.id === id)?.className
+  return teacherSpecialties.map(
+    (id) => classes.find((c) => c.id === id)?.className,
   );
   // 1 - Aerial Yoga
   // 2 - Aerial Yoga Kids
@@ -51,11 +50,11 @@ export const teachers: Teacher[] = [
     lastName: { el: "Πριόνα", en: "Priona" },
     fullName: { el: "Εύη Πριόνα", en: "Evi Priona" },
     experience: 14,
-    categoryType: { el: "Ιδιοκτήτρια", en: "Owner" },
+    categoryType: { el: "Ιδιοκτήτρια", en: "Founder" },
     specialties: [1, 2, 3, 4, 9],
     shortDescription: {
       el: "Ασχολείται με τον αθλητισμό από πολύ μικρή ηλικία.\n Έκανε τα πρώτα της βήματα στις εναέριες τέχνες (Aerial Silks) το 2012 και η αγάπη της γι'αυτές την οδήγησε να ασχοληθεί επαγγελματικά και να διδάσκει από το 2020. \nΕίναι πιστοποιημένη δασκάλα της Aerial Yoga 150hrs, Aerial Yin Yoga 50hrs, Yoga 500 hrs και Prenatal/Postnatal Yoga 50hrs από την Yoga Alliance.",
-      en: "She has been involved in sports since a very young age.\n She took her first steps in aerial arts (Aerial Silks) in 2012 and her love for them led her to pursue it professionally and teach since 2020. \nShe is a certified Aerial Yoga teacher 150hrs, Aerial Yin Yoga 50hrs, Yoga 500 hrs and Prenatal/Postnatal Yoga 50hrs by Yoga Alliance."
+      en: "She has been involved in sports since a very young age.\n She took her first steps in aerial arts (Aerial Silks) in 2012 and her love for them led her to pursue it professionally and teach since 2020. \nShe is a certified Aerial Yoga teacher 150hrs, Aerial Yin Yoga 50hrs, Yoga 500 hrs and Prenatal/Postnatal Yoga 50hrs by Yoga Alliance.",
     },
     fullDescription: {
       el: `
@@ -83,7 +82,7 @@ export const teachers: Teacher[] = [
       <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Prenatal/Postnatal Yoga (50 hours)</li>
     </ul>
     </div>
-`
+`,
     },
     image: "/teacherProfiles/evi-priona.webp",
     mailAddress: "info@aiorisis.gr",
@@ -107,7 +106,7 @@ export const teachers: Teacher[] = [
     specialties: [1, 2, 3, 9],
     shortDescription: {
       el: "",
-      en: ""
+      en: "",
     },
     fullDescription: {
       el: `
@@ -133,7 +132,7 @@ export const teachers: Teacher[] = [
         <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Breathworking & Meditation</li>
       </ul>
     </div>
-    `
+    `,
     },
     image: "/teacherProfiles/rafaela-xatzikosta.webp",
     mailAddress: "",
@@ -157,7 +156,7 @@ export const teachers: Teacher[] = [
     specialties: [1, 2, 3, 9],
     shortDescription: {
       el: "",
-      en: ""
+      en: "",
     },
     fullDescription: {
       el: `
@@ -183,7 +182,7 @@ export const teachers: Teacher[] = [
         <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Anatomy & Alignment</li>
       </ul>
     </div>
-    `
+    `,
     },
     image: "/teacherProfiles/natasa-petridou.webp",
     mailAddress: "",
@@ -207,7 +206,7 @@ export const teachers: Teacher[] = [
     specialties: [7],
     shortDescription: {
       el: "",
-      en: ""
+      en: "",
     },
     fullDescription: {
       el: `
@@ -233,7 +232,7 @@ export const teachers: Teacher[] = [
         <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· 4th Place - Pole Sport</li>
       </ul>
     </div>
-    `
+    `,
     },
     image: "/teacherProfiles/marialina-papadopoulou.webp",
     mailAddress: "",
@@ -257,7 +256,7 @@ export const teachers: Teacher[] = [
     specialties: [8, 10],
     shortDescription: {
       el: "",
-      en: ""
+      en: "",
     },
     fullDescription: {
       el: `
@@ -307,7 +306,7 @@ export const teachers: Teacher[] = [
     specialties: [4, 5, 6],
     shortDescription: {
       el: "",
-      en: ""
+      en: "",
     },
     fullDescription: {
       el: `
@@ -357,7 +356,7 @@ export const teachers: Teacher[] = [
     specialties: [1, 2, 3, 9],
     shortDescription: {
       el: "",
-      en: ""
+      en: "",
     },
     fullDescription: {
       el: `
@@ -385,7 +384,7 @@ export const teachers: Teacher[] = [
         <li class="bg-[#F6F1EB] p-3 rounded-xl border border-[#B9007C]/10 text-sm">· Vinyasa Flow Yoga</li>
       </ul>
     </div>
-    `
+    `,
     },
     image: "/teacherProfiles/eleni-tsiakiri01.webp",
     mailAddress: "",
