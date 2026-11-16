@@ -265,8 +265,7 @@ export const RetreatData: Retreat[] = [
       en: "Montanema Handmade Village",
     },
 
-    image:
-      "/retreats/Aerial-Yoga-Retreat-Montanema-Village-7-9-2-2024.webp",
+    image: "/retreats/Aerial-Yoga-Retreat-Montanema-Village-7-9-2-2024.webp",
 
     imageHorizontal:
       "/retreats/Aerial-Yoga-Retreat-Montanema-7-9-2-2024-horizontal.webp",
@@ -439,8 +438,7 @@ export const RetreatData: Retreat[] = [
 
     image: "/retreats/Echoes-of-Autumn.webp",
 
-    imageHorizontal:
-      "/retreats/Echoes-of-Autumn-horizontal.webp",
+    imageHorizontal: "/retreats/Echoes-of-Autumn-horizontal.webp",
 
     includes: [
       {
@@ -590,8 +588,7 @@ export const RetreatData: Retreat[] = [
       en: "Evia Silence Lighthouse, Evia",
     },
 
-    image:
-      "/retreats/Flow-&-Fly-Retreat-25-29-6-2026.webp",
+    image: "/retreats/Flow-&-Fly-Retreat-25-29-6-2026.webp",
 
     imageHorizontal:
       "/retreats/Flow-&-Fly-retreat-25-29-6-2026-horizontal.webp",
@@ -760,8 +757,7 @@ export const RetreatData: Retreat[] = [
       en: "Valeni Boutique Hotel & Spa, Pelion",
     },
 
-    image:
-      "/retreats/the-autumn-pause-13-me-15-11-26.webp",
+    image: "/retreats/the-autumn-pause-13-me-15-11-26.webp",
 
     imageHorizontal:
       "/retreats/the-autumn-pause-13-me-15-11-26-horizontal.webp",
@@ -841,6 +837,145 @@ export const RetreatData: Retreat[] = [
         quadRoom: {
           el: "300€/άτομο",
           en: "€300/person",
+        },
+      },
+    },
+  },
+
+  /* =========================================================
+     6. Aerial & Yoga Retreat
+  ========================================================= */
+
+  {
+    id: 6,
+    slug: "aerial-and-yoga-retreat",
+
+    title: {
+      el: "Aerial & Yoga Retreat",
+      en: "Aerial & Yoga Retreat",
+    },
+
+    subtitle: {
+      el: "February Escape: Aerial & Yoga Retreat",
+      en: "February Escape: Aerial & Yoga Retreat",
+    },
+
+    description: {
+      el: `❄️ Αυτόν τον Φεβρουάριο, σας προσκαλούμε σε μια αναζωογονητική χειμερινή απόδραση στην καρδιά της φύσης, στο μαγευτικό Montanema Handmade Village. Με καθοδηγητές την Εύη Πριόνα και τον Γιάννη Μητσοκάπα, δημιουργούμε έναν ζεστό και ασφαλή χώρο για να επιβραδύνουμε τους ρυθμούς μας, να αναπνεύσουμε καθαρό βουνίσιο αέρα και να επιστρέψουμε στο σώμα.
+
+🧘🏻‍♀️ Μέσα από πρακτικές Yoga και Aerial Yoga, θα εξερευνήσουμε τη σταθερότητα του εδάφους αλλά και την απελευθερωτική αίσθηση της αιώρησης. Η αιώρα γίνεται το μέσο μας για αποσυμπίεση, ενδυνάμωση και βαθιά χαλάρωση, ενώ οι ροές της Yoga και οι τεχνικές αναπνοής μάς επαναφέρουν σε απόλυτη ισορροπία.
+
+✨ Ένα ολοκληρωμένο τριήμερο φροντίδας με 2 διανυκτερεύσεις, θρεπτική ημιδιατροφή (2 πλούσια πρωινά & 2 παραδοσιακά γεύματα), κίνηση, συντροφικότητα και ανανέωση.`,
+
+      en: `❄️ This February, we invite you to an invigorating winter escape in the heart of nature, at the enchanting Montanema Handmade Village. Guided by Evi Priona and Yiannis Mitsokapas, we create a warm and welcoming space to slow down, breathe fresh mountain air, and reconnect with our bodies.
+
+🧘🏻‍♀️ Through Yoga and Aerial Yoga practices, we will explore both grounding and the liberating sense of flight. The aerial hammock becomes our tool for spinal decompression, strength, and deep release, while Yoga flows and breathwork bring us back to inner harmony.
+
+✨ A complete three-day restorative journey including 2 nights' accommodation, wholesome half-board (2 hearty breakfasts & 2 traditional meals), movement, community, and deep renewal.`,
+    },
+
+    date: {
+      el: "19-21 Φευρουαρίου 2027",
+      en: "19-21 February 2027",
+    },
+
+    startDate: "2027-02-19",
+
+    instructors: [
+      {
+        el: "Εύη Πριόνα",
+        en: "Evi Priona",
+      },
+      {
+        el: "Γιάννης Μητσοκάπας",
+        en: "Yiannis Mitsokapas",
+      },
+    ],
+
+    location: {
+      el: "Montanema Handmade Village, Ανθοχώρι Καρδίτσας",
+      en: "Montanema Handmade Village, Anthohori Karditsa",
+    },
+
+    image: "/retreats/aerial-and-yoga-retreat-02-27.webp",
+
+    imageHorizontal: "/retreats/aerial-and-yoga-retreat-02-27-horizontal.webp",
+
+    includes: [
+      {
+        el: "Πρακτικές Vinyasa Yoga",
+        en: "Vinyasa Yoga practices",
+      },
+      {
+        el: "Πρακτικές Aerial Yoga",
+        en: "Aerial Yoga practices",
+      },
+      {
+        el: "Πεζοπορία & εξερεύνηση της φύσης",
+        en: "Hiking & nature exploration",
+      },
+    ],
+
+    googleFormLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSeilnxDqVes1DHxoQYV-egL1p6_w9dYHCmcpZTNmx0_qqKudw/viewform",
+
+    partners: [
+      {
+        name: "OMONYMA",
+
+        description: {
+          el: "Η OMONYMA δημιουργήθηκε για να ενώνει ανθρώπους, να τους ωθεί να πραγματοποιούν τα όνειρα και τους στόχους τους. Το όραμα της εταιρείας είναι να δημιουργήσει από την αρχή προϊόντα εύχρηστα, απαραίτητα και πρακτικά, ώστε να συνοδεύουν τον άνθρωπο στο ταξίδι της αρμονίας και της ισορροπίας.",
+          en: "OMONYMA was created to bring people together and encourage them to pursue their dreams and goals. Its vision is to create practical products that support people on their journey toward harmony and balance.",
+        },
+      },
+    ],
+
+    pricing: {
+      earlyBird: {
+        endDate: "31/12/26",
+
+        singleRoom: {
+          el: "530€/άτομο",
+          en: "530€/person",
+        },
+
+        doubleRoom: {
+          el: "380€/άτομο",
+          en: "380€/person",
+        },
+
+        tripleRoom: {
+          el: "360€/άτομο",
+          en: "360€/person",
+        },
+
+        quadRoom: {
+          el: "310€/άτομο",
+          en: "310€/person",
+        },
+      },
+
+      regular: {
+        deposit: "150€",
+
+        singleRoom: {
+          el: "580€/άτομο",
+          en: "580€/person",
+        },
+
+        doubleRoom: {
+          el: "440€/άτομο",
+          en: "440€/person",
+        },
+
+        tripleRoom: {
+          el: "400€/άτομο",
+          en: "400€/person",
+        },
+
+        quadRoom: {
+          el: "360€/άτομο",
+          en: "360€/person",
         },
       },
     },
