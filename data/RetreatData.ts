@@ -863,9 +863,13 @@ export const RetreatData: Retreat[] = [
     description: {
       el: `❄️ Αυτόν τον Φεβρουάριο, σας προσκαλούμε σε μια αναζωογονητική χειμερινή απόδραση στην καρδιά της φύσης, στο μαγευτικό Montanema Handmade Village. Με καθοδηγητές την Εύη Πριόνα και τον Γιάννη Μητσοκάπα, μέσα από πρακτικές Yoga και Aerial Yoga, θα εξερευνήσουμε τη σταθερότητα του εδάφους αλλά και την απελευθερωτική αίσθηση της αιώρησης. Η αιώρα γίνεται το μέσο μας για αποσυμπίεση, ενδυνάμωση και βαθιά χαλάρωση, ενώ οι ροές της Yoga και οι τεχνικές αναπνοής μάς επαναφέρουν σε απόλυτη ισορροπία.
 
+      🌿 Τρεις μέρες γεμάτες κίνηση, αναπνοή, αιώρηση και σύνδεση με τη φύση!
+
       ✨ Ένα ολοκληρωμένο τριήμερο φροντίδας με 2 διανυκτερεύσεις, θρεπτική ημιδιατροφή (2 πλούσια πρωινά & 2 παραδοσιακά γεύματα), κίνηση, συντροφικότητα και ανανέωση.`,
 
       en: `❄️ This February, we invite you to an invigorating winter escape in the heart of nature, at the enchanting Montanema Handmade Village. Guided by Evi Priona and Yiannis Mitsokapas, through Yoga and Aerial Yoga practices, we will explore both grounding and the liberating sense of flight. The aerial hammock becomes our tool for spinal decompression, strength, and deep release, while Yoga flows and breathwork bring us back to inner harmony.
+
+      🌿 Three days full of movement, breath, suspension, and connection with nature!
 
       ✨ A complete three-day restorative journey including 2 nights' accommodation, wholesome half-board (2 hearty breakfasts & 2 traditional meals), movement, community, and deep renewal.`,
     },
