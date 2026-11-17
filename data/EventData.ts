@@ -33,6 +33,7 @@ export interface Event {
 }
 
 export const events: Event[] = [
+  //1
   {
     id: 1,
     slug: "workshop-aerial-yoga-duo",
@@ -98,6 +99,7 @@ export const events: Event[] = [
     imagePage: "/events/Aerial-Yoga-Duo-1-11-2022.webp",
     googleFormLink: "https://forms.gle/...",
   },
+  //2
   {
     id: 2,
     slug: "christmas-decoration-aiorisis-2022",
@@ -157,6 +159,7 @@ export const events: Event[] = [
     imagePage: "/events/decoration-christmas-20-11-2022.webp",
     googleFormLink: "",
   },
+  //3
   {
     id: 3,
     slug: "get-into-handstands",
@@ -228,6 +231,7 @@ export const events: Event[] = [
     imagePage: "/events/get-into-handstands-18-01-2023.webp",
     googleFormLink: "",
   },
+  //4
   {
     id: 4,
     slug: "acroyoga-transitions-and-flows",
@@ -312,6 +316,7 @@ export const events: Event[] = [
     googleFormLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSfBSV3evL7_FqAEzZNoepymhHhl7Vbi6vi6GQwV8n1RScfdfA/viewform?usp=sf_link",
   },
+  //5
   {
     id: 5,
     slug: "silks-rope-workshops-stella-tzirti",
@@ -395,6 +400,7 @@ export const events: Event[] = [
     imagePage: "/events/Silks-Rope-Workshops-07-05-2023.webp",
     googleFormLink: "",
   },
+  //6
   {
     id: 6,
     slug: "get-into-handstands-alignment-and-technique",
@@ -461,6 +467,7 @@ export const events: Event[] = [
       "/events/Get-Into-Handstandsalignment-and-technique_10_6_23.webp",
     googleFormLink: "",
   },
+  //7
   {
     id: 7,
     slug: "backbends-on-arm-balances",
@@ -526,6 +533,7 @@ export const events: Event[] = [
     imagePage: "/events/Backbends_on_arm_balances_11_06_23.webp",
     googleFormLink: "",
   },
+  //8
   {
     id: 8,
     slug: "creative-flow",
@@ -597,6 +605,7 @@ export const events: Event[] = [
     imagePage: "/events/creative-flow-workshop_21_10_23.webp",
     googleFormLink: "",
   },
+  //9
   {
     id: 9,
     slug: "christmas-decoration-aiorisis-2023",
@@ -656,6 +665,7 @@ export const events: Event[] = [
     imagePage: "/events/Christmas-Decoration-26_11_23.webp",
     googleFormLink: "",
   },
+  //10
   {
     id: 10,
     slug: "the-circus-that-came-to-life-at-christmas",
@@ -721,6 +731,7 @@ export const events: Event[] = [
     imagePage: "/events/christmas-circus-performance-2023.webp",
     googleFormLink: "",
   },
+  //11
   {
     id: 11,
     slug: "straps-beats-workshop",
@@ -786,6 +797,7 @@ export const events: Event[] = [
     imagePage: "/events/workshop-stella-tzirti-straps-beats.webp",
     googleFormLink: "",
   },
+  //12
   {
     id: 12,
     slug: "arm-balances-workshop-theodoros-famelis",
@@ -857,6 +869,7 @@ export const events: Event[] = [
       "/events/arm-balances-workshop-theodoros-famelis-13-10-2024.webp",
     googleFormLink: "",
   },
+  //13
   {
     id: 13,
     slug: "acroyoga-inversions-on-humans-karvelis",
@@ -933,6 +946,7 @@ export const events: Event[] = [
     imagePage: "/events/acroyoga-inversions-on-human-14-12-2024.webp",
     googleFormLink: "",
   },
+  //14
   {
     id: 14,
     slug: "echoes-of-cities",
@@ -1009,6 +1023,7 @@ export const events: Event[] = [
     imagePage: "/events/echoes-of-cities-10-06-2025.webp",
     googleFormLink: "",
   },
+  //15
   {
     id: 15,
     slug: "aerial-yoga-duo",
@@ -1079,6 +1094,7 @@ export const events: Event[] = [
     imagePage: "/events/aerial-yoga-duo-workshop12-10-2025.webp",
     googleFormLink: "",
   },
+  //16
   {
     id: 16,
     slug: "assists-in-inversions-handstands",
@@ -1149,6 +1165,7 @@ export const events: Event[] = [
     imagePage: "/events/assists-in-inversions-&-handstands.webp",
     googleFormLink: "",
   },
+  //17
   {
     id: 17,
     slug: "backbends-workshop-by-famelis",
@@ -1225,6 +1242,7 @@ export const events: Event[] = [
     imagePage: "/events/backbends-workshop-by-famelis.webp",
     googleFormLink: "",
   },
+  //18
   {
     id: 18,
     slug: "upside-down-workshop-by-famelis",
@@ -1295,6 +1313,7 @@ export const events: Event[] = [
     imagePage: "/events/upside-down-workshop-by-famelis.webp",
     googleFormLink: "",
   },
+  //19
   {
     id: 19,
     slug: "workshop-creative-flow-with-anthi-roro",
@@ -1838,5 +1857,143 @@ It is designed for students with at least one year of Aerial Yoga experience, as
     imagePage: "/events/aeria-contemporary-workshop-2026-1.webp",
     googleFormLink:
       "https://docs.google.com/forms/d/e/1FAIpQLSeFJPpOyegRdvOUefdJX4DmuHVuIHIVj9vXIWGXcB0M4iauBQ/viewform?usp=dialog",
+  },
+  //26
+  {
+    id: 26,
+    slug: "split-it-all-the-way",
+    title: {
+      el: `Split it all the way`,
+
+      en: `Split it all the way`,
+    },
+    startDate: "2026-12-12",
+    date: {
+      el: `Σάββατο 12/12/2026`,
+
+      en: `Saturday 12/12/2026`,
+    },
+    time: {
+      el: `Ώρα: 17:30 - 20:00`,
+
+      en: `Time: 17:30 - 20:00`,
+    },
+    description: {
+      el: `Ένα μάθημα δυναμικής ροής με στόχο να προετοιμάσει το σώμα για να εξερευνήσουμε θέσεις που κύριο χαρακτηριστικό τους είναι τα ανοίγματα στα πόδια. Στηρίξεις στα χέρια, ανάστροφες θέσεις, όρθιες και πρηνείς, όλες τους με ένα split.\n
+      Εσύ πόσα splits αντέχεις? 🔥`,
+
+      en: `A dynamic flow class designed to prepare the body for exploring poses characterized by leg-opening shapes. Arm balances, inversions, standing poses, and prone poses—all featuring a split.\n
+      How many splits can you handle? 🔥`,
+    },
+    includes: [
+      {
+        el: `Δυναμική ροή Vinyasa & προετοιμασία σώματος`,
+        en: `Dynamic Vinyasa flow & body warm-up`,
+      },
+      {
+        el: `Τεχνικές & drills για ανοίγματα ποδιών (splits)`,
+        en: `Technique & mobility drills for splits`,
+      },
+      {
+        el: `Στηρίξεις στα χέρια & αναστροφές με splits`,
+        en: `Arm balances & inversions with splits`,
+      },
+      {
+        el: `Όρθιες και πρηνείς θέσεις ευλυγισίας`,
+        en: `Standing and prone flexibility poses`,
+      },
+    ],
+    instructors: [
+      {
+        el: `Θεόδωρος Φαμέλης`,
+
+        en: `Theodoros Famelis`,
+      },
+    ],
+    instructorDetails: {
+      el: `Λίγα λόγια για τον εισηγητή:\nΟ Θεόδωρος Φαμέλης ενημερώνεται διαρκώς, παρακολουθώντας σεμινάρια και workshops. Το 2013 έκανε το πρώτο Teacher Training 200hrs στο Ghyta Yoga School, ενώ το 2014 ολοκλήρωσε και το Advanced Sadhana Training 300hrs στον ίδιο χώρο. Το 2018 ολοκλήρωσε το YogaWorks YTT 200h ενώ το 2022 τις 300 ώρες στο ίδιο σύστημα. Συμμετέχει ως εκπαιδευτής σε εκπαιδεύσεις δασκάλων γιόγκα και το μονοπάτι του συνεχίζεται με σκοπό την πνευματική γαλήνη.`,
+
+      en: `A few words about the speaker:\nTheodoros Famelis is constantly updated, attending seminars and workshops. In 2013 he did the first Teacher Training 200hrs at Ghyta Yoga School, while in 2014 he completed the Advanced Sadhana Training 300hrs at the same place. In 2018 he completed the YogaWorks YTT 200h while in 2022 the 300 hours in the same system. He participates as an instructor in yoga teacher trainings and his path continues with the aim of spiritual peace.`,
+    },
+    location: {
+      el: ``,
+
+      en: ``,
+    },
+    image: "/events/split-it-all-the-way-12-12-2026.webp",
+    imagePage: "/events/split-it-all-the-way-12-12-2026(2).webp",
+    googleFormLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSc5cWjW9iKdPnO23riShdgpDgVJcupC11aYhuPqCMOTG62QJg/viewform?usp=publish-editor",
+  },
+  //27
+  {
+    id: 27,
+    slug: "backbends-12-2026",
+    title: {
+      el: `Backbends`,
+
+      en: `Backbends`,
+    },
+    startDate: "2026-12-13",
+    date: {
+      el: `Κυριακή 13/12/2026`,
+
+      en: `Sunday 13/12/2026`,
+    },
+    time: {
+      el: `Ώρα: 11:00 - 13:30`,
+
+      en: `Time: 11:00 - 13:30`,
+    },
+    description: {
+      el: `Πόσες φορές ακούμε backbends και αυτόματα μας «τραβάει» η μέση; Μήπως δεν θα έπρεπε;\n
+      Στο πρώτο μας σεμινάριο θα εξερευνήσουμε τις υπερεκτάσεις μέσα από μια δυναμική ροή.\n
+      Θα προθερμάνουμε το σώμα, θα ξεμπλοκάρουμε τα σημεία-κλειδιά για ασφαλείς οπίσθιες κάμψεις και θα μάθουμε πώς να τις προσεγγίζουμε με δύναμη, επίγνωση και άνεση.`,
+
+      en: `How many times do we hear the term "backbends" and immediately feel a "twinge" in our lower back? Perhaps it shouldn't be that way!\n
+      In our first seminar, we will explore backbends through a dynamic flow.\n
+      We will warm up the body, unlock key areas essential for safe backbending, and learn how to approach these poses with strength, awareness, and ease.`,
+    },
+    includes: [
+      {
+        el: `Δυναμική ροή Vinyasa & προετοιμασία σπονδυλικής στήλης`,
+        en: `Dynamic Vinyasa flow & spinal warm-up`,
+      },
+      {
+        el: `Τεχνικές για ασφαλείς οπίσθιες κάμψεις & υπερεκτάσεις`,
+        en: `Techniques for safe backbends & extensions`,
+      },
+      {
+        el: `Ξεμπλοκάρισμα & άνοιγμα σε θώρακα, ώμους και ισχία`,
+        en: `Opening chest, shoulders & hip flexors`,
+      },
+      {
+        el: `Ενδυνάμωση κορμού & τεχνικές αποφόρτισης της μέσης`,
+        en: `Core strengthening & lower back decompression techniques`,
+      },
+    ],
+    instructors: [
+      {
+        el: `Θεόδωρος Φαμέλης`,
+
+        en: `Theodoros Famelis`,
+      },
+    ],
+    instructorDetails: {
+      el: `Λίγα λόγια για τον εισηγητή:\n
+      Ο Θεόδωρος Φαμέλης ενημερώνεται διαρκώς, παρακολουθώντας σεμινάρια και workshops. Το 2013 έκανε το πρώτο Teacher Training 200hrs στο Ghyta Yoga School, ενώ το 2014 ολοκλήρωσε και το Advanced Sadhana Training 300hrs στον ίδιο χώρο. Το 2018 ολοκλήρωσε το YogaWorks YTT 200h ενώ το 2022 τις 300 ώρες στο ίδιο σύστημα. Συμμετέχει ως εκπαιδευτής σε εκπαιδεύσεις δασκάλων γιόγκα και το μονοπάτι του συνεχίζεται με σκοπό την πνευματική γαλήνη.`,
+
+      en: `A few words about the speaker:\n
+      Theodoros Famelis is constantly updated, attending seminars and workshops. In 2013 he did the first Teacher Training 200hrs at Ghyta Yoga School, while in 2014 he completed the Advanced Sadhana Training 300hrs at the same place. In 2018 he completed the YogaWorks YTT 200h while in 2022 the 300 hours in the same system. He participates as an instructor in yoga teacher trainings and his path continues with the aim of spiritual peace.`,
+    },
+    location: {
+      el: ``,
+
+      en: ``,
+    },
+    image: "/events/backbends-13-12-2026.webp",
+    imagePage: "/events/backbends-13-12-2026(2).webp",
+    googleFormLink:
+      "https://docs.google.com/forms/d/e/1FAIpQLSc5cWjW9iKdPnO23riShdgpDgVJcupC11aYhuPqCMOTG62QJg/viewform?usp=publish-editor",
   },
 ];

@@ -29,9 +29,7 @@ const UpcomingEventOfEvents = () => {
   const locale = useLocale() as Locale;
   const tData = createTranslator(locale);
 
-  const upcomingEvents = events.filter((event) =>
-    isUpcoming(event.startDate)
-  );
+  const upcomingEvents = events.filter((event) => isUpcoming(event.startDate));
 
   return (
     <section className="bg-[#F6F1EB] px-4 py-20 text-black md:px-8 lg:px-16">
@@ -65,7 +63,7 @@ const UpcomingEventOfEvents = () => {
             </p>
           </div>
         ) : (
-          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-1">
+          <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-2">
             {upcomingEvents.map((event, index) => (
               <article
                 key={event.id}
@@ -142,11 +140,9 @@ const UpcomingEventOfEvents = () => {
                               >
                                 <span className="mt-2 h-1.5 w-1.5 rounded-full bg-[#B9007C]" />
 
-                                <span>
-                                  {tData(instructor)}
-                                </span>
+                                <span>{tData(instructor)}</span>
                               </li>
-                            )
+                            ),
                           )}
                         </ul>
                       </div>
@@ -160,22 +156,16 @@ const UpcomingEventOfEvents = () => {
                         </h4>
 
                         <ul className="space-y-2 text-sm text-neutral-600">
-                          {event.includes
-                            .slice(0, 4)
-                            .map((item, itemIndex) => (
-                              <li
-                                key={itemIndex}
-                                className="flex items-start gap-2"
-                              >
-                                <span className="w-1.5 text-[#B9007C]">
-                                  -
-                                </span>
+                          {event.includes.slice(0, 4).map((item, itemIndex) => (
+                            <li
+                              key={itemIndex}
+                              className="flex items-start gap-2"
+                            >
+                              <span className="w-1.5 text-[#B9007C]">-</span>
 
-                                <span>
-                                  {tData(item)}
-                                </span>
-                              </li>
-                            ))}
+                              <span>{tData(item)}</span>
+                            </li>
+                          ))}
                         </ul>
                       </div>
                     )}
@@ -190,8 +180,7 @@ const UpcomingEventOfEvents = () => {
 
                       <div className="space-y-2 text-sm leading-6 text-neutral-600">
                         {event.pricing.earlyBird &&
-                          event.pricing.earlyBird.endDate !==
-                          "N/A" && (
+                          event.pricing.earlyBird.endDate !== "N/A" && (
                             <div>
                               {/* Θα βάλουμε εδώ pricing όταν το οργανώσουμε */}
                             </div>
@@ -214,11 +203,11 @@ const UpcomingEventOfEvents = () => {
                       text={
                         locale === "en"
                           ? `Check out the event: ${tData(
-                            event.title
-                          )} at Aiorisis Studio!`
+                              event.title,
+                            )} at Aiorisis Studio!`
                           : `Δες το event: ${tData(
-                            event.title
-                          )} στο Αιώρησις Studio!`
+                              event.title,
+                            )} στο Αιώρησις Studio!`
                       }
                       path={`/events/${event.slug}`}
                     />
