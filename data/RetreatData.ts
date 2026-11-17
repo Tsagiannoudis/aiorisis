@@ -899,7 +899,7 @@ export const RetreatData: Retreat[] = [
 
     image: "/retreats/aerial-and-yoga-retreat-02-27.webp",
 
-    imageHorizontal: "/retreats/aerial-and-yoga-retreat-02-27.webp",
+    imageHorizontal: "/retreats/aerial-and-yoga-retreat-02-27-horizontal.webp",
 
     includes: [
       {
